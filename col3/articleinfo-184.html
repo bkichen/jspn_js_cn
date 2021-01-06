@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>课题研究——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_86'></span>
+<script language='JavaScript'>
+function funcDate_86()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_86.innerHTML = strHTML;
+}
+setInterval(funcDate_86,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td><a href="../col2/articlecolumn.html">政策文件</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>研究课题</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="3">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>新形势下价格工作督查的思考与实践</td></tr><tr align='center'><td><span class='x_time'>2020-04-14 09:37:43</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">&nbsp;</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">习近平总书记强调：“督查工作很重要，它是全局工作中不可缺少的一个重要环节。在一定意义上说，没有督查就没有落实，没有督查就没有深化”。实践证明，要做好督查工作，提高督查实效，就必须提高督查工作认识，找准督查工作规律，拓宽督查工作思路，创新督查工作方法。本文在阐述督查理论依据、分析国外开展督查工作实践的基础上，明确了新形势下价格工作督查的几点认识，进而立足于当前全面深化价格机制改革的工作实际，围绕健全机制规范督查工作、突出重点理清督查思路、加强督查队伍能力建设等方面，提出了建立健全适应价格工作特点的督查制度的工作思路及建议。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">一、督查的理论依据</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">督查，是行政管理的一种手段，也叫行政控制或行政监察，是组织实施有效管理的伴生物，也是决策的伴生物，100多年来一直是行政管理学研究的对象。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）行政管理的控制职能。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">当代西方行政管理学认为，督查属于管理控制范畴。在现代管理活动中，目标对象是动态系统，由于内外环境等各种因素的影响，加上所制定的目标和计划本身也不可能十全十美，人为因素往往也对行动本身造成不可忽视的影响，因而产生离开目标轨道的偏差在所难免。大致上有以下三种情况：一是目标计划与目标行动基本一致，只是局部、个别问题上有偏差；二是目标不尽合理，计划不完善，导致目标和行动都有困难；三是客观条件发生重大变化，使原有目标和计划不可能继续执行。通过行政管理的监督、检查和反馈等控制职能，可以发现问题、解决问题，采取措施修正计划，调整决策，其目的是排除自发因素的干扰，纠正偏离目标的失误，保证行政“机器”按科学轨道运行。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）行政管理的控制分类</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">。按计划的实施阶段，行政控制可分为三个类型：预先控制、现场控制和反馈控制。一是预先控制。预先控制也叫前馈控制，是指在计划实施之前为保证达到计划要求，根据各种干扰因素和受控系统的变化规律，以对可能发生的偏差做出科学预测的基础上，提前采取的控制因素。二是现场控制。是指在计划执行过程中，管理人员亲身观察被控制人员及事物的活动，指导其按规定的方式行事，以保证目标实现的事中监控行为。三是反馈控制。是指管理人员将已完成的工作执行结果与控制标准相比较，从而发现偏差的措施，以防止偏差发展或继续存在的控制活动。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">按行政控制的实施者，可分为自控和他控，即执行者的自我控制和管理者的调节控制。自我控制是计划执行者按照总体目标所赋予的目标责任实行的一种自我管理、自我纠偏行为；调节控制主要是由管理者通过对工作效果的检查，修正目标偏差、调整目标行为或重新制定目标，改变计划的一种行为。实践中所指的督查更多是指调节控制，是一种他控行为。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">二、当前我国政府的督查实践</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">党的十八大以来，新一届中央领导集体以踏石留印、抓铁有痕的作风抓落实，对督促检查工作提出了一系列新的要求。国务院将督促检查工作列入政府工作的重要组成部分，自2014年以来连续开展三次大督查，有效推动重大政策措施和重点工作部署落实，促进了经济社会发展主要目标任务顺利完成，提升了政府执行力和公信力，取得了良好社会反响。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）注重制度设计。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">2014</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">年8月，国务院办公厅印发《关于进一步加强政府督促检查工作的意见》，各地、各部门根据国务院要求建立起符合本地实际的督查工作机制，由上至下责任明确、分工合理、程序规范的常态化督促检查工作机制逐步完善；建立健全了限期报告制度、调查复核制度、情况通报制度、责任追究制度和督查调研制度；初步建立起政府统一领导、办公厅（室）综合协调、督促检查机构组织实施的工作体系，督查工作的规范化、科学化水平不断提高。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）注重形式创新。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">国务院督查在深入做好自查和实地督查的基础上，建立第三方评估机制。如邀请全国工商联、国务院发展研究中心、国家行政学院、中国科学院等第三方机构围绕简政放权、棚户区改造、精准扶贫、重大水利工程等部分重点政策措施落实情况展开评估，以便与自查和督查情况进行对表分析。在第一方执行、第二方监督之外，引入客观中立的第三方评估，如同一面镜子，帮助政府发现问题、找到差距，同时也有助于避免政府在自我评价体系中既当运动员又当裁判员。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）注重奖惩分明。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">不断完善激励和问责机制，国务院在督查激励方面，对真抓实干、工作成效明显的地方给予通报表扬，在资金、项目和土地等方面加大激励支持力度。在督查问责方面，聚焦懒政怠政和不作为乱作为问题，抓住典型，严肃问责。国务院在第二次大督查中，问责382个突出问题，处理1456人。第三次大督查对第二次督查时受到国务院表扬激励的20个市（州）、20个县（市、区），实行“免督查”。 </span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">江苏省物价局重视督查价格工作，根据国务院和省政府相关工作要求，研究制定《关于进一步加强行政督查工作的实施意见》和《全省价格系统2017年度督查工作要点》，以明确目标任务和重点工作，按照坚持服务中心、推动发展、实事求是和科学规范的原则，开展形式多样的督查工作，不断提升督查效能，有力推动了重大决策部署、重要工作任务和重点工作目标的贯彻落实。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">三、新形势下督查工作的几点认识</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">为政之要，贵在务实，重在落实。贯彻落实重大决策部署与领导重要指示精神，督查督办是一项必不可少的环节。它是确保政令畅通及重大决策部署落到实处的必要手段，是改进工作作风、提高工作效率的有效措施。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）准确把握督查工作内涵。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">督查，就是监督检查、督促办理。从字面上理解，其基本涵义包括监督、查看、推动、考察等几层意思。从实质上看，首先督查是实现目标的重要保证。任何目标只有通过执行系统实施才能实现。如果没有强有力的督查手段，在决策的执行过程中就有可能出现偏差，导致目标落实不到位。其次督查是修正决策的有效途径。通过开展积极有效的督查督办，了解决策执行中的情况、经验和问题，必要时可以及时修正决策。最后督查是改进作风的有力举措。通过督查，可以进一步加快工作节奏，提高工作效率，有效遏制扯皮推诿，敷衍应付，久拖不决等现象的发生，逐步养成唯实、务实，讲实效、办实事的良好风气。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）正确认识督查工作形势。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">党的十八届三中全会以来，中央提出了改革路线图和时间表，出台了涉及15个领域、330多项较大改革举措。随着改革进入深水区，改革所面临的环境更为复杂，任务更为艰巨，一分部署须九分落实。然而，当前决策执行中还存在着这样那样的问题，如思想认识不到位，在推进改革过程中，有人怕劳心费神不愿改，有人怕利益受损不想改，有人怕担责受惩不敢改；工作力量不到位，承担改革任务人员不够、经费不足等；解决问题不到位，不主动研究改革困难、问题，矛盾上交、责任下移，甚至存在袖手旁观、推诿扯皮的现象。现实工作任务决定了当前督查工作必须适应新形势的发展要求，及时更新思想，提高工作水平，主动、创造性地开展工作，推动各项决策的贯彻落实。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）切实找准督查工作定位。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">督查工作要体现思路创新，督出实效，督出权威，在科学确定督查内容、讲求工作方法、把握好服务方向等方面努力的同时，要做到“准、实、真”。一是工作定位要准。督查部门一方面必须实实在在地协助领导抓好各项工作的落实，另一方面，在督查过程中，不能越位、错位，打着领导的旗号，指手划脚，而是要积极为推动工作出点子、想招子，在参与中体现督查的作用。二是工作内容要实。确立督查就是服务的思路，督查是为了推动决策的落实，最终也是为了服务改革、服务发展，树立了服务的思想，才能更好地协调方方面面的关系，做好工作。三是工作反馈要实，督查反馈中要喜忧兼报，无论是决策督查，还是对领导批办件的督查，都要本着对领导、对工作高度负责的精神，坚持实事求是，既报喜又报忧，使督查反馈做到全面、准确、真实。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（四）全力纠正督查工作偏差。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">狠抓督查、有助于决定的落实，但同时也要注意督查过程中存在的几种倾向。一是走走过场，抓督查走程序，发通知、看报告、搞总结、再上报，表面上热热闹闹，实质上削弱督查的权威性。二是只“督”不“研”，一味强调“督”的作用，不深究问题，发现不了问题根本所在，提出不了解决问题的办法举措，实质上违背了督查解决问题的初衷。三是单打独斗，在督查中只强调督查部门的作用，缺乏协调意识，不能联合各方联动督查，尤其是针对业务性较强的工作时，往往不能切中要害，实际上影响了督查的效果。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">四、建立健全适应价格工作特点的督查制度</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">当前，全面深化价格机制改革已经进入攻坚期，建立新的价格形成机制，堪称综合性和整体性价格改革，是全面深化改革中最核心、牵涉面最广的改革“硬骨头”之一。党中央、国务院和省委、省政府下发《意见》，已经明确了生成价格机制的时间表，划定了路线图，不管是落实已出台的改革，还是推出新的改革举措，都更加需要披荆斩棘的勇气，更加需要勇往直前的毅力，更加需要雷厉风行的作风，在落实的过程中，需要建立健全规范化、制度化和科学化的督查制度。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）健全机制规范督查工作。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">把健全督查工作机制作为开展督查工作的根本，做到按制度办事，按程序操作，切实做到有章可循、有规可守。制定一套科学、完整、可操作的督查机制来规范督查工作，事必会达到事半功倍的效果。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">1</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">、建立常态化工作机制。要建立健全“领导批办件办理制度”、“领导批办件反馈情况呈阅制度”、“重点工作执行报告制度”、“督查通报制度”、“疑难问题会办制度”、“跟踪回访制度”等，通过这些制度的建立和实施，严格按照明确的要求和时间节点进行催办、督办和反馈，规范各类督查事项的操作流程，加强过程控制，可使日常工作更加规范化、制度化、科学化，</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">2</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">、建立统筹协调机制。进一步畅通督查工作联系渠道，形成运转高效的工作网络，实现督查工作协调联动，适时研究解决督查工作中遇到的重大问题，可通过定期召开联席会议的方式，交流督查工作情况，商讨督查工作思路和措施，使各地、各部门按照各自工作职能，各有侧重地开展好督查工作，避免重复、交叉及多头督查。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">3</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">、建立激励约束机制。对办的好而快的及时表扬或奖励，办的慢而效果差甚至出现反复的要严肃批评或问责，建立奖惩分明的考评机制，有助于不断提高督查的严肃性。 </span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">4</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">、建立督查通报机制。根据不同种类的督查事项，可选择内部通报、社会公开等方式及时公开督查结果和督查发现的突出问题，坚持随时督查随时通报，不断扩大知情面，提高透明度，尤其是通过新闻媒体广泛宣传典型经验、及时反映存在问题，充公发挥舆论监督作用，可以不断提高督查的社会影响力和公信力。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）突出重点理清督查思路。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">1</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">、围绕中心突出督查重点。要把党和政府重大决策部署、重要政策举措和重点工作作为督查的重中之重，既要统筹兼顾、整体推进，又要抓好关键、以点带面。当前和今后一个时期，作为价格系统要突出抓好全面深化价格机制改革、供给侧结构性改革、简政放权以及党委、政府重要会议和领导同志批示交办事项的贯彻落实情况的督查工作。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">2</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">、增强实效创新督查方法。要进一步创新督查方法，调动多方力量，整合资源、形成合力。加强督查机构的上下联动、左右协同，根据工作需要可组织开展跨地区、跨部门的异地交叉督查。注重发挥第三方作用，采用政府购买服务方式，对重要决策部署落实情况开展第三方评估；同时在督查工作中主动邀请人大代表、政协委员和专家学者参与督查，借外智、借外力做好督查工作，避免既当裁判员又当运动员。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">3</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">、问题导向做好督调结合。抓住决策落实中梗阻点和领导关注的重点问题，当好参谋，主动调研，找出症结，在分析问题上求深、求透，不但善于发现问题，而且能提出问题的解决途径，并提出预见性措施，从而为决策层正确把握工作导向，不断修正和完善决策，以及制定新的决策提供服务。同时，利用互联网+技术建立电子督查系统，遵照工作台账管理理念，运用计算机软件、移动通信等技术开发信息管理系统，使工作更透明、更规范、更直观，为领导决策提供更便捷的服务。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）加强督查队伍能力建设。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">1</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">、形成合力不断加强组织领导。将督查工作列入重要议事日程，党组书记为抓落实第一责任人，根据国务院相关要求，各地、各部门办公厅（室）要加强对督促检查的统筹协调和具体指导工作，相关部门根据授权做好所承担的督查任务，建立起分级负责和协同配合工作机制。进一步充实督查干部队伍，选拔优秀干部到督查队伍中来，加强培训力度，提高其综合协调、把握政策、调查研究、决策参谋等能力。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">2</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">、严肃纪律不断强化自身管理。进一步严明督查工作纪律，严禁滥用权力，未经批准，擅自立项督查；严禁打着领导旗号指手划脚，擅自插手被查单位工作；严禁利用督查之便为自己捞好处、谋私利。在督查工作中，一旦发现督查人员弄虚作假，掩盖问题，欺骗领导；违反组织、廉洁纪律，说了不该说的言论、拿了不该拿的东西、去了不该去的地方等，一经查实，调离督查岗位并严肃问责，以铁的纪律打造清正廉洁的督查干部队伍。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">3</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">、强化学习不断提高综合素质。督查工作是一项综合性很强的工作，涉及方方面面。作为从事督查工作的同志，要有较强的政治敏锐性和鉴别力，从思想上、行动上与党中央保持高度一致，自觉、坚定地贯彻落实中央和省委重大决策。要具备较高的政策理论水平、宽广的知识面、较强的业务能力、丰富的工作经验，对政策要有准确、严谨、透彻的把握。只有不懈地加强全方位的学习，切实提高观察问题、分析问题、解决问题的能力，全面提升政治素质和业务素质，才能担负起所负的督查职责。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体"></span>&nbsp;</p><p>&nbsp;</p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-187.html'>发挥价格杠杆调节作用  促进养老产业健康发展</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-157.html'>价格举报投诉案件办理的法律风险防控对策研究</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

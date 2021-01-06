@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>政策文件——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_66'></span>
+<script language='JavaScript'>
+function funcDate_66()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_66.innerHTML = strHTML;
+}
+setInterval(funcDate_66,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">政策文件</a></td> 
+        <td><a href="../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>政策文件</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="2">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>《价格违法行为行政处罚规定》</td></tr><tr align='center'><td><span class='x_time'>2019-12-29 11:59:5</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 16px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体"></span></span>&nbsp;</p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 16px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　</span>(1999年7月10日国务院批准　1999年8月1日国家发展计划委员会发布　根据2006年2月21日《国务院关于修改〈价格违法行为行政处罚规定〉的决定》第一次修订　根据2008年1月13日《国务院关于修改〈价格违法行为行政处罚规定〉的决定》第二次修订　根据2010年12月4日《国务院关于修改〈价格违法行为行政处罚规定〉的决定》第三次修订)</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第一条　为了依法惩处价格违法行为，维护正常的价格秩序，保护消费者和经营者的合法权益，根据《中华人民共和国价格法》</span>(以下简称价格法)的有关规定，制定本规定。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第二条　县级以上各级人民政府价格主管部门依法对价格活动进行监督检查，并决定对价格违法行为的行政处罚。</span></span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第三条　价格违法行为的行政处罚由价格违法行为发生地的地方人民政府价格主管部门决定</span>;国务院价格主管部门规定由其上级价格主管部门决定的，从其规定。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第四条　经营者违反价格法第十四条的规定，有下列行为之一的，责令改正，没收违法所得，并处违法所得</span>5倍以下的罚款;没有违法所得的，处10万元以上100万元以下的罚款;情节严重的，责令停业整顿，或者由工商行政管理机关吊销营业执照：</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(一)除依法降价处理鲜活商品、季节性商品、积压商品等商品外，为了排挤竞争对手或者独占市场，以低于成本的价格倾销，扰乱正常的生产经营秩序，损害国家利益或者其他经营者的合法权益的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(二)提供相同商品或者服务，对具有同等交易条件的其他经营者实行价格歧视的。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第五条　经营者违反价格法第十四条的规定，相互串通，操纵市场价格，造成商品价格较大幅度上涨的，责令改正，没收违法所得，并处违法所得</span>5倍以下的罚款;没有违法所得的，处10万元以上100万元以下的罚款，情节较重的处100万元以上500万元以下的罚款;情节严重的，责令停业整顿，或者由工商行政管理机关吊销营业执照。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　除前款规定情形外，经营者相互串通，操纵市场价格，损害其他经营者或者消费者合法权益的，依照本规定第四条的规定处罚。</span></span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　行业协会或者其他单位组织经营者相互串通，操纵市场价格的，对经营者依照前两款的规定处罚</span>;对行业协会或者其他单位，可以处50万元以下的罚款，情节严重的，由登记管理机关依法撤销登记、吊销执照。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第六条　经营者违反价格法第十四条的规定，有下列推动商品价格过快、过高上涨行为之一的，责令改正，没收违法所得，并处违法所得</span>5倍以下的罚款;没有违法所得的，处5万元以上50万元以下的罚款，情节较重的处50万元以上300万元以下的罚款;情节严重的，责令停业整顿，或者由工商行政管理机关吊销营业执照：</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(一)捏造、散布涨价信息，扰乱市场价格秩序的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(二)除生产自用外，超出正常的存储数量或者存储周期，大量囤积市场供应紧张、价格发生异常波动的商品，经价格主管部门告诫仍继续囤积的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(三)利用其他手段哄抬价格，推动商品价格过快、过高上涨的。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　行业协会或者为商品交易提供服务的单位有前款规定的违法行为的，可以处</span>50万元以下的罚款;情节严重的，由登记管理机关依法撤销登记、吊销执照。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　前两款规定以外的其他单位散布虚假涨价信息，扰乱市场价格秩序，依法应当由其他主管机关查处的，价格主管部门可以提出依法处罚的建议，有关主管机关应当依法处罚。</span></span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第七条　经营者违反价格法第十四条的规定，利用虚假的或者使人误解的价格手段，诱骗消费者或者其他经营者与其进行交易的，责令改正，没收违法所得，并处违法所得</span>5倍以下的罚款;没有违法所得的，处5万元以上50万元以下的罚款;情节严重的，责令停业整顿，或者由工商行政管理机关吊销营业执照。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第八条　经营者违反价格法第十四条的规定，采取抬高等级或者压低等级等手段销售、收购商品或者提供服务，变相提高或者压低价格的，责令改正，没收违法所得，并处违法所得</span>5倍以下的罚款;没有违法所得的，处2万元以上20万元以下的罚款;情节严重的，责令停业整顿，或者由工商行政管理机关吊销营业执照。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第九条　经营者不执行政府指导价、政府定价，有下列行为之一的，责令改正，没收违法所得，并处违法所得</span>5倍以下的罚款;没有违法所得的，处5万元以上50万元以下的罚款，情节较重的处50万元以上200万元以下的罚款;情节严重的，责令停业整顿：</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(一)超出政府指导价浮动幅度制定价格的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(二)高于或者低于政府定价制定价格的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(三)擅自制定属于政府指导价、政府定价范围内的商品或者服务价格的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(四)提前或者推迟执行政府指导价、政府定价的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(五)自立收费项目或者自定标准收费的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(六)采取分解收费项目、重复收费、扩大收费范围等方式变相提高收费标准的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(七)对政府明令取消的收费项目继续收费的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(八)违反规定以保证金、抵押金等形式变相收费的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(九)强制或者变相强制服务并收费的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(十)不按照规定提供服务而收取费用的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(十一)不执行政府指导价、政府定价的其他行为。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第十条　经营者不执行法定的价格干预措施、紧急措施，有下列行为之一的，责令改正，没收违法所得，并处违法所得</span>5倍以下的罚款;没有违法所得的，处10万元以上100万元以下的罚款，情节较重的处100万元以上500万元以下的罚款;情节严重的，责令停业整顿：</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(一)不执行提价申报或者调价备案制度的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(二)超过规定的差价率、利润率幅度的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(三)不执行规定的限价、最低保护价的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(四)不执行集中定价权限措施的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(五)不执行冻结价格措施的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(六)不执行法定的价格干预措施、紧急措施的其他行为。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第十一条　本规定第四条、第七条至第九条规定中经营者为个人的，对其没有违法所得的价格违法行为，可以处</span>10万元以下的罚款。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　本规定第五条、第六条、第十条规定中经营者为个人的，对其没有违法所得的价格违法行为，按照前款规定处罚</span>;情节严重的，处10万元以上50万元以下的罚款。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第十二条　经营者违反法律、法规的规定牟取暴利的，责令改正，没收违法所得，可以并处违法所得</span>5倍以下的罚款;情节严重的，责令停业整顿，或者由工商行政管理机关吊销营业执照。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第十三条　经营者违反明码标价规定，有下列行为之一的，责令改正，没收违法所得，可以并处</span>5000元以下的罚款：</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(一)不标明价格的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(二)不按照规定的内容和方式明码标价的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(三)在标价之外加价出售商品或者收取未标明的费用的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(四)违反明码标价规定的其他行为。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第十四条　拒绝提供价格监督检查所需资料或者提供虚假资料的，责令改正，给予警告</span>;逾期不改正的，可以处10万元以下的罚款，对直接负责的主管人员和其他直接责任人员给予纪律处分。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第十五条　政府价格主管部门进行价格监督检查时，发现经营者的违法行为同时具有下列三种情形的，可以依照价格法第三十四条第</span>(三)项的规定责令其暂停相关营业：</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(一)违法行为情节复杂或者情节严重，经查明后可能给予较重处罚的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(二)不暂停相关营业，违法行为将继续的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(三)不暂停相关营业，可能影响违法事实的认定，采取其他措施又不足以保证查明的。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　政府价格主管部门进行价格监督检查时，执法人员不得少于</span>2人，并应当向经营者或者有关人员出示证件。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第十六条　本规定第四条至第十三条规定中的违法所得，属于价格法第四十一条规定的消费者或者其他经营者多付价款的，责令经营者限期退还。难以查找多付价款的消费者或者其他经营者的，责令公告查找。</span></span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　经营者拒不按照前款规定退还消费者或者其他经营者多付的价款，以及期限届满没有退还消费者或者其他经营者多付的价款，由政府价格主管部门予以没收，消费者或者其他经营者要求退还时，由经营者依法承担民事责任。</span></span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第十七条　经营者有《中华人民共和国行政处罚法》第二十七条所列情形的，应当依法从轻或者减轻处罚。</span></span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　经营者有下列情形之一的，应当从重处罚：</span></span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(一)价格违法行为严重或者社会影响较大的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(二)屡查屡犯的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(三)伪造、涂改或者转移、销毁证据的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(四)转移与价格违法行为有关的资金或者商品的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(五)经营者拒不按照本规定第十六条第一款规定退还消费者或者其他经营者多付价款的;</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　</span>(六)应予从重处罚的其他价格违法行为。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第十八条　本规定中以违法所得计算罚款数额的，违法所得无法确定时，按照没有违法所得的规定处罚。</span></span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第十九条　有本规定所列价格违法行为严重扰乱市场秩序，构成犯罪的，依法追究刑事责任。</span></span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第二十条　经营者对政府价格主管部门作出的处罚决定不服的，应当先依法申请行政复议</span>;对行政复议决定不服的，可以依法向人民法院提起诉讼。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第二十一条　逾期不缴纳罚款的，每日按罚款数额的</span>3%加处罚款;逾期不缴纳违法所得的，每日按违法所得数额的2‰加处罚款。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第二十二条　任何单位和个人有本规定所列价格违法行为，情节严重，拒不改正的，政府价格主管部门除依照本规定给予处罚外，可以公告其价格违法行为，直至其改正。</span></span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第二十三条　有关法律对价格法第十四条所列行为的处罚及处罚机关另有规定的，可以依照有关法律的规定执行。</span></span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第二十四条　价格执法人员泄露国家秘密、经营者的商业秘密或者滥用职权、玩忽职守、徇私舞弊，构成犯罪的，依法追究刑事责任</span>;尚不构成犯罪的，依法给予处分。</span></p><p style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; TEXT-INDENT: 0px; MARGIN: 22px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: rgb(255,255,255); PADDING-TOP: 0px"><span style="FONT-STYLE: normal; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); LETTER-SPACING: 0px; COLOR: rgb(51,51,51); FONT-SIZE: 16px"><span style="FONT-FAMILY: 宋体">　　第二十五条　本规定自公布之日起施行。</span></span></p><p><span style="FONT-FAMILY: Calibri; FONT-SIZE: 14px">&nbsp;</span></p><p><span style="FONT-FAMILY: Calibri; FONT-SIZE: 14px">&nbsp;</span></p><p></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-373.html'>《江苏省价格条例》</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-308.html'>江苏省物价局-江苏省物价局网站关于缴纳2018年度会费的通知</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>课题研究——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_86'></span>
+<script language='JavaScript'>
+function funcDate_86()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_86.innerHTML = strHTML;
+}
+setInterval(funcDate_86,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td><a href="../col2/articlecolumn.html">政策文件</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>研究课题</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="3">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>网络交易价格行为界定存在的问题及对策</td></tr><tr align='center'><td><span class='x_time'>2017-09-29 12:39:37</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p>&nbsp;</p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">葛翔宇　胡永放</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 28px"><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">近年来，因网络交易价格行为引发的价格投诉举报频发增多，专业举报人的介入，更是让价格部门有应接不暇之势。举报人对价格部门受理查处网络交易价格行为的认定屡发争议，各地价格监督检查机构也有不同理解和界定，如何界定网络交易价格行为，处理网络交易价格举报案件，如何防患执法风险，规范网络交易价格行为，是摆在价格部门亟待解决的问题。本文结合基层工作实践，谈谈一些看法和认识。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">一、基本情况</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">随着信息化时代的到来，互联网普及率的日益提高，通过网络进行购物、交易、支付等电子商务模式发展迅速，网络交易已成为消费者主要交易方式，网络交易量迅速增长。但随之带来的价格行为纠纷也逐渐增多，由此引发的价格投诉举报件大幅增加，2016年全省网络交易价格举报4173件，占全省价格举报件的 36.5%，高居榜首。从2016年全省投诉举报情况来看，网络交易价格行为纠纷主要集中涉嫌价格欺诈等问题，因不服价格部门定性处理结论引起的行政复议85件，全省价格系统行政复议案件113件，占全省价格系统行政复议案件的75.2%，其中因不服价格部门定性处理结论引起的行政诉讼8 件，全省价格系统行政诉讼案件47件，占全省价格系统行政诉讼案件的17.02%。由于专业举报人的介入，引发网络交易价格行为界定争议声不断，行政复议、行政诉讼形势堪忧，已成为各及价格部门高度重视，亟待解决的问题，必须应对解决。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">二、存在问题</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）现行政策滞后,界定争议较大</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">投诉举报反映的问题主要集中在网络交易明码标价、价格欺诈等方面。目前对于行为定性适用的政策法规仅有国家发改委《关于商品和服务实行明码标价的规定》、《禁止价格欺诈行为的规定》、〔《禁止价格欺诈行为的规定》有关条款解释的通知〕，而且出台时间较久，特别是《关于商品和服务实行明码标价的规定》、《禁止价格欺诈行为的规定》出台时间在2001年和2002年，而淘宝交易平台创立于2003年。政策出台主要针对实体店铺、固定场所，对网络交易的明码标价和价格行为表现形式、行为特点、产生问题，针对性不强，不具操作性，导致处理电商投诉举报引发争议较大。如：《关于商品和服务实行明码标价的规定》第六条“明码标价的标价方式由省级人民政府价格主管部门统一规定，县级以上地方人民政府价格主管部门的价格监督检查机构对标价方式进行监制。未经监制的，任何单位和个人不得擅自印制和销售”，根据此条规定价格监督检查机构应当对明码标价方式监制，但网络交易标价方式监制处于空白地带。第九条“明码标价应当做到价签价目齐全、标价内容真实明确、字迹清晰、货签对位、标示醒目。价格变动时应当及时调整。”根据此条规定明码标价实行标价签、价目表形式标价，但网络交易商品标价无法通过直观实际的标价签、价目表进行标示，只能以数字和文字虚拟标示。〔国家发展改革委关于《禁止价格欺诈行为的规定》有关条款解释的通知〕第四条：“经营者采用与其他经营者或者其他销售业态进行价格比较的方式开展促销活动，应当准确标明被比较价格的含义，且能够证明标示的被比较价格真实有依据。否则属于《规定》第六条第（三）项情形。”〈第六条第（三）项情形表述为：使用欺骗性或者误导性的语言、文字、图片、计量单位等标价，诱导他人与其交易的价格欺诈行为〉。由于现行政策滞后，导致在是否构成价格欺诈、是否构成不正当价格行为、是否违反明码标价规定界定争议较大，对网络交易价格行为界定影响较大，争议不断。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）政策把握不一，定性不尽相同</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">当前，消费者及专业举报人投诉举报网络交易，主要集中反映涉嫌价格欺诈问题，行为表现多样。价格欺诈是指经营者是否利用虚假的或者使人误解的标价形式或者价格手段，欺骗、诱导消费者或者其他经营者与其进行交易的行为。由于对构成价格欺诈要件理解不同，政策把握不一，各地价格部门对同一表现行为定性不尽相同，如：对划线价没有交易记录理解不一，有的解释答复为不代表实际成交价，仅作为市场参考价或厂方指导价，按照不构成价格欺诈行为定性；有的解释答复为划线价应该是有实际成交记录的价格，如果没有成交记录的划线价标示，按照构成价格欺诈行为定性；有的解释答复为划线价是被比较价格含义，电商只要可以提供其他商家或者其他销售业态经营者标示过的价格，按照不构成价格欺诈行为定性。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）处理结论差异,诉讼风险增大</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">当前，各地价格部门对电商网络交易价格行为政策界限把握不一，定性不尽相同，导致处理结论差异。分析各地价格部门检查案例情况如下：1、虚构原价行为，存在二种处理结论。一是按构成价格欺诈行为给予罚款50000元以下行政处罚；二是按构成不正当价格行为给予罚款5000以下元行政处罚。2、划线价没有交易记录，存在三种处理结论。一是按不构成价格违法行为，告知举报人走民事仲裁或者诉讼渠道维护权益；二是按构成价格欺诈行为给予50000元以下行政处罚；三是按违反明码标价规定行为给予罚款5000元以下行政处罚。3、促销价没有真实比较依据，存在五种处理结论。一是按照不构成价格欺诈行为免于处罚，约谈提醒电商规范标价行为；二是按照构成价格欺诈行为给予50000元以下行政处罚；三是按照构成不正当价格行为给予罚款5000元以下行政处罚；四是按照不正当价格行为给予警告处罚；五是按照违反明码标价规定行为给予罚款5000元以下行政处罚。4、低标高结，存在两种处理结论。一是按照对同一商品或者服务，在同一交易场所同时使用两种标价签或者价目表，以低价招徕顾客并以高价进行结算的价格欺诈行为给予罚款50000元以下行政处罚；二是按照在标价之外加价出售商品或者收取未标明的费用的违反明码标价规定行为给予罚款5000元以下行政处罚。相同的案情，不同的定性，处罚尺度不同，处理结论差异较大，将对价格部门构成潜在的执法风险。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">三、对策及建议</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）正确对待，积极应对</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">近年来，网络交易价格纠纷大幅增加，特别是专业举报人的介入，投诉举报高居榜首，定性处理争议引发的行政复议和行政诉讼此起彼伏，价格系统内部也是倍感压力、分歧较大，态度观点不同：有的对专业举报受理尽可能设置障碍；有的在定性上对被举报电商尽可能给予宽松支持；有的在处理结论上给予从轻；有的认为专业举报人不是正常消费者，占用价格部门大量行政资源，不应支持。关于专业举报人是否属于消费者问题，目前法律法规没有约束性条款，专业举报人是否可以投诉举报，法律法规也没用禁止性条款。虽然2016年8月5日，国家工商总局发布《消费者权益保护法实施条例》（征求意见稿）第二条：“消费者为生活消费需要而购买、使用商品或者接受服务的，其权益受本条例保护。但是金融消费者以外的自然人、法人和其他组织以营利为目的而购买、使用商品或者接受服务的行为不适用本条例。”但该征求意见稿规定仅对以营利为目的而购买、使用商品或者接受服务的行为除外，而是否以营利为目的，难以区分和界定，在法定范围内的诉求尚无构成以营利为目的司法判例。最高法在2014年3月15日起施行的司法解释,明确了“知假买假”可受法律保护，通常情况下的购物者应当认定为消费者，可以主张惩罚性赔偿。知假买假都未否定其消费者身份，何况价格专业举报人。综合分析，现行司法解释对以牟利为目的购买而主张惩罚性赔偿的，倾向不予支持，但并未禁止排除其举报价格违法行为的权利。因此，无论是专业举报人还是非专业举报人，向价格部门投诉举报价格违法行为，及时受理查处属于法定职责，不可不为。虽然专业举报消耗了价格部门大量行政资源，但其对规范价格执法程序，提高价格执法水平，起到了促进作用。因此，无论是对待电商专业举报还是非专业举报，都应保持同样态度：正确对待，积极应对，客观公正，依法行政。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）完善政策法规,堵塞政策漏洞</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">一是尽快出台《网络交易明码标价规定》、《网络交易价格行为规则》等相关政策法规。对网络交易明码标价形式、方法、内容等规定，以及违反明码标价规定行为、价格欺诈行为、不正当价格行为等价格违法行为表现形式、构成要件、界定原则、法律责任、处罚尺度等作出明确规定，为网络交易价格行为监管提供法律支撑。二是严格规范法规解释，统一政策界限和定性依据。当前对网络网络交易价格行为政策界限把握不一，应积极争取国家发改委对其出台的争议较大的政策法规作出解释，特别是对当前投诉举报频发的划线价问题，即“经营者采用与其他经营者或者其他销售业态进行价格比较的方式开展促销活动，应当准确标明被比较价格的含义，且能够证明标示的被比较价格真实有依据。”那些依据可以作为真实合法的比较依据，现在各地解释答复，口径不一，厂方指导价、厂方建议价、商场超市价、实体店价、官方旗舰店价、吊牌价能否作为比较依据，真实依据如何界定。对真实有效比较依据界定应作出明确解释，应明确规定：“标示的被比较价格真实有依据是指同商品品种、同规格型号、同一期间其他销售业态有标示记录证据的标价。”统一政策界限和定性依据。三是先行先试，先行出台地方性政策法规。江苏价格工作一直走在全国前列，若短期内全国性网络交易价格行为政策法规和发改委政策解释难以出台，可采取先行先试的办法，以省人大条例或省政府规章形式出台《江苏省网络交易价格行为管理规定》，或以省局规范性文件形式先行出台《江苏省网络交易价格行为规范》，通过地方性政策法规，规范我省网络交易价格行为，维护电商经营者和消费者合法权益，依法依规，公平公正处理网络交易价格纠纷。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）统一执法界限，防患执法风险</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">同样的案情，不同定性，不同结论，将对价格监督检查机构构成潜在执法风险。按照错案追究制，只要败诉，就要启动追责。因此，各地价格主管部门应高度重视，积极应对，加以防范，严防错案风险，死守依法行政底线。应以司法解释和司法判例为指导，以司法判例作为检验标准，尽快统一定性处理依据，统一执法界限。建议省物价局牵头汇编《关于审理消费者权益保护纠纷案件司法解释参考》、《网络价格行为诉讼案例汇编》，为全省价格执法提供指导。对适用法律法规争议较大，有不同司法判例的关键焦点法律问题，积极向人大反映建议，沟通协调，推动高法出台司法解释，指导全国价格执法。同时，组织开展法律法规培训，邀请法院行政庭法官和政法大学法学专家为基层执法人员授课，准确理解把握法律法规和政策界限，防范执法风险。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（四）实行疏堵结合，强化行为监管</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">近年以来，网络交易价格投诉举报，似有潮水汹涌般之势，专业举报人的介入，更让价格部门应接不暇，仅靠受理举报，事后查处，难以奏效，未能从根本上解决问题，应采取疏堵结合，事前积极指导，事后严格监管。2016年12月6日江苏省高级人民法院《关于审理消费者权益保护纠纷案件若干问题的讨论纪要》（苏高法〔2016〕10号）第二项关于新型消费问题：“会议认为，对于快递服务、网络约车、信用卡消费、网络购物等新型消费领域，要坚持鼓励与规范并重的价值取向。” 第12条：“关于网络购物格式条款的效力问题，会议认为，网络销售平台使用格式条款与消费者订立管辖协议、免责条款，仅以字体加黑或加粗方式突出显示该条款的，不属于合理提示方式。消费者主张此类管辖格式条款、免责条款无效的，人民法院应予支持。”因此，应采取单独跳框的形式对管辖条款、免责条款进行单独的特别提示，才可以成为双方合同的组成部分，具有法律效力。依据高院审理纪要，店铺仅以划线或字体加黑、加粗等方式提示，未对划线价进行单独解释说明，不属于合理提示方式，容易引起价格纠纷投诉举报。应结合省高院审理纪要，针对专业举报人举报关注的划线价、促销价、折扣价、原价、现价、原售价、成交价、新品折、促销期等重点问题进行指导，通过在店铺首页价格标示区主要位置，单独跳框，特别提示，增加标示语，明确告示消费者“划线价仅为厂方指导价，并非原价、实际成交价，并非有销售记录价格”等单独的特别提示语，并确保能够提供被比较价格的真实有效依据，对其真实性、准确性、合法性负责。解读如何正确理解原价、促销价、折扣价、成交价、新品折、促销期等问题，指导如何规范标示划线价、促销价、原价、现价、促销期，疏导投诉举报热点问题，减少价格违法行为的发生，规范网络交易价格行为，强化网络交易价格行为监管，维护网络交易市场价格秩序。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体"></span>&nbsp;</p><p></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-157.html'>价格举报投诉案件办理的法律风险防控对策研究</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-221.html'>以清费减负为抓手  助推镇江“产业强市”</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

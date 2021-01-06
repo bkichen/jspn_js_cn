@@ -1,0 +1,87 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>居民消费价格预期调查平台</title>
+<link href="images/style_2016.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	function checkLogin()
+	{
+		if(document.frmLogin.strAccount.value=="")
+		{
+			alert("请输入用户名");
+			return false;
+		}
+		else if(document.frmLogin.strPassword.value=="")
+		{
+			alert("请输入密码");
+			return false;
+		}
+		document.frmLogin.submit();
+		return true;
+	};
+	function reset(){
+	document.getElementById("strAccount").value="";
+	document.getElementById("strPassword").value="";
+	}
+	
+</script>
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body class="loginBodyBG">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0" class="loginMainTableBG">
+  <tr>
+    <td align="center" valign="top" class="loginMainTdBG">
+	
+	
+	<table border="0" cellspacing="0" cellpadding="0" style="margin-top:140px;">
+	  <tr>
+		<td><img src="images/login_201606_img_001.png"></td>
+	  </tr>
+	</table>
+	
+	<table border="0" cellspacing="0" cellpadding="0" style="margin-top:60px;">
+      <tr>
+        <td class="loginMain_BG" align="left" valign="top">
+			
+			<div id="divLoginStyleID">
+			<table border="0" cellspacing="0" cellpadding="0">
+			<form name="frmLogin" method="post" action="login.action">
+              <tr>
+                <td><input type="text" id="strAccount" name="strAccount" class="inputLogin" value=""></td>
+              </tr>
+              <tr>
+                <td style="line-height:28px;">&nbsp;</td>
+              </tr>
+              <tr>
+                <td><input id="password" type="password" name="strPassword" class="inputLogin" value=""></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+			</form>  
+			<tr>
+                <td align="center">
+				<input type="image" src="/hodeframe2016_jsprice/images/login_201606_img_003.png" onclick="checkLogin()">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="image" src="/hodeframe2016_jsprice/images/login_201606_img_004.png" onclick="reset()">
+				</td>
+              </tr>
+            </table>
+			</div>
+			
+		</td>
+      </tr>
+    </table>
+	<table border="0" cellspacing="0" cellpadding="0" style="margin-top:30px;">
+	  <tr>
+		<td class="textCopyRight">版权所有：江苏省物价局-江苏省物价局网站 技术支持：<img src="images/logo_mycom.png" style="vertical-align:middle;"> 南京希迪麦德软件有限公司</td>
+	  </tr>
+	</table>
+	</td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>图片新闻——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_541'></span>
+<script language='JavaScript'>
+function funcDate_541()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_541.innerHTML = strHTML;
+}
+setInterval(funcDate_541,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td><a href="../index.html">首 页</a></td>
+<td><a href="../col1/articlecolumn.html">工作动态</a></td>
+<td><a href="../col2/articlecolumn.html">政策文件</a></td>
+<td><a href="../col3/articlecolumn.html">课题研究</a></td>
+<td><a href="../col4/articlecolumn.html">专家视点</a></td>
+<td><a href="../col5/col13/piccolumn.html">预期调查</a></td>
+<td><a href="../col6/col9/articlecolumn.html">价格培训</a></td>
+<td><a href="../col7/articlecolumn.html">会员风采</a></td>
+<td><a href="../col8/articlecolumn.html">联系我们</a></td></tr></tbody></table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='' target='_self' class='x_column_link'>图片新闻</a></td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="26">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td></td></tr><tr><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='picinfo-582.html' target='_blank'><img src='../information/picfile/1/20201225150818_33333333333333.jpg' alt='江苏省价格认证协会被省发改委和省民政厅抽调参与关于开展2020年全省行业协会营商环境满意度调查' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='picinfo-582.html' target='_blank' title='江苏省价格认证协会被省发改委和省民政厅抽调参与关于开展2020年全省行业协会营商环境满意度调查'>江苏省价格认证协会被省发改委和…</a></td></tr></table></td></tr><tr></tr></table></td><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='picinfo-581.html' target='_blank'><img src='../information/picfile/1/20201218174020_22222222222222.jpg' alt='两会会长为江苏省价格认证协会新增补的王延龙等六位副会长授副会长证书和副会长单位牌匾' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='picinfo-581.html' target='_blank' title='两会会长为江苏省价格认证协会新增补的王延龙等六位副会长授副会长证书和副会长单位牌匾'>两会会长为江苏省价格认证协会新…</a></td></tr></table></td></tr><tr></tr></table></td><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='picinfo-580.html' target='_blank'><img src='http://www.jspn.js.cn/information/picfile/1/20201218171949_small_.jpg' alt='江苏省物价局-江苏省物价局网站和认证协会两会周卫国会长和倪冰会长率队赴江苏中安科技服务有限公司调研' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='picinfo-580.html' target='_blank' title='江苏省物价局-江苏省物价局网站和认证协会两会周卫国会长和倪冰会长率队赴江苏中安科技服务有限公司调研'>江苏省物价局-江苏省物价局网站和认证协会两会周…</a></td></tr></table></td></tr><tr></tr></table></td><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='picinfo-579.html' target='_blank'><img src='http://www.jspn.js.cn/information/picfile/1/20201207161518_small_.jpg' alt='江苏省物价局-江苏省物价局网站和价格认证协会联合党支部参观江苏省慈善论坛暨2020年全省社会组织展示交流会' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='picinfo-579.html' target='_blank' title='江苏省物价局-江苏省物价局网站和价格认证协会联合党支部参观江苏省慈善论坛暨2020年全省社会组织展示交流会'>江苏省物价局-江苏省物价局网站和价格认证协会联…</a></td></tr></table></td></tr><tr></tr></table><tr><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='picinfo-573.html' target='_blank'><img src='../information/picfile/1/20201117104201_77777777777777.jpg' alt='江苏省价格认证协会倪冰会长率队巡视价格鉴证师考试江苏考场' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='picinfo-573.html' target='_blank' title='江苏省价格认证协会倪冰会长率队巡视价格鉴证师考试江苏考场'>江苏省价格认证协会倪冰会长率队…</a></td></tr></table></td></tr><tr></tr><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank'><img src='http://www.jspn.js.cn/information/picfile/1/20201028162330_55555555555555.jpg' alt='江苏省物价局-江苏省物价局网站第五次会员大会暨第五届理事会第一次会议成功举行' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank' title='江苏省物价局-江苏省物价局网站第五次会员大会暨第五届理事会第一次会议成功举行'>江苏省物价局-江苏省物价局网站第五次会员大会暨…</a></td></tr></table></td><tr></tr><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank'><img src='http://www.jspn.js.cn/information/picfile/1/20201028092805_77777777777777.jpg' alt='江苏省价格鉴证师培训工作圆满结束' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank' title='江苏省价格鉴证师培训工作圆满结束'>江苏省价格鉴证师培训工作圆满结…</a></td></tr></table></td><tr></tr><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank'><img src='http://www.jspn.js.cn/information/picfile/1/20200929163818_44444444444444.jpg' alt='9月29日，江苏省价格认证协会倪冰会长率协会秘书处同志考察2020价格鉴证师考试南京考场。' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank' title='9月29日，江苏省价格认证协会倪冰会长率协会秘书处同志考察2020价格鉴证师考试南京考场。'>9月29日，江苏省价格认证协会倪…</a></td></tr></table></td><tr></tr><tr><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank'><img src='../information/picfile/1/20200929141421_77777777777777.jpg' alt='江苏省物价局-江苏省物价局网站第四届理事会第五次理事大会于2020年9月23日在南京召开。会议讨论通过协会第五届理事会换届筹备工作领导小组提交的关于协会第五次会员大会暨第五届理事会第一次会议议案及有关文件和新一届理事会理事、常务理事、监事、秘书长、副会长、会长候选人建议名单。周卫国会长主持会议并讲话' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank' title='江苏省物价局-江苏省物价局网站第四届理事会第五次理事大会于2020年9月23日在南京召开。会议讨论通过协会第五届理事会换届筹备工作领导小组提交的关于协会第五次会员大会暨第五届理事会第一次会议议案及有关文件和新一届理事会理事、常务理事、监事、秘书长、副会长、会长候选人建议名单。周卫国会长主持会议并讲话'>江苏省物价局-江苏省物价局网站第四届理事会第五…</a></td></tr></table></td></tr><tr></tr><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank'><img src='../information/picfile/20200929/1601356077794366.jpg' alt='为提高价格鉴证师考试通过率，江苏省物价局-江苏省物价局网站决定聘请既有理论又有实践经验的资深老师授课，请考生尽快报名。' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank' title='为提高价格鉴证师考试通过率，江苏省物价局-江苏省物价局网站决定聘请既有理论又有实践经验的资深老师授课，请考生尽快报名。'>为提高价格鉴证师考试通过率，江…</a></td></tr></table></td><tr></tr><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank'><img src='../information/picfile/1/20200929102907_55555555555555.jpg' alt='9月27日，江苏省价格认证协会倪冰会长率协会副会长和秘书处同志到江苏省评估行业龙头企业-江苏德道天诚土地房地产评估造价咨询有限公司调研，并传达中价协座谈会会议精神，布置价格鉴证师报名、培训和考试工作。' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank' title='9月27日，江苏省价格认证协会倪冰会长率协会副会长和秘书处同志到江苏省评估行业龙头企业-江苏德道天诚土地房地产评估造价咨询有限公司调研，并传达中价协座谈会会议精神，布置价格鉴证师报名、培训和考试工作。'>9月27日，江苏省价格认证协会倪…</a></td></tr></table></td><tr></tr><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank'><img src='../information/picfile/1/20200908124239_22222222222222.jpg' alt='9月 2日，江苏省价格认证协会倪冰会长一行赴全国产品检测龙头企业苏州华碧微科检测技术有限公司开展工作调研，并继续推进报考价格鉴证师工作。' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank' title='9月 2日，江苏省价格认证协会倪冰会长一行赴全国产品检测龙头企业苏州华碧微科检测技术有限公司开展工作调研，并继续推进报考价格鉴证师工作。'>9月 2日，江苏省价格认证协会倪…</a></td></tr></table></td><tr></tr><tr><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank'><img src='../information/picfile/1/20200827102351_00000000000000.jpg' alt='8月 27日，江苏省物价局-江苏省物价局网站周卫国会长、江苏省价格认证协会倪冰会长率领部分副会长及常务理事赴江苏百盛信息科技有限公司开展工作调研，并继续推进报考价格鉴证师工作。' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank' title='8月 27日，江苏省物价局-江苏省物价局网站周卫国会长、江苏省价格认证协会倪冰会长率领部分副会长及常务理事赴江苏百盛信息科技有限公司开展工作调研，并继续推进报考价格鉴证师工作。'>8月 27日，江苏省物价局-江苏省物价局网站周卫国…</a></td></tr></table></td></tr><tr></tr><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank'><img src='../information/picfile/1/20200723144410_66666666666666.jpg' alt='7月 23日，江苏省物价局-江苏省物价局网站周卫国会长、江苏省价格认证协会倪冰会长率领部分副会长赴中国电信未来馆，参观学习5G建设，体验5G应用。中国电信股份有限公司江苏分公司陈志强副总经理、市场部顾振东副总经理陪同参观。同时，协会还继续推进报考价格鉴证师工作。' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank' title='7月 23日，江苏省物价局-江苏省物价局网站周卫国会长、江苏省价格认证协会倪冰会长率领部分副会长赴中国电信未来馆，参观学习5G建设，体验5G应用。中国电信股份有限公司江苏分公司陈志强副总经理、市场部顾振东副总经理陪同参观。同时，协会还继续推进报考价格鉴证师工作。'>7月 23日，江苏省物价局-江苏省物价局网站周卫国…</a></td></tr></table></td><tr></tr><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank'><img src='../information/picfile/1/20200721141203_33333333333333.jpg' alt='7月21日，江苏省物价局-江苏省物价局网站和价格认证协会主要负责人到南京审计大学金审学院开展调研，并动员报考价格鉴证师。' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank' title='7月21日，江苏省物价局-江苏省物价局网站和价格认证协会主要负责人到南京审计大学金审学院开展调研，并动员报考价格鉴证师。'>7月21日，江苏省物价局-江苏省物价局网站和价格…</a></td></tr></table></td><tr></tr><td valign='top'><table width="100%" border="0" valign='top'><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank'><img src='../information/picfile/1/20200720102434_22222222222222.jpg' alt='7月18日，江苏省物价局-江苏省物价局网站和价格认证协会两会领导人到全国评估业绩二十名国衡集团开展调研，并动员报考价格鉴证师。' border='1' style=' border-color:#000000;color:#000000;' width='180' height='145'></a></td></tr><tr><td valign='top'></td></tr><tr><td align='center'><a class='x_title' href='javascript:;' target='_blank' title='7月18日，江苏省物价局-江苏省物价局网站和价格认证协会两会领导人到全国评估业绩二十名国衡集团开展调研，并动员报考价格鉴证师。'>7月18日，江苏省物价局-江苏省物价局网站和价格…</a></td></tr></table></td><tr></tr><tr align="center" bgcolor='#F5F5F5'><td align='center' colspan="12"><style>
+.hodePage5 { width:100%; text-align:center; }
+.hodePage5 { font-size:12px; margin-bottom:10px; margin-top:5px; }
+.hodePage5 a, .hodePage5 a:visited, .hodePage5 a:link { border:1px solid #ddd; color:#2c98c7; cursor:pointer; height:21px; line-height:21px; padding:0 8px; text-decoration:none; display:inline-block; overflow:hidden; margin-right:4px; }
+.hodePage5 a:hover { background:#044580 none repeat scroll 0 0; color:#FFFFFF; border-color:#044580 }
+.hodePage5 span.hodePage5_cur_page { color:#000; cursor:default; font-weight:bold; height:23px; line-height:23px; padding:0 8px; display:inline-block; overflow:hidden; margin-right:4px; }
+</style>
+<script language='JavaScript'>
+function goToPageURL(intPageNum)
+{
+	document.pageForm.currpage.value = intPageNum;
+	document.pageForm.submit();
+	}
+</script>
+<table cellspacing='0' style='margin:0 auto;' width='100%'>
+<form method='post' name='pageForm' action=''><input name='currpage' type='hidden'><input type='hidden' name='colid' value='26'></form>
+<tr><td align='center'>
+<div class='hodePage5'>
+<a href='Javascript:goToPageURL(1)' title='首页'>首页</a><b><span class='hodePage5_cur_page'>1</span></b><a href='Javascript:goToPageURL(2)' title="第2页">2</a><a href='Javascript:goToPageURL(3)' title="第3页">3</a><a href='Javascript:goToPageURL(3)' title='末页'>末页</a></div><div class='hodePage5'>搜索到约<b>36</b>项结果 </div></td></tr></table></td></tr>
+          
+        
+		
+		
+      
+    
+	
+	
+  
+
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

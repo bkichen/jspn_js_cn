@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>政策文件——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_66'></span>
+<script language='JavaScript'>
+function funcDate_66()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_66.innerHTML = strHTML;
+}
+setInterval(funcDate_66,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">政策文件</a></td> 
+        <td><a href="../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>政策文件</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="2">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>江苏省物价局-江苏省物价局网站关于缴纳2018年度会费的通知</td></tr><tr align='center'><td><span class='x_time'>2018-08-01 09:23:59</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="TEXT-ALIGN: left; LINE-HEIGHT: 40px"><span style="FONT-FAMILY: Times New Roman"><strong><span style="TEXT-DECORATION: underline"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312">各理事单位</span></span></strong><strong><span style="TEXT-DECORATION: underline"><span style="FONT-SIZE: 21px"> &nbsp;</span></span></strong><strong><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312">：</span></strong></span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 40px; TEXT-INDENT: 48px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312">过去的一年中，在广大会员单位的关心和支持下，省价格协会的各项工作取得了新的进展。对此，我们表示衷心的感谢！</span></span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 40px; TEXT-INDENT: 48px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312">为便于协会下一步更好地开展活动，为会员单位提供服务和交流合作的平台，根据《江苏省物价局-江苏省物价局网站章程》及《江苏省物价局-江苏省物价局网站会费缴纳规定》，请贵单位于</span><span style="FONT-SIZE: 21px">2018</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312">年</span><span style="FONT-SIZE: 21px; COLOR: black">10</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">月</span><span style="FONT-SIZE: 21px; COLOR: black">30</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">日前缴纳会费。</span></span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 40px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 21px">&nbsp;&nbsp;&nbsp; </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312">会费缴费标准：贵单位作为省价格协会理事单位，按规定，</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">会费标准为</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312">每年</span><span style="TEXT-DECORATION: underline"><span style="FONT-SIZE: 21px">1000-4000</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312">元，</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">根据自愿原则，可以多缴。</span></span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">会费缴纳方式：请将会费电汇至江苏省物价局-江苏省物价局网站帐户</span></span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">协会全称：江苏省物价局-江苏省物价局网站</span></span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">开户银行：农业银行南京云南路支行</span></span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">协会帐号：</span><span style="FONT-SIZE: 21px; COLOR: black">10100501040001774</span></span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">汇款时，请在银行单据附言栏注明：价格协会。汇款后，</span><strong><span style="TEXT-DECORATION: underline"><span style="FONT-SIZE: 21px; COLOR: black"><a href="mailto:请将以下表格内信息发送至jsjgbjb@126.com"><span style="COLOR: #000000"><span style="TEXT-DECORATION: underline"><span style="FONT-FAMILY: 仿宋_GB2312">请</span></span><span style="TEXT-DECORATION: underline"><span style="FONT-FAMILY: 仿宋_GB2312">将以下表格</span></span></span><span style="TEXT-DECORATION: underline"><span style="FONT-FAMILY: 仿宋_GB2312"><span style="COLOR: #000000">内信息发送至</span></span><span style="COLOR: #000000">jsjgbjb@126.com</span></span></a></span></span></strong><strong><span style="TEXT-DECORATION: underline"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">邮箱，</span></span></strong><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">以便我们寄送发票。联系人：朱晔，电话：</span><span style="FONT-SIZE: 21px; COLOR: black">025-83275226</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">，</span><span style="FONT-SIZE: 21px; COLOR: black">13337709997</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">。</span></span></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">&nbsp;</span></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">&nbsp;</span></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">&nbsp;</span></p><p style="TEXT-ALIGN: center; MARGIN: 10px 0px; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">江苏省物价局-江苏省物价局网站会费缴纳回执信息</span></p><table cellspacing="0" cellpadding="0" uetable="null"><tbody><tr class="firstRow" style="HEIGHT: 26px"><td style="BORDER-TOP: windowtext 1px solid; BORDER-RIGHT: windowtext 1px solid; BORDER-BOTTOM: windowtext 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 7px; BORDER-LEFT: windowtext 1px solid; PADDING-RIGHT: 7px; BACKGROUND-COLOR: transparent" height="26" valign="top" width="173"><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 19px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">会员单位名称</span></span></p></td><td style="BORDER-TOP: windowtext 1px solid; BORDER-RIGHT: windowtext 1px solid; BORDER-BOTTOM: windowtext 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 7px; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 7px; BACKGROUND-COLOR: transparent" height="26" valign="top" width="91"><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 19px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">汇款金额</span></span></p></td><td style="BORDER-TOP: windowtext 1px solid; BORDER-RIGHT: windowtext 1px solid; BORDER-BOTTOM: windowtext 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 7px; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 7px; BACKGROUND-COLOR: transparent" height="26" valign="top" width="161"><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 19px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">通讯地址及邮编</span></span></p></td><td style="BORDER-TOP: windowtext 1px solid; BORDER-RIGHT: windowtext 1px solid; BORDER-BOTTOM: windowtext 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 7px; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 7px; BACKGROUND-COLOR: transparent" height="26" valign="top" width="127"><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 19px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">承办人及电话</span></span></p></td></tr><tr style="HEIGHT: 116px"><td style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1px solid; BORDER-BOTTOM: windowtext 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 7px; BORDER-LEFT: windowtext 1px solid; PADDING-RIGHT: 7px; BACKGROUND-COLOR: transparent" height="116" valign="top" width="173"></td><td style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1px solid; BORDER-BOTTOM: windowtext 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 7px; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 7px; BACKGROUND-COLOR: transparent" height="116" valign="top" width="91"></td><td style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1px solid; BORDER-BOTTOM: windowtext 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 7px; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 7px; BACKGROUND-COLOR: transparent" height="116" valign="top" width="161"></td><td style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: windowtext 1px solid; BORDER-BOTTOM: windowtext 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 7px; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 7px; BACKGROUND-COLOR: transparent" height="116" valign="top" width="127"></td></tr></tbody></table><p style="TEXT-ALIGN: left; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;</span></span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;</span></span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 40px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 江苏省物价局-江苏省物价局网站</span></span></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px; TEXT-INDENT: 139px"><span style="FONT-FAMILY: Times New Roman"><span style="FONT-SIZE: 21px; COLOR: black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2018</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">年</span><span style="FONT-SIZE: 21px; COLOR: black">7</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">月</span><span style="FONT-SIZE: 21px; COLOR: black">27</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">日</span></span></p><p>&nbsp;</p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-374.html'>《价格违法行为行政处罚规定》</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-297.html'>关于举办全省价格系统初任岗前培训班的通知</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

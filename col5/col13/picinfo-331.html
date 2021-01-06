@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>往期查看——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../../images/laydate/laydate.js"></script>
+<script src="../../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_127'></span>
+<script language='JavaScript'>
+function funcDate_127()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_127.innerHTML = strHTML;
+}
+setInterval(funcDate_127,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../../index.html">首 页</a></td> 
+        <td><a href="../../col1/articlecolumn.html">工作动态</a></td> 
+        <td><a href="../../col2/articlecolumn.html">政策文件</a></td> 
+        <td><a href="../../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../../col4/articlecolumn.html">专家视点</a></td> 
+        <td class="menuSelected"><a href="piccolumn.html">预期调查</a></td> 
+        <td><a href="../../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../../index.html'>首页</a> >>&nbsp;<a href='../articlecolumn.html' target='_self' class='x_column_link'>预期调查</a> >>&nbsp;<a href='piccolumn.html' target='_self' class='x_column_link'>往期查看</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" height="600" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center">
+			<div id="mainLeftMenuList">
+				<table border="0" cellspacing="0" cellpadding="0"> 
+                  <tr> 
+                    <td><a href="#">调查填报</a></td> 
+                  </tr> 
+                  <tr> 
+                    <td id="menuListSelected"><a href="piccolumn.html">往期查看</a></td> 
+                  </tr> 
+                </table>			</div>
+			</td>
+          </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td colspan='3' class='x_content_title'>2018年第二季度居民消费价格预期调查报告</td></tr><tr align='center' colspan='3'><td>作者：<span class='x_author'></span>&nbsp;&nbsp;编辑：<span class='x_author'>系统管理员</span>&nbsp;&nbsp;<span class='x_time'>2019-01-07 16:11:34</span></td></tr><tr align='center' colspan='3'><td>&nbsp;</td></tr><tr>
+						<td><div id='divMainContentID'><div align='center'><img width='650' alt='2018年第二季度居民消费价格预期调查报告' src='../../information/picfile/1/20190107161235_79371592603714.jpg' valign='top'></div><span class='x_content'><p style="TEXT-ALIGN: center"><span style="FONT-FAMILY: Calibri">2018</span><span style="FONT-FAMILY: 宋体">年二季度居民消费价格预期调查报告</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 为进一步增强居民消费价格预期调查的准确性，今年初，我们在全省新增了一批来自党政、经济、科研、房地产等领域和行业的专家学者及相关专业人士参与预期调查。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 参加</span><span style="FONT-FAMILY: Calibri">2018</span><span style="FONT-FAMILY: 宋体">年二季度居民消费价格预期调查有</span><span style="FONT-FAMILY: Calibri">362</span><span style="FONT-FAMILY: 宋体">人，收回有效问卷</span><span style="FONT-FAMILY: Calibri">362</span><span style="FONT-FAMILY: 宋体">份。与一季度大部分人预计居民消费价格总水平和主副食品价格上涨相比，二季度居民消费价格总水平和主副食品价格预期以稳中缓涨为主，与去年同期基本一致。在持续紧缩的房地产调控政策和“房子是用来住的，不是用来炒的”总基调下，全省商品房总体价格继续保持稳中缓涨的预期，绝大多数城市商品房价格预期趋于稳定。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 一、居民消费价格总水平预期稳中缓涨</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 与</span><span style="FONT-FAMILY: Calibri">2018</span><span style="FONT-FAMILY: 宋体">年一季度相比，预计二季度居民消费价格总水平上涨</span><span style="FONT-FAMILY: Calibri">176</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">48.62%</span><span style="FONT-FAMILY: 宋体">，其中预计缓和上涨</span><span style="FONT-FAMILY: Calibri">167</span><span style="FONT-FAMILY: 宋体">人，明显上涨</span><span style="FONT-FAMILY: Calibri">9</span><span style="FONT-FAMILY: 宋体">人，分别占</span><span style="FONT-FAMILY: Calibri">94.88%</span><span style="FONT-FAMILY: 宋体">、</span><span style="FONT-FAMILY: Calibri">5.12%</span><span style="FONT-FAMILY: 宋体">；预计基本持平</span><span style="FONT-FAMILY: Calibri">150</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">41.44%</span><span style="FONT-FAMILY: 宋体">；预计有所下降</span><span style="FONT-FAMILY: Calibri">35</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">9.67%</span><span style="FONT-FAMILY: 宋体">；不能确定</span><span style="FONT-FAMILY: Calibri">1</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">0.27%</span><span style="FONT-FAMILY: 宋体">；无人预计明显下降。</span></p><p><span style="FONT-FAMILY: 宋体">调查结果显示，预计二季度居民消费价格总水平上涨的人数减少至不到半数，其中超过九成的人预计缓和上涨；预计基本持平的人数约四成，接近预计上涨人数。绝大部分人预计居民消费价格总水平稳中缓涨。</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933177107157.jpg" alt="1.jpg" src="../../information/picfile/20190108/1546933177107157.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p>&nbsp;</p><p>&nbsp;</p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 从居民消费价格总水平预期走势看，二季度（本期）居民消费价格总水平预期和往年同期走势一致，上涨预期较上期迅速下降，比上期的</span><span style="FONT-FAMILY: Calibri">68.13%</span><span style="FONT-FAMILY: 宋体">减少了</span><span style="FONT-FAMILY: Calibri">19.51</span><span style="FONT-FAMILY: 宋体">个百分点；和去年同期的</span><span style="FONT-FAMILY: Calibri">54.08%</span><span style="FONT-FAMILY: 宋体">相比，本期上涨预期减少了</span><span style="FONT-FAMILY: Calibri">5.46</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 与上期</span><span style="FONT-FAMILY: Calibri">30.94%</span><span style="FONT-FAMILY: 宋体">的人预计居民消费价格总水平基本持平相比，本期增加</span><span style="FONT-FAMILY: Calibri">10.5</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Calibri">37.46%</span><span style="FONT-FAMILY: 宋体">相比，本期增加了</span><span style="FONT-FAMILY: Calibri">3.98</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 与上期极少数人预计居民消费价格总水平下降相比，本期有所回升，增加了</span><span style="FONT-FAMILY: Calibri">9.05</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Calibri">8.16%</span><span style="FONT-FAMILY: 宋体">相比，本期仅增</span><span style="FONT-FAMILY: Calibri">1.51</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 调查表明，与上期大多数人预计居民消费价格总水平上涨相比，本期居民消费价格总水平预期以稳中缓涨为主。与去年同期相比，本期居民消费价格总水平预期变化不大。</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933193266624.jpg" alt="表1 拷贝.jpg" src="http://www.jspn.js.cn/information/picfile/20190108/1546933193266624.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933283108345.jpg" alt="2.jpg" src="http://www.jspn.js.cn/information/picfile/20190108/1546933283108345.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933301810288.jpg" alt="3.jpg" src="../../information/picfile/20190108/1546934006181809.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933314133226.jpg" alt="4.jpg" src="../../information/picfile/20190108/1546934017601153.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 二、</span> <span style="FONT-FAMILY: 宋体">主副食品价格预期稳中缓涨，并以平稳为主</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 与</span><span style="FONT-FAMILY: Calibri">2018</span><span style="FONT-FAMILY: 宋体">年一季度相比，预计二季度主副食品价格上涨</span><span style="FONT-FAMILY: Calibri">113</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">31.22%</span><span style="FONT-FAMILY: 宋体">，其中预计缓和上涨</span><span style="FONT-FAMILY: Calibri">107</span><span style="FONT-FAMILY: 宋体">人，明显上涨</span><span style="FONT-FAMILY: Calibri">6</span><span style="FONT-FAMILY: 宋体">人，分别占</span><span style="FONT-FAMILY: Calibri">94.68%</span><span style="FONT-FAMILY: 宋体">、</span><span style="FONT-FAMILY: Calibri">5.32%</span><span style="FONT-FAMILY: 宋体">；预计基本持平</span><span style="FONT-FAMILY: Calibri">191</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">52.76%</span><span style="FONT-FAMILY: 宋体">；预计有所下降</span><span style="FONT-FAMILY: Calibri">55</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">15.19%</span><span style="FONT-FAMILY: 宋体">；预计明显下降</span><span style="FONT-FAMILY: Calibri">3</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">0.83%</span><span style="FONT-FAMILY: 宋体">。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 调查结果显示，预计二季度主副食品价格上涨的人数下降至约三成，其中超过九成的人预计缓和上涨；预计主副食品价格基本持平的人数超过半数，高于预计价格上涨的人数。绝大部分人预计主副食品价格稳中缓涨，并以平稳为主。</span></p><p>&nbsp;</p><p>&nbsp;</p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933327248336.jpg" alt="5.jpg" src="http://www.jspn.js.cn/information/picfile/20190108/1546933327248336.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p>&nbsp;</p><p>&nbsp;</p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 从主副食品价格预期走势看，与上期</span><span style="FONT-FAMILY: Calibri">68.75%</span><span style="FONT-FAMILY: 宋体">的人预计主副食品价格上涨相比，本期大幅下降，减少了</span><span style="FONT-FAMILY: Calibri">37.53</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Calibri">39.88%</span><span style="FONT-FAMILY: 宋体">相比，本期减少了</span><span style="FONT-FAMILY: Calibri">8.66</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 与上期</span><span style="FONT-FAMILY: Calibri">30.32%</span><span style="FONT-FAMILY: 宋体">的人预计主副食品价格基本持平相比，本期增加了</span><span style="FONT-FAMILY: Calibri">22.44</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Calibri">47.73%</span><span style="FONT-FAMILY: 宋体">相比，本期略增</span><span style="FONT-FAMILY: Calibri">5.03</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 与上期极少数人预计主副食品价格下降相比，本期下降预期迅速上升，增加</span><span style="FONT-FAMILY: Calibri">15.4</span><span style="FONT-FAMILY: 宋体">个百分点，但仍保持低位占比；与去年同期的</span><span style="FONT-FAMILY: Calibri">12.39%</span><span style="FONT-FAMILY: 宋体">相比，本期略增</span><span style="FONT-FAMILY: Calibri">3.63</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 调查表明，与上期大多数人预计主副食品价格上涨相比，本期主副食品价格以稳中缓涨预期为主；与去年同期相比，本期主副食品价格预期变化不大。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 关于大米、食用油和猪肉价格预期情况。本期预计大米价格上涨</span><span style="FONT-FAMILY: Calibri">53</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">14.64%</span><span style="FONT-FAMILY: 宋体">，其中缓和上涨</span><span style="FONT-FAMILY: Calibri">49</span><span style="FONT-FAMILY: 宋体">人，明显上涨</span><span style="FONT-FAMILY: Calibri">4</span><span style="FONT-FAMILY: 宋体">人，分别占</span><span style="FONT-FAMILY: Calibri">92.49%</span><span style="FONT-FAMILY: 宋体">、</span><span style="FONT-FAMILY: Calibri">7.51%</span><span style="FONT-FAMILY: 宋体">；基本持平</span><span style="FONT-FAMILY: Calibri">294</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">81.22%</span><span style="FONT-FAMILY: 宋体">；有所下降</span><span style="FONT-FAMILY: Calibri">15</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">4.14%</span><span style="FONT-FAMILY: 宋体">；无人预计明显下降。预计食用油价格上涨</span><span style="FONT-FAMILY: Calibri">59</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">16.29%</span><span style="FONT-FAMILY: 宋体">，其中缓和上涨</span><span style="FONT-FAMILY: Calibri">55</span><span style="FONT-FAMILY: 宋体">人，明显上涨</span><span style="FONT-FAMILY: Calibri">4</span><span style="FONT-FAMILY: 宋体">人，分别占</span><span style="FONT-FAMILY: Calibri">93.25%</span><span style="FONT-FAMILY: 宋体">、</span><span style="FONT-FAMILY: Calibri">6.75%</span><span style="FONT-FAMILY: 宋体">；基本持平</span><span style="FONT-FAMILY: Calibri">282</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">77.9%</span><span style="FONT-FAMILY: 宋体">；有所下降</span><span style="FONT-FAMILY: Calibri">19</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">5.25%</span><span style="FONT-FAMILY: 宋体">；明显下降</span><span style="FONT-FAMILY: Calibri">1</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">0.28%</span><span style="FONT-FAMILY: 宋体">；不能确定</span><span style="FONT-FAMILY: Calibri">1</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">0.28%</span><span style="FONT-FAMILY: 宋体">。预计猪肉价格上涨</span><span style="FONT-FAMILY: Calibri">100</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">27.62%</span><span style="FONT-FAMILY: 宋体">，其中缓和上涨</span><span style="FONT-FAMILY: Calibri">96</span><span style="FONT-FAMILY: 宋体">人，明显上涨</span><span style="FONT-FAMILY: Calibri">4</span><span style="FONT-FAMILY: 宋体">人，分别占</span><span style="FONT-FAMILY: Calibri">96.02%</span><span style="FONT-FAMILY: 宋体">、</span><span style="FONT-FAMILY: Calibri">3.98%</span><span style="FONT-FAMILY: 宋体">；基本持平</span><span style="FONT-FAMILY: Calibri">168</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">46.41%</span><span style="FONT-FAMILY: 宋体">；有所下降</span><span style="FONT-FAMILY: Calibri">86</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">23.76%</span><span style="FONT-FAMILY: 宋体">；明显下降</span><span style="FONT-FAMILY: Calibri">7</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">1.93%</span><span style="FONT-FAMILY: 宋体">；不能确定</span><span style="FONT-FAMILY: Calibri">1</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">0.28%</span><span style="FONT-FAMILY: 宋体">。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 调查结果显示：国家二月份下调粮食最低收购价格，这对粮油肉的价格预期带来不同程度的影响，大米和食用油价格继续以平稳预期为主，看平人数占比均达开展预期调查以来的最高点，超过八成，较上期增加了十多个百分点；大米和食用油价格上涨预期均较上期明显回落。与去年同期相比，大米和食用油价格预期变化不大，其中，看平预期有所上升。与上期大多数人预计猪肉价格上涨相比，本期猪肉价格上涨预期大幅下降，看平和下降预期迅速上升，其中下降预期接近上涨预期。</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933340136970.jpg" alt="表2 拷贝.jpg" src="http://www.jspn.js.cn/information/picfile/20190108/1546933340136970.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933351127240.jpg" alt="表3 拷贝.jpg" src="../../information/picfile/20190108/1546934104580283.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933370503816.jpg" alt="表4 拷贝.jpg" src="../../information/picfile/20190108/1546933370503816.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933379180690.jpg" alt="表5 拷贝.jpg" src="../../information/picfile/20190108/1546934151411685.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933394900741.jpg" alt="6.jpg" src="../../information/picfile/20190108/1546934168743029.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933405779262.jpg" alt="7.jpg" src="../../information/picfile/20190108/1546934182841357.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933414101585.jpg" alt="8.jpg" src="../../information/picfile/20190108/1546933414101585.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 三、商品房总体价格预期继续稳中缓涨，绝大部分城市预期趋于稳定</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 与</span><span style="FONT-FAMILY: Calibri">2018</span><span style="FONT-FAMILY: 宋体">年一季度相比，预计二季度商品房总体价格上涨</span><span style="FONT-FAMILY: Calibri">179</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">49.45%</span><span style="FONT-FAMILY: 宋体">，其中预计缓和上涨</span><span style="FONT-FAMILY: Calibri">162</span><span style="FONT-FAMILY: 宋体">人，明显上涨</span><span style="FONT-FAMILY: Calibri">17</span><span style="FONT-FAMILY: 宋体">人，分别占</span><span style="FONT-FAMILY: Calibri">90.5%</span><span style="FONT-FAMILY: 宋体">、</span><span style="FONT-FAMILY: Calibri">9.5%</span><span style="FONT-FAMILY: 宋体">；预计总体价格基本持平</span><span style="FONT-FAMILY: Calibri">147</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">40.61%</span><span style="FONT-FAMILY: 宋体">；预计总体价格有所下降</span><span style="FONT-FAMILY: Calibri">35</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">9.67%</span><span style="FONT-FAMILY: 宋体">；预计总体价格明显下降</span><span style="FONT-FAMILY: Calibri">1</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Calibri">0.27%</span><span style="FONT-FAMILY: 宋体">。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 调查显示，约半数的人预计二季度商品房总体价格上涨，其中预计缓和上涨人数占九成；四成的人预计商品房总体价格基本持平。绝大部分人继续保持商品房价格稳中缓涨的预期。</span></p><p>&nbsp;</p><p>&nbsp;</p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933425124043.jpg" alt="9.jpg" src="../../information/picfile/20190108/1546933425124043.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 从商品房价格预期走势看，房地产市场调控成效继续显现。本期商品房价格上涨预期，比上期的</span><span style="FONT-FAMILY: Calibri">46.25%</span><span style="FONT-FAMILY: 宋体">，略增</span><span style="FONT-FAMILY: Calibri">3.2</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Calibri">66.17%</span><span style="FONT-FAMILY: 宋体">相比，减少</span><span style="FONT-FAMILY: Calibri">16.72</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 与上期</span><span style="FONT-FAMILY: Calibri">45%</span><span style="FONT-FAMILY: 宋体">的人预计商品房价格基本持平相比，本期减少了</span><span style="FONT-FAMILY: Calibri">4.39</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Calibri">27.8%</span><span style="FONT-FAMILY: 宋体">相比，本期增加了</span><span style="FONT-FAMILY: Calibri">12.81</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 与上期</span><span style="FONT-FAMILY: Calibri">8.75%</span><span style="FONT-FAMILY: 宋体">的人预计商品房价格下降相比，本期略增</span><span style="FONT-FAMILY: Calibri">1.19</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Calibri">5.43%</span><span style="FONT-FAMILY: 宋体">相比，本期增加</span><span style="FONT-FAMILY: Calibri">4.51</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 调查表明，与去年同期大多数人预计商品房总体价格上涨相比，本期商品房总体价格延续上期保持稳中缓涨的预期。</span></p><p><span style="FONT-FAMILY: 宋体">&nbsp;&nbsp;&nbsp; 近两年，全国和我省对房地产市场持续实行紧缩性调控政策，逐步挤压投机性需求，同时，坚持“房子是用来住的，不是用来炒的”的总基调。</span><span style="FONT-FAMILY: Calibri">2018</span><span style="FONT-FAMILY: 宋体">年，我省房地产市场依然是严控期，并进一步强化商品住房价格备案制度，开发企业拿地更趋理性，调控政策效应持续显现。从全省各地商品房价格预期情况看，绝大多数城市商品房价格预期趋于稳定。十三个设区市中，苏州和盐城商品房价格以平稳预期为主，其中，苏州预计商品房价格平稳的人数超过六成，盐城超过七成。南京、无锡、连云港、扬州、镇江五个市商品房价格以稳中缓涨预期为主。其中，南京、无锡和镇江商品房价格预期与上期相比，基本没有变化；连云港商品房价格预期与上期以平稳为主相比，本期上涨预期上升，平稳预期下降，绝大部分人预计商品房价格稳中缓涨；扬州商品房价格预期与上期以上涨为主相比，本期上涨预期迅速下降，平稳预期大幅上升。常州、徐州、南通、淮安、泰州、宿迁六个市商品房价格以缓和上涨预期为主，其中，徐州、南通、泰州、宿迁商品房价格预期和上期相比，变大不大；常州商品房价格预期与上期以平稳为主相比，本期上涨预期大幅上升，但以缓涨为主；淮安商品房价格上涨预期继续上升，但仍以缓涨为主。常州、淮安两地商品房价格需引起有关部门的关注和引导。</span></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933490352774.jpg" alt="表6 拷贝.jpg" src="../../information/picfile/20190108/1546934234394472.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933565108444.jpg" alt="10.jpg" src="../../information/picfile/20190108/1546934252841572.jpg"></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933580837355.jpg" alt="11.jpg" src="../../information/picfile/20190108/1546934268505838.jpg"></p><p><span style="FONT-FAMILY: 宋体"></span><img title="1546933597195235.jpg" alt="12.jpg" src="../../information/picfile/20190108/1546934281461214.jpg"><span style="FONT-FAMILY: Calibri"></span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p style="TEXT-ALIGN: right"><span style="FONT-FAMILY: 宋体">江苏省物价局-江苏省物价局网站</span></p><p style="TEXT-ALIGN: right"><span style="FONT-FAMILY: 宋体">二○一八年四月</span></p><p>&nbsp;</p><p>&nbsp;</p></span></div></td>
+					   </tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

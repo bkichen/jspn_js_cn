@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>政策文件——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_66'></span>
+<script language='JavaScript'>
+function funcDate_66()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_66.innerHTML = strHTML;
+}
+setInterval(funcDate_66,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">政策文件</a></td> 
+        <td><a href="../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>政策文件</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="2">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>关于印发《2018年全省价格协会工作指导意见》的通知</td></tr><tr align='center'><td><span class='x_time'>2018-03-19 17:08:11</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="TEXT-ALIGN: center; LINE-HEIGHT: 27px"><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" background:="">苏价协〔</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" background:="" new="" times="">2018</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" background:="">〕</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" background:="" new="" times="">1</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" background:="">号</span></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 39px"><span style="FONT-SIZE: 20px; FONT-FAMILY: " color:="">&nbsp;</span></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 29px; FONT-FAMILY: 宋体; COLOR: black">&nbsp;</span></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 37px"><strong><span style="FONT-SIZE: 29px; FONT-FAMILY: 宋体; COLOR: black">关于印发《2018年全省价格协会工作</span></strong></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 37px"><strong><span style="FONT-SIZE: 29px; FONT-FAMILY: 宋体; COLOR: black">指导意见》的通知</span></strong></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 39px"><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="">&nbsp;</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 35px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">省价格协会各分会，各设区市及省管县（市）价格协会：</span></p><p style="BACKGROUND: white; TEXT-ALIGN: left; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">现将《</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">2018</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">年全省价格协会工作指导意见》印发给你们，请结合工作实际，认真贯彻落实<span style="BACKGROUND: white">。</span></span></p><p style="BACKGROUND: white; TEXT-ALIGN: left; LINE-HEIGHT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; BACKGROUND: white; COLOR: black">&nbsp;</span></p><p style="BACKGROUND: white; TEXT-ALIGN: left; LINE-HEIGHT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; BACKGROUND: white; COLOR: black">&nbsp;</span></p><p style="BACKGROUND: white; TEXT-ALIGN: right; LINE-HEIGHT: 39px; TEXT-INDENT: 356px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; BACKGROUND: white; COLOR: black; LETTER-SPACING: 0px">江苏省物价局-江苏省物价局网站</span></p><p style="BACKGROUND: white; TEXT-ALIGN: right; LINE-HEIGHT: 39px; TEXT-INDENT: 346px"><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" background:="" new="" times="" letter-spacing:="">&nbsp;&nbsp;&nbsp; 2018</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; BACKGROUND: white; COLOR: black; LETTER-SPACING: 0px">年</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" background:="" new="" times="" letter-spacing:="">3</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; BACKGROUND: white; COLOR: black; LETTER-SPACING: 0px">月</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" background:="" new="" times="" letter-spacing:="">19</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; BACKGROUND: white; COLOR: black; LETTER-SPACING: 0px">日</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: black">&nbsp;</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: black">&nbsp;</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: black">&nbsp;</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: black">&nbsp;</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: black">&nbsp;</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: black">&nbsp;</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: black">&nbsp;</span></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 36px"><strong><span style="FONT-SIZE: 29px; FONT-FAMILY: " color:="" new="" times="">2018</span></strong><strong><span style="FONT-SIZE: 29px; FONT-FAMILY: 宋体; COLOR: black">年全省价格协会工作</span></strong></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 36px"><strong><span style="FONT-SIZE: 29px; FONT-FAMILY: 宋体; COLOR: black">指导意见</span></strong></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: black">&nbsp;</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">2018</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">年是全面贯彻落实十九大精神开局之年，是改革开放</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">40</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">周年，是决胜高水平全面小康社会、实施</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">“</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">十三五</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">”</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">规划承上启下的关键之年。各级价格协会要紧紧围绕贯彻落实省委、省政府《关于全面推进价格机制改革的实施意见》和全省价格工作会议精神，积极主动服务价格机制改革，服务高质量发展，增强服务本领，提升服务质量，拓展服务职能，稳慎推进全省价格协会改革和发展。</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">一、服务改革创新，助力价格工作</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">1</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体; COLOR: black">、组织好课题研究和政策评估。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">做好价格系统课题研究活动的组织协调工作，按时序进度推进和完成各项课题研究任务。开展全省价格系统课题研究成果评选、兼职价格研究员优秀研究成果评选等活动，继续营造全省价格研究氛围。鼓励各地围绕深化价格改革各项重大政策举措以及价格工作重点、热点和难点，组织开展联合调研和政策评估，推进价格研究工作向高水平发展。继续深化和完善价格监管机制改革研究，形成有一定份量的研究成果和评估报告。及时跟进“第七届薛暮桥价格研究成果奖”评选及获奖情况，积极做好薛暮桥价格研究成果奖评选的相关服务协调工作。</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">2</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体; COLOR: black">、加强市场与价格形势研判与分析。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">邀请专家决策委员和协会常务理事，积极参与居民消费价格预期调查，开展经济和价格形势分析。年内邀请高校或国家层面价格研究的专家学者作专题讲课。鼓励各地继续开展</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times=""> “</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">物价讲堂</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">”</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">、</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">“</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">法制讲堂</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">”</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">等活动，活跃业务交流，促进价格干部队伍能力素质提高。</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">3</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体; COLOR: black">、引导青年参与价格研究。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">参与青年研究活动方案实施的相关工作，适时将全省价格系统优秀青年研究人员吸收为协会会员或兼职研究员，为价格系统青年同志开展研究工作创造条件。</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">二、承接服务职能，推进协会改革</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">4</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体; COLOR: black">、加快职能转变。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">借鉴中国价格协会改革经验，结合我省形势发展要求，拟定价格协会改革整体方案，实现协会人员到位和财务分离，做好全面脱钩的准备工作。努力承接政府购买服务，为协会长久发展提供经费保证和后续动力。加强协会之间的沟通交流，取长补短。加大对价格系统市、县级协会改革的指导和推进力度。</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">5</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体; COLOR: black">、加强组织建设。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">健全协会机构构架与设计，完善协会工作制度规章，促进各级价格协会工作的常态化、制度化，增强协会工作的生机与活力。加强与上级协会定期联系、与四个分会经常交流、对市县协会工作日常指导，纵向与横向沟通相结合，强化服务功能，全面提升全省价格协会工作水平。鼓励各地围绕能源价格改革、交通运输价格改革等，适时成立相应分会，加快分会组织体系建设。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">6</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体; COLOR: black">、加大学习交流。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">计划年内组织</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">1-2</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">次省内外考察，开展兄弟协会间的工作交流，学习借鉴创新社会组织管理的新经验、好做法，取长补短，不断改进和加强协会建设，提升和强化协会组织功能，更好地适应新形势下社会组织改革发展的要求。</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">三、创优服务手段，树立社会地位</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">7</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体; COLOR: black">、完善预期调查软件开发和协会门户网站建设。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">继续开展居民消费价格预期调查，完善</span><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">APP</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">软件应用，调整参调人员结构，增补专家或专业人士，全面提高工作效率，提升编制质量，扩大社会影响，服务系统、服务会员、服务社会。整合各方面资源，建设价格协会门户网站，丰富内容，打造品牌，增强协会工作整体活力。</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">8</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">、</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体; COLOR: black">活跃分会组织活动。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">适时与有关分会联合组织研讨交流活动，以分会活动促进面上协会工作开展。各地协会也可以结合价格工作需要，联合分会共同开展针对性研讨交流活动，征求协会会员单位和分会会员对改革政策的意见和建议，积极为推进价格改革献计献策。</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 36px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: " color:="" new="" times="">9</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体; COLOR: black">、不断提升服务质量。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: black">继续办好《江苏价格》杂志，加大约稿力度，汇聚多方力量，提升稿件质量。加强杂志编辑和流程管理，优化版面，增强刊物可读性。整合《江苏价格》和《居民消费价格预期调查报告》等信息资源，在协会网站及时发布价格动态、政策法规等价格信息，为会员做好价格政策的宣传解读和信息服务。同时，围绕深化价格改革和价格中心工作，紧密结合会员单位需求，适时组织开展一些价格业务培训和价格政策法规解读，帮助相关会员单位和企事业单位熟悉和了解价格政策，推动价格改革措施顺利落实。</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-296.html'>省物价局 省价格协会关于做好2018年全省价格课题研究工作的通知</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-285.html'>关于报送2018年全省价格研究课题的通知</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

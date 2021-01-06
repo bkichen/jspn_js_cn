@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>课题研究——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_86'></span>
+<script language='JavaScript'>
+function funcDate_86()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_86.innerHTML = strHTML;
+}
+setInterval(funcDate_86,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td><a href="../col2/articlecolumn.html">政策文件</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>研究课题</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="3">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>与时俱进　改革创新　做好新形势下的价格协会工作</td></tr><tr align='center'><td><span class='x_time'>2017-08-10 12:33:27</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><strong><span style="FONT-SIZE: 29px; FONT-FAMILY: 宋体"></span></strong>&nbsp;</p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">张祥生　颜艳平　于绍明</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">&nbsp;</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">近年来，苏州市价格协会在省、市物价局和省价格协会的关心和指导下，主动适应经济发展的新常态和推进价格机制改革的新形势新要求，以价格理论研究为基础，以行业管理为核心，以创新服务为突破，全面推进价格协会改革。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">一、改革组织架构</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">良好的组织架构是顺利开展工作的基础。价格协会的组织架构问题，目前省内各地不尽相同。有的由价格部门负责同志担任会长、秘书长，有的由价格部门离退休同志担任，有的由系统外同志担任。苏州市价格协会成立之初，由物价局长任会长，分管市长任名誉会长；后来由退休局长任会长，现任局长任名誉会长。而县区价格协会中，有的与物价局完全脱钩，独立运作，导致协会工作开展困难，举步维艰。究其原因，主要是对价格协会的性质认识不一，对党政干部在社团兼职条件要求学习不透所致。我们认为，推进价格协会组织架构改革，必须准确把握以下两条：</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）准确把握价格协会的性质。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">对价格协会的性质，价格系统内的不少同志有模糊认识，有的存在认识误区。毋庸置疑，价格协会属社团组织，但社团组织有具体分类，不同类别的社团组织，改革要求也不尽相同。一般而言，社会团体可以分为学术性、联合性、行业性和专业性四类。其中，学术性社会团体一般由专家、学者和科研工作者自愿组成，以学会、研究会命名。联合性社会团体由相同或不同领域的法人组织或个人为了共同的兴趣、爱好、利益进行横向交流而自愿组成，一般以联合会、促进会命名。行业性社会团体由相同或相近领域的法人组织或个人组成，通过沟通本行业企业和从业者与政府的关系，保护和增进全体成员合法权益，一般以行业协会、商会、同业公会命名。专业性社会团体，是指相同领域的法人组织和专业人士围绕专业技术和专业资金开展专业活动，提高专业能力，维护自身合法权益而组成的为经济社会服务的非营利性社会组织，一般以协会命名。价格协会属专业性社会团体，非行业性社会团体。目前，各级党委政府积极推动的是行业性社会团体与行政机关面脱钩的改革。以苏州为例，2014年市政府办公室下发的《深化市属行业协会（商会）改革实施细则》（苏府办〔2014〕211号）明确，“本实施细则所确定的市属行业协会（商会），是专指市属行业性社会团体，重点是工商经济类行业社会团体，不包括联合会、学会、研究会等联合性、专业性、学术性社会团体。”经请示市民政局，苏州市价格协会属于专业性社会团体，不属于“五分离”改革对象。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）准确把握党政干部参加社团组织的要求。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">不管是专业性社会团体还是行业性社会团体，都未明确禁止退休或在职党政领导干部在社会团体中兼职。八项规定出台后，针对退休领导干部在社团兼职问题，中组部2014年下发了《关于规范退（离）领导干部在社会团体兼职问题的通知》（中组发〔2014〕11号），明确退（离）领导干部在社会团体兼职必须按干部管理权限审批或备案以后方可兼职，兼职不得领取社会团体的薪酬、奖金、津贴等报酬和获取其他额外利益。2014年，中组部在中组发〔2014〕11号文件基础上对现职党政领导干部在社团兼职规定进行明确，现职领导干部一般不兼任社会团体职务，确因特殊情况需要在社团兼任职务须按干部管理权限审批后方可兼职，所兼职务与本职业务有关。由此可见，不管现职和退休党政领导干部，均可在协会兼职，关键要做到两条：一是经组织部门批准，二是不得领取任何报酬。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">2017</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">年3月31日，苏州市价格协会召开了换届大会，选举产生了新一届的协会理事、常务理事、会长、秘书长，选举市物价局张祥生副局长担任会长，市场价格行为监督管理处处长担任秘书长，明确不再设名誉会长。上述兼职均按干部管理权限经市委组织部或局党组批准同意。同时，为进一步扩大协会影响，增进协会活力，选举两位高校、党校专家为协会副会长，各市物价局局长、相关行业知名企业家当选为理事、常务理事。下一步，按照《社会团体登记管理条例》的规定，将聘请专职工作人员，负责协助协会领导机构做好日常事务。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">二、拓展服务领域</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">发展是永恒的主题。价格协会需要紧密结合形势变化，持续推进自身发展，才能始终挺立潮头，立于不败之地。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）拓展传统服务的深度。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">过去，苏州价格协会主要工作是价格研究和行业价格管理。这两方面，都要持续纵深推进。在价格研究领域，要建立价格研究分会，把高校专家学者、各行业价格工作者、价格系统中青年才俊吸收进来，充分借助外脑智慧，拓展价格研究领域，提高价格研究质量。在行业价格管理领域，继续探索和实践在市场经济条件下依托行业价格组织加强价格自律的做法，发展壮大行业价格分会组织，积极参与价格诚信体系建设，引导行业价格分会会员单位开展价格诚信消费放心活动，大力倡导明码标价，坚决反对价格欺诈，切实杜绝天价暴利，规范市场价格行为，为经济发展营造良好价费环境。为适应市场新变化和工作新要求，市价格协会将适时筹建宾馆酒店、汽车市场（4S店）、价格诚信等新的分会，努力实现对市场各主要领域、各重点行业的全覆盖。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）拓展新兴服务的广度。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">一是积极承接政府购买服务。充分发挥价格协会熟悉价格业务知识，了解市场价格行情的优势，接受价格主管部门委托，以“政府购买服务”的形式，承接社会调查、信息咨询、政策宣传、数据分析等基础性价格业务工作。二是积极承办学习培训业务。接受价格主管部门和会员单位委托，面向政府部门、会员单位和其他单位的价格工作者，组织开展价格政策、收费政策、竞争政策等各类价格业务知识的学习培训活动，指导和帮助他们更好了解价格信息，把握价格政策。三是积极拓展政策评估业务。配合价格主管部门，积极参与重大价格政策出台前的风险评估、实施后的效应评估以及重大项目、重大资金使用的专家评审工作，提供专业的评估意见，服务政府机关更好地作出决策。组建专家委员会，邀请部分理事参与评估工作，进一步提升评估的效果和水平，为推进各项价格工作提供更好的智力支持和帮助。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">三、改进工作方法</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">方法对头，事半功倍。做好价格协会工作，必须有好的方式方法。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）坚持需求导向。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">价格协会是政府与企业在价格管理领域的桥梁和纽带。做好价格协会工作，既要贯彻好政府价格管理意图，又要反映好企业利益诉求，全面满足双方的不同需求。要积极配合价格主管部门，做好服务发展、关注民生、促进和谐的各项工作，把强化价格调控、推进价格机制改革、探索市场价格行为监管、完善价格治理格局等作为服务价格主管部门的有力抓手、有效途径，做好价格管理要求在协会会员的贯彻落实工作。同时，及时向价格主管部门反映企业意愿，反映会员单位对价格政策的意见和建议，为企业利益排忧解难，为企业长远发展出谋划策，使价格决策更贴近广大群众的意愿。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）坚持创新发展。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">在价格研究方面，建立完善价格研究课题的选题、经费核拨、评审、奖励等具体工作规则，以程序化、规范化的研究工作流程，促进价格研究全面深入展开。探索建立全市兼职价格研究员队伍，形成研究工作网络体系。建立分会活动制度，建立会员联系QQ群、微信群，实现经常化、常态化的协会活动机制和高效畅通的联系渠道。建立完善协会会费筹集机制，保障协会工作顺利开展。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体"></span>&nbsp;</p><p></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-218.html'>应用物价大数据开展大服务的思考</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='javascript:;'>创新研究机制　绽放智慧之花</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

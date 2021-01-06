@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="江苏省物价局网站是给江苏省物价参考信息，提供最新的物价信息，及最全的物价信息。">
+
+<link href="images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="images/laydate/laydate.js"></script>
+<script src="images/main_2016.js"></script>
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script>
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_1'></span>
+<script language='JavaScript'>
+function funcDate_1()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_1.innerHTML = strHTML;
+}
+setInterval(funcDate_1,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" align="center" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td class="menuSelected"><a href="">首 页</a></td>
+<td><a href="col1/articlecolumn.html">工作动态</a></td>
+<td><a href="col2/articlecolumn.html">政策文件</a></td>
+<td><a href="col3/articlecolumn.html">课题研究</a></td>
+<td><a href="col4/articlecolumn.html">专家视点</a></td>
+<td><a href="col5/col13/piccolumn.html">预期调查</a></td>
+<td><a href="col6/col9/articlecolumn.html">价格培训</a></td>
+<td><a href="col7/articlecolumn.html">会员风采</a></td>
+<td><a href="col8/articlecolumn.html">联系我们</a></td></tr></tbody></table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center" valign="top">
+		
+		<table width="99%" border="0" cellspacing="0" cellpadding="0" class="tableLineLTRB_Gr tableStyle10">
+          <tr>
+            <td>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableIndexStyle_1">
+              <tr>
+                <td width="5"><img src="images/index_2016_img_14.jpg"></td>
+                <td class="textIndexMenuName_1">工作动态</td>
+                <td width="15" background="./images/index_2016_img_15.jpg" align="right"><img src="images/index_2016_img_17.jpg"></td>
+                <td>&nbsp;</td>
+				<td width="80" align="center"><a href="col1/articlecolumn.html">更多>></a></td>
+              </tr>
+            </table>
+			</td>
+          </tr>
+          <tr>
+            <td height="270" valign="top">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle5">
+              <tr>
+                <td width="345" align="center"><style type="text/css">
+#slideBox_7 *{margin:0;padding:0;list-style-type:none;}
+/*图片轮换*/
+#slideBox_7{width:340px;height:260px;overflow:hidden;position:relative;}
+#slideBox_7 ul#show_pic_7{margin:0;padding:0;list-style:none;height:260px;width:4750px;position:absolute;}
+#slideBox_7 ul#show_pic_7 li{float:left;margin:0;padding:0;height:285px;}
+#slideBox_7 ul#show_pic_7 li img{display:block;}
+#iconBall_7{position:absolute;bottom:0;right:0;}
+#iconBall_7 li{float:left;color:#7a7a7a;width:20px;height:28px;line-height:28px;cursor:pointer;text-align:center;font-size:14px;font-weight:bold;padding-top:4px;}
+#iconBall_7 li.active{background:url(style/pic/listnew/5/iconbg_2014.png) no-repeat;color:#fff;}
+#slideText_7 {width:340px;height:28px;background:rgba(0,0,0,0.7);color:#fff;position:absolute;left:0px;bottom:0px;*background:transparent;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2000000,endColorstr=#b2000000);}
+#textBall_7{position:absolute;left:10px;bottom:3px;}
+#textBall_7 li{float:left;cursor:pointer;display:none;color:#fff;font-size:14px;}
+#textBall_7 li.active{display:block;}
+#textBall_7 li a {text-decoration:none;color:#fff;}
+</style>
+
+
+<div id="slideBox_7">
+	<ul id="show_pic_7" style="left:0px">
+		<li><a href="col26/picinfo-582.html" target="_blank"><img alt="江苏省价格认证协会被省发改委和省民政厅抽调参与关于开展2020年全省行业协会营商环境满意度调查" title="" width="340" height="260" src="information/picfile/1/20201225150818_33333333333333.jpg"></a></li><li><a href="col26/picinfo-581.html" target="_blank"><img alt="两会会长为江苏省价格认证协会新增补的王延龙等六位副会长授副会长证书和副会长单位牌匾" title="" width="340" height="260" src="information/picfile/1/20201218174020_22222222222222.jpg"></a></li><li><a href="col26/picinfo-580.html" target="_blank"><img alt="江苏省物价局-江苏省物价局网站和认证协会两会周卫国会长和倪冰会长率队赴江苏中安科技服务有限公司调研" title="" width="340" height="260" src="information/picfile/1/20201218171949_66666666666666.jpg"></a></li><li><a href="col26/picinfo-579.html" target="_blank"><img alt="江苏省物价局-江苏省物价局网站和价格认证协会联合党支部参观江苏省慈善论坛暨2020年全省社会组织展示交流会" title="" width="340" height="260" src="information/picfile/1/20201207161518_11111111111111.jpg"></a></li><li><a href="col26/picinfo-573.html" target="_blank"><img alt="江苏省价格认证协会倪冰会长率队巡视价格鉴证师考试江苏考场" title="" width="340" height="260" src="information/picfile/1/20201117104201_77777777777777.jpg"></a></li>	</ul>
+	<div id="slideText_7"></div>
+	<ul id="iconBall_7">
+		<li class="active">1</li><li>2</li><li>3</li><li>4</li><li>5</li>	</ul>
+	<ul id="textBall_7">
+		<li class="active"><a href="col26/picinfo-582.html" target="_blank">江苏省价格认证协会被省发改委和…</a></li><li><a href="col26/picinfo-581.html" target="_blank">两会会长为江苏省价格认证协会新…</a></li><li><a href="col26/picinfo-580.html" target="_blank">江苏省物价局-江苏省物价局网站和认证协会两会周…</a></li><li><a href="col26/picinfo-579.html" target="_blank">江苏省物价局-江苏省物价局网站和价格认证协会联…</a></li><li><a href="col26/picinfo-573.html" target="_blank">江苏省价格认证协会倪冰会长率队…</a></li>	</ul>
+</div>
+
+
+<script type="text/javascript">
+var glide_7 =new function(){
+	function $id(id){return document.getElementById(id);};
+	this.layerGlide=function(auto,oEventCont,oTxtCont,oSlider,sSingleSize,second,fSpeed,point){
+		var oSubLi = $id(oEventCont).getElementsByTagName('li');
+		var oTxtLi = $id(oTxtCont).getElementsByTagName('li');
+		var interval,timeout,oslideRange;
+		var time=1; 
+		var speed = fSpeed 
+		var sum = oSubLi.length;
+		var a=0;
+		var delay=second * 1000; 
+		var setValLeft=function(s){
+			return function(){
+				oslideRange = Math.abs(parseInt($id(oSlider).style[point]));	
+				$id(oSlider).style[point] =-Math.floor(oslideRange+(parseInt(s*sSingleSize) - oslideRange)*speed) +'px';		
+				if(oslideRange==[(sSingleSize * s)]){
+					clearInterval(interval);
+					a=s;
+				}
+			}
+		};
+		var setValRight=function(s){
+			return function(){	 	
+				oslideRange = Math.abs(parseInt($id(oSlider).style[point]));							
+				$id(oSlider).style[point] =-Math.ceil(oslideRange+(parseInt(s*sSingleSize) - oslideRange)*speed) +'px';
+				if(oslideRange==[(sSingleSize * s)]){
+					clearInterval(interval);
+					a=s;
+				}
+			}
+		}
+		
+		function autoGlide(){
+			for(var c=0;c<sum;c++){oSubLi[c].className='';oTxtLi[c].className='';};
+			clearTimeout(interval);
+			if(a==(parseInt(sum)-1)){
+				for(var c=0;c<sum;c++){oSubLi[c].className='';oTxtLi[c].className='';};
+				a=0;
+				oSubLi[a].className="active";
+				oTxtLi[a].className = "active";
+				interval = setInterval(setValLeft(a),time);
+				timeout = setTimeout(autoGlide,delay);
+			}else{
+				a++;
+				oSubLi[a].className="active";
+				oTxtLi[a].className = "active";
+				interval = setInterval(setValRight(a),time);	
+				timeout = setTimeout(autoGlide,delay);
+			}
+		}
+	
+		if(auto){timeout = setTimeout(autoGlide,delay);};
+		for(var i=0;i<sum;i++){	
+			oSubLi[i].onmouseover = (function(i){
+				return function(){
+					for(var c=0;c<sum;c++){oSubLi[c].className='';oTxtLi[c].className='';};
+					clearTimeout(timeout);
+					clearInterval(interval);
+					oSubLi[i].className = "active";
+					oTxtLi[i].className = "active";
+					if(Math.abs(parseInt($id(oSlider).style[point]))>[(sSingleSize * i)]){
+						interval = setInterval(setValLeft(i),time);
+						this.onmouseout=function(){if(auto){timeout = setTimeout(autoGlide,delay);};};
+					}else if(Math.abs(parseInt($id(oSlider).style[point]))<[(sSingleSize * i)]){
+							interval = setInterval(setValRight(i),time);
+						this.onmouseout=function(){if(auto){timeout = setTimeout(autoGlide,delay);};};
+					}
+				}
+			})(i)			
+		}
+	}
+}
+
+//调用语句
+glide_7.layerGlide(
+	true,         //设置是否自动滚动
+	'iconBall_7',   //对应索引按钮
+	'textBall_7',   //标题内容文本
+	'show_pic_7',   //焦点图片容器
+	340,          //设置滚动图片位移像素
+	2,			  //设置滚动时间2秒 
+	0.1,          //设置过渡滚动速度
+	'left'		  //设置滚动方向“向左”
+);
+</script>
+</td>
+                <td align="left" valign="top"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col1/articleinfo-459.html' target='_blank'>置顶：关于欢迎加入江苏省物价局-江苏省物价局网站的公告</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>06-08</span></td></tr></table></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col1/articleinfo-460.html' target='_blank'>置顶：省物价局省人力资源和社会保障厅关于…</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>06-09</span></td></tr></table></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col1/articleinfo-578.html' target='_blank'>前10月全国规模以上工业企业利润50124.2亿 …</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>11-27</span></td></tr></table></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col1/articleinfo-577.html' target='_blank'>中共中央关于制定国民经济和社会发展第十四…</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>11-21</span></td></tr></table></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col1/articleinfo-572.html' target='_blank'>江苏电网第二监管周期输配电价和销售电价</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>11-08</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col1/articleinfo-569.html' target='_blank'>江苏省价格鉴证师培训工作圆满结束</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>10-28</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col1/articleinfo-563.html' target='_blank'>置顶：关于举办2020年价格鉴证师 考前培训…</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>09-25</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col1/articleinfo-560.html' target='_blank'>苏州市物理治疗和康复医疗服务项目收费试点…</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>09-08</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col1/articleinfo-561.html' target='_blank'>明年起至2023年江苏53所民办高校学历教育收…</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>09-04</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col1/articleinfo-558.html' target='_blank'>国常会：深入做好新增财政资金直接惠企利民…</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>09-01</span></td></tr></table>
+				<td width="5"></td>
+              
+            
+			
+          
+        
+
+		<table width="99%" border="0" cellspacing="1" cellpadding="0" class="tableLineLTRB_Gr tableStyle10">
+          <tr>
+            <td bgcolor="#2383F1">
+			<div id="divIndexImgID_1">
+			<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td><a href="col21/index.html"><img src="images/index_2016_img_40.jpg"></a></td>
+<td><a href="hodeframe2016_jsprice/login.html" target="_blank"><img src="images/index_2016_img_42.jpg"></a></td></tr></tbody></table>			</div>
+			</td>
+          </tr>
+        </table>
+		
+		<table width="99%" border="0" cellpadding="0" cellspacing="0" class="tableStyle10">
+          <tr>
+            <td class="tdColumns">
+			
+			<div id="divColumnsID">
+			<table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="textColumns_Y" onmouseover="changeInfoA(1)" id="menuListA_1">政策文件</td>
+                <td class="textColumns_N" onmouseover="changeInfoA(2)" id="menuListA_2">价格培训</td>
+                <td class="textColumns_N" onmouseover="changeInfoA(3)" id="menuListA_3">课题研究</td>
+              </tr>
+            </table>
+			</div>
+			
+			</td>
+          </tr>
+		  <tr>
+            <td align="left" valign="top" height="240">
+			
+			<table width="99%" border="0" cellspacing="0" cellpadding="0">
+              <tr id="showInfoA_1">
+                <td align="left" valign="top"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col2/articleinfo-507.html' target='_blank'>置顶：中华人民共和国资产评估法</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-07-15</span></td></tr></table></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col2/articleinfo-372.html' target='_blank'>置顶：《中华人民共和国价格法》</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2019-12-31</span></td></tr></table></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col2/articleinfo-529.html' target='_blank'>转发中价协 关于《2020年价格鉴证师职业能力水平评价考试统一考试报名简章…</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-07-22</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col2/articleinfo-523.html' target='_blank'>国务院办公厅关于进一步规范行业协会商会收费的通知</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-07-17</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col2/articleinfo-495.html' target='_blank'>浅析：行政许可与备案的区别</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-07-08</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col2/articleinfo-494.html' target='_blank'>转发关于进一步做好清理规范行业协会商会涉企收费工作的通知</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-07-06</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col2/articleinfo-455.html' target='_blank'>关于成立江苏省物价局-江苏省物价局网站机动车鉴定评估分会的决定</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-05-29</span></td></tr><tr><td colspan='4' align='right'><a href='col2/articlecolumn.html' target='_self' class='x_more'>更多>></a>&nbsp;</td></tr></table>
+              
+              <tr id="showInfoA_2" style="display:none;">
+                <td align="left" valign="top"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col6/col9/articleinfo-518.html' target='_blank'>如何区别低层、高层、小高层、多层？</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-07-17</span></td></tr></table></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col6/col9/articleinfo-521.html' target='_blank'>你的音量，暴露了你的修养</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-07-16</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col6/col9/articleinfo-300.html' target='_blank'>关于举办全省价格系统初任岗前培训班的通知(1)</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2018-05-09</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col6/col9/articleinfo-209.html' target='_blank'>江苏省价格系统干部轮训班在宁成功举办</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2017-11-01</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col6/col9/articleinfo-193.html' target='_blank'>省物价局关于举办全省价格系统干部轮训班的通知</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2017-09-29</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col6/col9/articleinfo-150.html' target='_blank'>全省价格系统初任岗前培训班在宁举办</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2017-06-06</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col6/col9/articleinfo-89.html' target='_blank'>关于举办价格协会与政府机关脱钩后 政策研讨培训班的通知 </a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2017-02-14</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col6/col9/articleinfo-85.html' target='_blank'>公立医院医药价格综合改革效果评估培训班在南京举行</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2016-07-08</span></td></tr><tr><td colspan='4' align='right'><a href='col6/col9/articlecolumn.html' target='_self' class='x_more'>更多>></a>&nbsp;</td></tr>
+              
+              <tr id="showInfoA_3" style="display:none;">
+                <td align="left" valign="top"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col3/articleinfo-576.html' target='_blank'>化解矛盾  促进和谐化解矛盾  促进和谐  ——南京市秦淮区价格争议调解处理…</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-11-21</span></td></tr></table></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col3/articleinfo-540.html' target='_blank'>森林火灾损失评估分类和指标探讨</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-08-05</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col3/articleinfo-512.html' target='_blank'>促进宁镇扬一体发展价格政策研究</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-07-16</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col3/articleinfo-511.html' target='_blank'>转载 从严查处哄抬价格行为 切实做好保供稳价工作 防控新冠疫情期间实施若…</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-07-16</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col3/articleinfo-510.html' target='_blank'>十四五时期服务高质量发展价格政策研究</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-07-16</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col3/articleinfo-504.html' target='_blank'>转发 中国主要城市房地产市场交易情报</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-07-15</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col3/articleinfo-503.html' target='_blank'>德国的生态补偿实践及其启示</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-07-14</span></td></tr><tr><td></td><td width='15' align="center">·</td><td valign='middle'><a class='x_title' href='col3/articleinfo-502.html' target='_blank'>土地增值税对非住宅投资咨询实例分析</a>&nbsp;&nbsp;</td><td align='right'><span class='x_time'>2020-07-13</span></td></tr><tr><td colspan='4' align='right'><a href='col3/articlecolumn.html' target='_self' class='x_more'>更多>></a>&nbsp;</td></tr>
+              
+            
+			
+			
+          
+        
+		
+		<table width="99%" border="0" cellpadding="0" cellspacing="0" class="tableStyle10">
+          <tr>
+            <td class="tdColumns">
+			
+			<div id="divColumnsID">
+			<table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="textColumns_Y" onmouseover="changeInfoB(1)" id="menuListB_1">机构登记</td>
+                <td class="textColumns_N" onmouseover="changeInfoB(2)" id="menuListB_2">人员登记</td>
+                <td class="textColumns_N" onmouseover="changeInfoB(3)" id="menuListB_3">平价商店分会</td>
+                <td class="textColumns_N" onmouseover="changeInfoB(4)" id="menuListB_4">诚信分会</td>
+              </tr>
+            </table>
+			</div>
+			
+			</td>
+          </tr>
+		  <tr>
+            <td align="left" valign="top" height="240">
+			
+			<table width="99%" border="0" cellspacing="0" cellpadding="0">
+              <tr id="showInfoB_1">
+                <td align="left" valign="top"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td></td></tr><tr><td colspan='1' align='right'><a href='col22/articlecolumn-22.html' target='_self' class='x_more'>更多>></a>&nbsp;</td></tr></table></td>
+              </tr>
+              <tr id="showInfoB_2" style="display:none;">
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr id="showInfoB_3" style="display:none;">
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr id="showInfoB_4" style="display:none;">
+                <td align="left" valign="top"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td></td></tr><tr><td colspan='4' align='right'><a href='col25/articlecolumn-25.html' target='_self' class='x_more'>更多>></a>&nbsp;</td></tr></table></td>
+              </tr>
+            </table>
+			
+			</td>
+          </tr>
+        </table>
+		
+		
+		
+		
+        <td width="265" align="center" valign="top">
+		
+		<table width="99%" border="0" cellspacing="0" cellpadding="0" class="tableStyle10">
+          <tr>
+            <td class="textIndexMenuName_2">协会介绍</td>
+          </tr>
+          <tr>
+            <td class="tableIndexStyle_2">
+			<div id="divIndexImgID_2">
+			<table cellspacing="0" cellpadding="0" width="100%" border="0"> 
+<tbody> 
+<tr> 
+<td><a href="col14/col15/articlecolumn.html"><img src="images/index_2016_img_28.jpg"><br>协会简介</a></td> 
+<td><a href="col14/col16/articlecolumn.html"><img src="images/index_2016_img_22.jpg"><br>协会制度</a></td> 
+<td><!--<A href="http://www.jspn.js.cn/col14/col17/articlecolumn.php"><IMG src="http://www.jspn.js.cn/images/index_2016_img_25.jpg"><BR>协会机构</A>--></td></tr> 
+<tr> 
+<td><!--<A href="http://www.jspn.js.cn/col14/col19/articlecolumn.php"><IMG src="http://www.jspn.js.cn/images/index_2016_img_34.jpg"><BR>加入协会</A>--></td> 
+<td><!--<A href="http://www.jspn.js.cn/col14/col20/articlecolumn.php"><IMG src="http://www.jspn.js.cn/images/index_2016_img_35.jpg"><BR>理事名单</A>--></td> 
+<td><!--A href="http://www.jspn.js.cn/col14/col18/articlecolumn.php"><IMG src="http://www.jspn.js.cn/images/index_2016_img_33.jpg"><BR>协会机制</A--></td></tr></tbody></table>			</div>
+			</td>
+          </tr>
+        </table>
+		
+		<table width="99%" border="0" cellspacing="0" cellpadding="0" class="tableStyle5">
+          <tr>
+            <td class="textIndexMenuName_2">会员登录</td>
+          </tr>
+          <tr>
+            <td class="tableIndexStyle_2" height="70">
+			<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<form id="frmLogin" method="post" name="frmLogin" action="http://oa.jsjgxh.org:8080/hodeframe2016_jsprice/login.action" target="_blank">
+<tbody>
+<tr>
+<td width="50" align="center" class="textLoginTitle">帐户:</td>
+<td><input class="inputLogin" name="strAccount"></td>
+<td rowspan="2"><input class="btnSubmitLogin" name="Submit" value="登 录" type="submit"></td></tr>
+<tr>
+<td align="center" class="textLoginTitle">密码:</td>
+<td><input class="inputLogin" name="strPassword" type="password"></td></tr></tbody></form></table>			</td>
+          </tr>
+        </table>
+		
+		<table width="99%" border="0" cellspacing="0" cellpadding="0" class="tableLineLTRB_Gr tableStyle10">
+          <tr>
+            <td><img src="images/index_2016_img_401.jpg"></td>
+          </tr>
+        </table>
+		
+		<table width="99%" border="0" cellspacing="0" cellpadding="0" class="tableStyle5">
+          <tr>
+            <td class="textIndexMenuName_2">《江苏价格》期刊</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" class="tableIndexStyle_2"><div id="diveBookHomeImgID">
+	<table cellpadding="0" cellspacing="0" border="0">	
+	  <tr>
+								<td><a href="col21/articlecolumn-175.html"><img src="information/bookpic/20190110130727_315261.jpg" width="110" height="150"><br>价格2018年第5期</a></td>
+										<td><a href="col21/articlecolumn-174.html"><img src="information/bookpic/20190110130354_359457.jpg" width="110" height="150"><br>价格2018年第4期</a></td></tr>
+										<td><a href="col21/articlecolumn-173.html"><img src="information/bookpic/20190110125951_660198.jpg" width="110" height="150"><br>价格2018年第3期</a></td>
+										<td><a href="col21/articlecolumn-159.html"><img src="information/bookpic/20180718103305_714647.jpg" width="110" height="150"><br>价格2018年第2期</a></td></table></div></td></tr>
+						</table> 	
+	
+	</td>
+          
+        
+		
+		
+      
+    
+	
+	
+	
+  
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#0F76E8" class="tableStyle10">
+      <tr>
+        <td class="textIndexMenuName_3">居民消费价格预期调查报告</td>
+        <td width="80" align="center"><a href="col5/col13/piccolumn.html" class="linkMore">更多>></a></td>
+      </tr>
+    </table>
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle5">
+      <tr>
+        <td height="180" align="center" valign="top"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td></td></tr><tr><td valign='top'><table width="100%" border="0"><tr><td width="1%"><a class='x_title' href='col5/col13/picinfo-501.html' target='_blank'><img src='information/picfile/1/20200713103135_77777777777777.jpg' alt='2020年第三季度居民消费价格预期调查报告' border='1' style=' border-color:#000000;color:#000000;' width='140' height='190'></a></td></tr><tr><td valign='top'><table width="100%"><tr><td><a class='x_title' href='col5/col13/picinfo-501.html' target='_blank'>2020年第三季度…</a></td></tr></table></td></tr><tr></tr></table></td><td valign='top'><table width="100%" border="0"><tr><td width="1%"><a class='x_title' href='col5/col13/picinfo-430.html' target='_blank'><img src='information/picfile/1/20200403153725_22222222222222.jpg' alt='2020年第二季度居民消费价格预期调查报告' border='1' style=' border-color:#000000;color:#000000;' width='140' height='190'></a></td></tr><tr><td valign='top'><table width="100%"><tr><td><a class='x_title' href='col5/col13/picinfo-430.html' target='_blank'>2020年第二季度…</a></td></tr></table></td></tr><tr></tr></table></td><td valign='top'><table width="100%" border="0"><tr><td width="1%"><a class='x_title' href='col5/col13/picinfo-419.html' target='_blank'><img src='information/picfile/1/20200302141049_22222222222222.jpg' alt='2020年第一季度居民消费价格预期调查报告' border='1' style=' border-color:#000000;color:#000000;' width='140' height='190'></a></td></tr><tr><td valign='top'><table width="100%"><tr><td><a class='x_title' href='col5/col13/picinfo-419.html' target='_blank'>2020年第一季度…</a></td></tr></table></td></tr><tr></tr></table></td><td valign='top'><table width="100%" border="0"><tr><td width="1%"><a class='x_title' href='col5/col13/picinfo-347.html' target='_blank'><img src='information/picfile/1/20191227150351_99999999999999.jpg' alt='2019年第四季度居民消费价格预期调查报告' border='1' style=' border-color:#000000;color:#000000;' width='140' height='190'></a></td></tr><tr><td valign='top'><table width="100%"><tr><td><a class='x_title' href='col5/col13/picinfo-347.html' target='_blank'>2019年第四季度…</a></td></tr></table></td></tr><tr></tr></table></td><td valign='top'><table width="100%" border="0"><tr><td width="1%"><a class='x_title' href='col5/col13/picinfo-342.html' target='_blank'><img src='information/picfile/1/20190805141022_57260471582592.jpg' alt='2019年第三季度居民消费价格预期调查报告' border='1' style=' border-color:#000000;color:#000000;' width='140' height='190'></a></td></tr><tr><td valign='top'><table width="100%"><tr><td><a class='x_title' href='col5/col13/picinfo-342.html' target='_blank'>2019年第三季度…</a></td></tr></table></td></tr><tr></tr></table></td><td valign='top'><table width="100%" border="0"><tr><td width="1%"><a class='x_title' href='col5/col13/picinfo-340.html' target='_blank'><img src='information/picfile/1/20190505163900_78271481593603.jpg' alt='2019年第二季度居民消费价格预期调查报告' border='1' style=' border-color:#000000;color:#000000;' width='140' height='190'></a></td></tr><tr><td valign='top'><table width="100%"><tr><td><a class='x_title' href='col5/col13/picinfo-340.html' target='_blank'>2019年第二季度…</a></td></tr></table></td></tr><tr></tr></table></td></tr></table></td>
+      </tr>
+    </table>
+	
+	
+	</td>
+  </tr>
+</table>
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center"> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>课题研究——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_86'></span>
+<script language='JavaScript'>
+function funcDate_86()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_86.innerHTML = strHTML;
+}
+setInterval(funcDate_86,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td><a href="../col2/articlecolumn.html">政策文件</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>研究课题</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="3">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>价格杠杆在强市富民战略中的运用</td></tr><tr align='center'><td><span class='x_time'>2017-09-07 12:36:54</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体"></span>&nbsp;</p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">范建江</span></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">&nbsp;</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">盐城市第七次党代会明确提出“产业强市、生态立市、富民兴市”战略。盐城市物价局一直以此强市富民战略为奋斗方向，积极发挥价格杠杆“四两拨千斤”的调控作用，严格落实清费减负政策助力企业发展，服务“产业强市”；深入推进价格改革引导科学发展，服务“生态立市”；强化价格监管保障民生和谐，服务“富民兴市”。上半年，盐城居民消费价格总水平（CPI）同比上涨1.8%，总体稳定可控，为全市经济社会健康发展营造了良好的价费环境。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">一、通过清费减负，助力企业发展，服务“产业强市”</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">企业是社会财富的主要创造者，产业是地区发展的最大支撑力，企业旺则产业强，产业强则盐城强。面对国际、国内都不太景气的宏观经济形势和盐城产业发展不够充分的现实，以及盐城韩资企业、汽车产业出现的特殊情况，盐城市物价局将减轻企业负担作为新常态下的紧迫任务，扑下身子，下大力气开展清费降本减负工作，为企业营造宽松的发展环境，从而服务“产业强市”战略。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）全面落实清费减负政策，切实减轻企业负担。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">坚决落实国家和省市各项清费减负政策，对涉企收费项目开展全面深入的自查梳理，做到应免尽免、应减尽减。动态梳理各项收费目录清单，加强涉企收费监管，确保清费减负政策不折不扣地落实到位。及时落实国家和省4月份、6月份两轮大规模清费减负政策，可直接减轻全市企业负担1.7亿元以上，有力促进实体经济发展。自7月1日起，盐城大工业用电和一般工商业及其它用电的销售价格每千瓦时降低1.83分，预计全市每年可为企业降低用电成本约3.6亿元左右。自8月1日起，取消、暂停商业银行部分基础金融服务收费，进一步减轻用户负担，优化实体经济发展环境。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）加强收费工作全程监管，坚决堵住收费漏洞。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">建立健全收费情况年度报告制度、收费单位巡查制度等5项收费监管制度，加强收费工作全程监管，为企业发展设置收费“防火墙”，堵住各种收费漏洞，营造规范有序的收费秩序。修订《市级政府部门涉企行政许可中介服务事项及收费目录清单》，将非涉企的行政许可中介服务事项及收费项目纳入目录清单。制定《市级行政许可（审批）收费项目和政府性基金项目清单》。根据“三级四同”清单及相关法律法规对各单位的行政审批（许可）事项、中介服务事项、行政事业性收费项目、基金项目进行合规性复审，并提请市政府审议批准。对全市35个部门的762家单位的行政事业性收费收支情况进行审验，数据上报率、审核通过率均达100%。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）扎实开展服务企业活动，务实解决具体难题。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">积极响应市委市政府“进万企、解难题、促发展”活动，组织“定报企业服务月”活动，对60多家企业密集开展收费情况调研，全面掌握企业负担状况。针对市区餐饮企业反映燃气开户费高的问题，盐城市物价局及时采取措施约谈燃气企业负责人，引导企业合理收费，减收免收工商企业燃气开户费，预计可减轻工商企业负担1000万元以上。妥善处理新奥燃气公司与天津圣金特汽配有限公司（建湖）供气价格矛盾，免收初装费，每立方米气价降低0.3元，为企业减轻不少负担。积极协调大吉再生资源发电有限公司搬迁中存在的问题，引导双菊风机（汽配）有限公司与马自达、吉利等其他品牌的汽车生产商洽谈合作，积极应对汽车市场形势变化。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">二、通过价格改革，引导科学发展，服务“生态立市”</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">环保是城市文明的重要标志，生态是全面小康的重要指标，环保好则生态优，生态优则盐城美。盐城的空气质量一直名列全省前茅、位居全国前列，生态美的确是盐城的靓丽名片，值得倍加珍惜。盐城市物价局始终坚持绿色发展理念，重视生态文明建设，顺应国家供给侧结构性改革的大势，积极推进资源环境等价格改革，引导结构调整，促进节能减排，淘汰落后产能，推进科学发展，从而服务“生态立市”战略。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）实施阶梯价格政策，促进资源节约。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">对水、电、天然气等重要资源类产品，严格实施阶梯价格政策，在保障绝大部分群体的基本能源供给的同时，抑制过高能源消费，鼓励资源节约。推进各县市区阶梯水价及污水处理费政策的实施，多次督查通报。目前全市已基本完成阶梯水价及污水处理费政策的落实。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）实施差别化价格政策，淘汰落后产能。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">严格落实环境保护价格政策，根据企业对环境的污染程度实施差别化水价、电价政策。制定“两减六治三提升”专项行动实施方案，出台《关于试行污水处理费差别水价政策的通知》，根据企业环保信用评价等级，实行差别水价政策，倒逼高污染产能退出。对被确定为淘汰类高耗能设备实施差别化电价，引导淘汰落后产能。同时，对新能源产业，积极帮助争取上级政策和资金支持，完成盐城第7批再生能源电价附加补助项目的申报工作，支持光伏发电企业发展。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）推进农业水价综合改革，促进节水增效。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">农业是用水大户，也是节水潜力所在。盐城是农业大市，全面提高农业用水精细化管理水平，推动农业用水方式转变，提高农业用水效率，促进实现农业现代化，对盐城全面小康尤为重要。上半年，盐城市物价局根据国家和省相关政策文件精神积极推进农业水价综合改革，组织开展农业水价综合改革工作业务辅导，指导并督促各县（市、区）抓紧落实。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（四）提高排污成本，增强环境保护意识。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">根据国家和省相关政策文件精神，经法定程序，市区污水处理费自今年1月1日起，由每吨0.95元调整为1.20元，提高排污成本，增强企业环保意识。推进排污权制度建设，明确化学需氧量、氨氮等污染物等主要污染物的有偿使用费标准及交易基准价格，引导企业重视生态保护，尽力减少污染物排放。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（五）规范旅游景点价格秩序，呵护美丽盐城名片。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">认真落实《江苏省旅游价格行为规范》，组织开展全市旅游景点专项整治行动，对旅游景点价格执行情况进行实地检查，发现问题及时约谈景区负责人。将荷兰花海、中华水浒园等新增加政府性投资的景区纳入政府指导价管理范围。密切跟踪关注全市旅游景点价格调整情况，呵护美丽盐城旅游名片。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">三、通过监管调控，稳市场保民生，服务“富民兴市”</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">盐城市物价局坚持把人民对美好生活的向往作为价格工作的不懈追求，不断强化价格监管，规范市场秩序，加强价格调控预警，保障民生和谐，从而服务“富民兴市”战略。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）以价格监管规范秩序，保障市场健康运行。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">组织春运、清明、五一、端午等重要节日市场价格监管，确保节日期间市场商品和服务价格稳定。组织春耕春播期间农资价格监管，保障化肥、农药、农膜、种子等农资价格稳定，有力规范了农业生产资料市场价格秩序。组织禽流感疫情期间应急价格监管，杜绝利用非常时期非法牟利的哄抬物价行为。加强教育、医疗、银行等专项价格检查，规范重点行业收费行为。对万达广场等新开重点商贸服务区域，提前介入，上门服务，宣传价格法律法规，鼓励企业高点定位，创建价格诚信区域。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）攻克民生价格难题，展示职责担当。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">动真碰硬规范停车收费行为。与公安、财政、城管等部门联合核准，对市区实行收费管理的91个停车点、1141个停车泊位向社会正公布，接受社会监督。对市区20多家重点停车场（点）进行地毯式检查，发现问题立即责令整改。统筹兼顾出台车位租金标准，积极开展政策宣传引导，防控政策风险。清理农村客运线路价格，将原来的77条线路129个车型等级大幅减少为25条线路27个车型等级，有效降低了客运票价争议。严格按照全国12358举报系统案件办理的程序规定，认真办理各项价格咨询、投诉举报。上半年市12358服务热线共受理价格咨询投诉举报1426件，按期办结率、署名回复率100％，消费者回访满意率96%以上。切实履行价格认定、价格争议调解职能。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）抓好平价商店载体建设，切实稳价惠民。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">扎实开展“平价商店规范年”活动，规范平价商店的经营行为。坚持质量优先的原则，淘汰不合格平价商店。经省局考核组抽查，盐城市区平价商店达优秀格次。上半年，全市80家平价商店（平价专区）共销售平价农产品近1800万公斤,受益人数816万人次,让利惠民872万元，在保供稳价、促进农民增收等方面发挥了积极作用。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（四）启动社会救助与物价上涨挂钩联动机制，兜住民生底线。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">贯彻国家“社会政策要托底”的要求，落实盐城市《关于健全社会救助和保障标准与物价上涨挂钩联动机制的通知》，牵头负责联动机制的完善和相关协调工作，密切关注物价上涨对困难群众基本生活的影响。去年10月份、11月份，盐城居民消费价格指数（CPI）超过3%，及时与民政、人社等部门沟通协调，迅速启动该联动机制，对享受国家抚恤补助的优抚对象、城市低保对象、城市“三无”对象、孤儿以及领取失业保险金期间失业人员等困难群众59万人连续两个月发放临时价格补贴共2400多万元，兜住民生底线。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">四、发挥价格杠杆作用面临的形势及当前的任务</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">省委省政府《关于全面推进价格机制改革的实施意见》出台已一年多，市第七次党代会提出“产业强市、生态立市、富民兴市”战略也已近一年。随着价格改革进入深水区，全面小康进入攻坚期，“强富美高”新盐城建设进入快车道，新型商品和服务业态多样化，社会利益诉求多元化……，价格监管工作必须爬坡过坎、负重前行。价格工作面临的严峻形势和重要任务需要从讲政治、顾大局的高度出发，“在其位，谋其政”，守土有责、守土尽责。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）加强价格调控监测预警。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">下半年，十九大召开在即。尽管盐城市CPI处于稳定可控的温和态势，但我们绝不能麻痹大意、掉以轻心。要密切关注粮油肉蛋菜、农业生产资料、药品及住房等价格变化，深化重点行业价格监测调查分析，确保盐城市场价格稳定可控。注重收集、分析、预测可能引发价格举报的线索，努力将工作做在前面。要始终坚持“稳”字当头，落实好价格调节基金、平价商店等价格调控政策措施，发挥财政资金兜底功能，造福民生。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）完成价格改革年度任务。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">对照国家和省、市价格改革时序进度，稳慎推进价格改革，完成年度价改任务。深化资源环境价格改革，进一步理顺市区各类用气价格水平，推进水利工程供水价格结构性调整工作，加强城市二次供水管理。认真落实“263”计划，分阶段调整部分污染物排污费征收基准标准，调整石油化工、包装印刷等试点行业挥发性有机物排污费征收标准。调整基层医改的价费政策，推进分级诊疗。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）保障清费降本减负成效。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">要坚决打好清费减负攻坚战。根据国家和省、市政策文件，继续动态清理各类收费项目，切实减轻企业和社会负担。建立健全5项收费监管制度，加强收费事中事后监管，营造宽松的企业发展环境。督促检查国家和省、市清费减负政策落实情况，坚决取消不合理的收费项目，进一步减轻企业的负担，助力实体经济做大做强。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（四）营造诚信公平市场秩序。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">严格落实国务院公平竞争审查制度，保障市场在资源配置中起决定性作用和更好发挥政府作用，充分激发市场主体活力。持续开展价格诚信创建活动，培育全市价格诚信典型示范。加强对教育、医疗、养老、殡葬等行业收费监管，规范收费行为。选择民生热点行业开展专项收费巡访工作，精准出击，深排查、早整改、严亮剑，将价格矛盾隐患消灭在萌芽状态，牢牢把握工作主动权，为强市富民战略再作新贡献！</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体"></span>&nbsp;</p><p></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-221.html'>以清费减负为抓手  助推镇江“产业强市”</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-219.html'>深化中介收费改革  促进减负助企新提升</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

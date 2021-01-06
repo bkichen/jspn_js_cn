@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>课题研究——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_86'></span>
+<script language='JavaScript'>
+function funcDate_86()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_86.innerHTML = strHTML;
+}
+setInterval(funcDate_86,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td><a href="../col2/articlecolumn.html">政策文件</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>研究课题</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="3">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>化解矛盾  促进和谐化解矛盾  促进和谐  ——南京市秦淮区价格争议调解处理工作介绍</td></tr><tr align='center'><td><span class='x_time'>2020-11-21 09:39:16</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="text-align: center; text-indent: 37px; line-height: 40px;"><span style="font-size:19px;font-family:楷体;color:black">南京市秦淮区发展和改革委员会价格认证中心李新疆</span></p><p style="text-align:center;text-indent:43px;line-height:40px;text-autospace:none"><strong><span style="font-size:21px;font-family:宋体">&nbsp;</span></strong></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:宋体">价格争议调解处理工作是实践价格公共服务理念的创新做法，</span><span style="font-size:21px;font-family:宋体">开展价格争议调解处理工作是一项关注民生、化解社会矛盾的新任务，我们按照要求</span><span style="font-size:21px;font-family:宋体">深入学习有关精神，结合实际，开展了富有成效的工作。</span><span style="font-size:21px;font-family:宋体">下面就我区对开展价格争议调解处理工作的认识，我们开展这项工作的方式及开展这项工作意义的几点看法介绍如下：</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><strong><span style="font-size:21px;font-family:黑体">一、</span></strong><span style="font-size:21px;font-family:黑体">开展价格争议调解处理工作的体会</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:楷体">1、</span><span style="font-size:21px;font-family:楷体;color:black">要把价格争议调解融入到大调解的范畴中去。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:宋体">近年来，随着我国经济的快速发展，</span><span style="font-size:21px;font-family:宋体;color:black">社会关系发生了重大变化，导致社会关系主体日趋多元化，利益主体的诉求的多样化。在当前建设和谐社会的过程中，调解是及时化解利益矛盾冲突的有效途径之一，而大部分的调解工作和价格标准有着密不可分的联系。开展这项工作，就是将我们的工作延伸，把价格争议调解融入到大调解的范畴中去，在司法调解、人民调解、行政调解中充分发挥价格部门对价格、标准的权威性、公正性的优势，为争议双方当事人</span><span style="font-size:21px;font-family:宋体">提供一个公正、方便、快捷的价格调解处理平台，化解争议双方的矛盾，服务社会和谐建设。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:楷体">2、把价格争议调解处理作为价格认定工作的拓展。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:宋体">价格争议调解处理工作是价格认定部门实践价格公共服务理念的新的工作职责，我们不能简单地把它等同于价格认定。价格争议调解是在法律法规的基础上，更多地是体现简便易行，通过灵活的调解机制倾听争议双方当事人的意愿，谋求争议双方合法权益的一致，切实解决各方利益诉求，最终达到各方基本满意的效果，推动和谐社会关系的形成，外延相对来说比较广。如在处理一起</span><span style="font-size:21px;font-family:宋体">热点事件中的案例：</span></p><p style="text-indent:43px;line-height:40px"><span style="font-size:21px;font-family:宋体">市场改造的群体事件纠纷</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:宋体">南京</span><span style="font-size:21px;font-family:宋体">银桥市场在内部改造升级后，欲提高经营租赁户的租金水平，但经营租赁户不愿提高租金，部分经营租赁户采取堵住市场大门，不让市场进行正常经营的过激行为，造成了社会不安定因素。在接到市政府12345热线工单后，我们迅速赶到市场，向市场管理方和经营租赁户代表就双方纠纷的发生原因进行了调查了解：市场管理方认为人员工资上升和市场内部改造升级后，市场运营成本上升，因此租金应适当提高；而经营租赁户提出，租赁协议未到期，市场管理方应履行租赁协议上的价格，不同意涨升租金。了解情况后，根据相关法规和政策规定，向双方提出了调解建议：市场管理方应按照合同法的相关规定，继续履行租赁协议约定的价格，待租赁期满后，再视情协商解决租赁价格；经营租赁户的正当诉求可以向政府有权部门反映，不能采取堵门等不正当的过激行为，以免造成不必要的后果，当事人要负相应法律责任的。当事双方接受了调解建议，达成现时不涨租金待租赁协议到期后协商解决租金的协议。对及时调解，化解矛盾，避免不必要的安全因素，媒体给予了标题为“价格主管部门当天解决银桥市场停业问题”的正面报导。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:黑体">二、开展价格争议调解处理工作的方式</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:宋体">我们区开展这项工作的方式可以用四个字概括：借力、助力。</span></p><p style="margin-left:91px;text-align:left;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:楷体">1、<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:21px;font-family:楷体">借力</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:宋体">在开展这项工作前的调研时发现，社区居民及商家与消费者，小矛盾可以自行解决，大矛盾几乎都由派出所解决，而且各种矛盾几乎都转化为经济利益之争。到派出所了解调解纠纷，设想并且参与（或者让其到我中心来）派出所的价格纠纷调解，派出所也很欢迎，但发现不是没有案源，如每件涉及价格的纠纷都参与（平均每个所月调解纠纷20至50多起，全区17个所约340至850多起，全年约4000多至10000多起），</span><span style="font-size:21px;font-family:宋体">依靠中心自身的人力、物力根本无法招架。为此</span><strong><span style="font-size:21px;font-family: 宋体">，</span></strong><span style="font-size:21px;font-family:宋体">当时为延伸价格争议调解工作职能，确保价格争议调解全覆盖，我们把价格争议调解网点设立至司法、消协、医疗事故处理办公室、派出所、夫子庙旅游风光带服务中心、12个街道、多个社区和部分商场、专业市场和特色企业，设立调解服务站65个，形成了“横向到边，纵向到底，覆盖全区”的调解网络。但从</span><span style="font-size:21px;font-family:宋体;color:black">价格争议调解工作正式开展多年以来的情况看，上述设立多数站点可以说是形式大于内容，几乎是流于形式，内容较少；但通过调研和工作实践我们找准了一个切入点，不但有形式而且也有了丰富内容， 那就是将价格争议调解点设立在派出所内，借助派出所里的司法调解室和人员，延伸价格工作职能，借助人民调解平台开展我们的价格争议调解处理工作。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:楷体;color:black">2</span><span style="font-size:21px;font-family:楷体;color:black">、<strong>助力</strong></span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:宋体;color:black">对价格争议调解这个平台，我们主要是</span><span style="font-size:21px;font-family:宋体">提供价格法规、政策咨询服务和专业技术等支持，遇有特殊案例的在协同调解平台共同参与。</span></p><p style="text-indent:42px;line-height:40px"><span style="font-size:21px;font-family:宋体">如</span><span style="font-size:21px;font-family:宋体;color:black">在消费领域、物业管理、房屋装潢纠纷调解中充分发挥了价格部门的优势，当事人双方也因为价格主管部门在价格标准方面的权威性，漫天要价的行为得到了遏制，调解矛盾纠纷的结案率得到了提高。在调解一些特殊商品如玉石、奢侈品等，调解点的调解员往往抓不住调解的关键点，我们根据价格认定工作的经验提供参考建议后，基本能达到事半功倍的效果。举几个案例：</span></p><p style="text-indent:42px;line-height:40px"><span style="font-size:21px;font-family:宋体;color:black">1</span><span style="font-size:21px;font-family:宋体;color:black">、某派出所在调解一起手机屏幕损坏的纠纷，已经达成赔偿损坏手机屏幕的协议，但受损一方在修理手机屏幕时，可以说是被修理人员忽悠，说修理屏幕不如加点钱换一个新手机了，结果换手机的钱远远超过了修复屏幕的钱，受损方要求另一方增加赔偿，不要说赔偿方，就是调解员对已经达成的协议肯定也不愿意再另行调解增加赔偿，让受损方对手机屏幕赔偿数额有疑问找价格部门咨询。受损方找到我们后，了解了纠纷基本情况，指出达成协议的赔偿数额，完全可以换一个新的手机屏幕，手机屏幕损坏完全可以修复，而你要求赔偿一个新手机的价钱，属于不合理的诉求，在我们的说服下，受损方接受了调解协议上的赔偿数额。</span></p><p style="text-indent:42px;line-height:40px"><span style="font-size:21px;font-family:宋体;color:black">2</span><span style="font-size:21px;font-family:宋体;color:black">、车辆</span><span style="font-size:21px;font-family:宋体">进出住宅小区的起落杆纠纷。起因：一住户开车进小区和物业发生矛盾，保安不让进，住户就把起落杆用手抬了一下，结果造成不能正常起落。物业要求住户赔偿一万元，住户只同意赔偿2000元，谈不拢最终闹到派出所，接警的警官和调解员对双方诉求赔偿差价较大不知如何入手，请求我们参与。在接到请求后，陪同警官和调解员到现场查看情况，根据我们价格认定工作的经验，要求物业公司找来专业人员对不能正常起落的起落杆在我们的监督下，进行拆解查找原因，结果是起落杆的一个传动部位的塑料齿轮的轮齿损坏，造成不能正常起落。经过我们的市场调查，这种齿轮的市场价约在50元左右，如果工人的一个工作日工资算150元的话，修复价格也就在200元左右。看到这种情况，争议双方的住户进行了认错，物业公司也不要住户赔偿了，双方和解，争议得到圆满解决；</span></p><p style="text-indent:42px;line-height:40px"><span style="font-size:21px;font-family:宋体">3、邻里装潢纠纷案例</span><span style="font-size:21px;font-family:楷体">：（一）纠纷过程</span><strong><span style="font-size:21px;font-family:楷体">：</span></strong><strong><span style="font-size:21px;font-family:宋体">一</span></strong><span style="font-size:21px;font-family:宋体">五楼张姓住户因厨房漏水，造成四楼严姓住户的厨房橱柜和客厅的部分墙面被水侵损坏，损坏的物品需要更换或修复。四楼住户要五楼住户赔偿一万元，而五楼只同意帮助修复或赔偿伍佰元，双方各执一词，争持不下，且火气都较大，无法形成统一的意见，后到设立在某派出所内的价格争议调解点进行争议调处。</span><span style="font-size:21px;font-family:楷体">（二）调处过程及结果：</span><span style="font-size:21px;font-family:宋体">接到双方调解请求后，价格争议调解员进行现场查勘验，认定了引起双方纠纷的情况为：五楼张姓住户因厨房自来水管漏水，造成四楼严姓住户的厨房橱柜和客厅的部分墙面被水侵损坏，损坏的物品需要更换或修复。价格争议调解员根据根据《民法通则》第一百一十九条 侵害公民身体造成伤害的，应当赔偿医疗费、因误工减少的收入、残废者生活补助费等费用；造成死亡的，并应当支付丧葬费、死者生前扶养的人必要的生活费等费用。损坏国家的、集体的财产或者他人财产的，应当恢复原状或者折价赔偿。认为五楼存在明显过错，应当赔偿因过错而造成四楼产生的损失，但因实事求是，按照实际损失进行赔偿，不能一方扩大损失报价，另一方降低实际损失的报价赔偿。按照争议双方认可的实际损坏情况，经过价格争议调解员咨询装潢公司相关人员和市场价格调查，提出价格赔偿参考建议。</span><span style="font-size:21px;font-family:楷体">争议双方经当面调解后，自愿达成一致意：</span><span style="font-size:21px;font-family:宋体">一是、五楼张姓住户赔偿四楼严姓住户损坏物品需要更换或修复的费用1800元；二是、双方经调解后，双方不再为此事追究对方的任何责任，相互也不再为此事纠缠对方。</span></p><p style="text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:宋体">我们采取发挥社会调解力量这种借力与助力的价格争议调解工作处理方式，</span><span style="font-size:21px;font-family:宋体">借力与助力的有机结合，相辅相成，使得我们这项工作的开展，不是流于形式，而是有了内容，并且也达到了一定成效。</span><span style="font-size:21px;font-family:宋体">使涉及到价格的矛盾和纠纷能在最短的时间、用最小的成本得到解决，让广大群众实实在在感受到价格服务就在身边。卓有成效的工作在国家发改委有关处室、省市人大、政协和系统内等单位来我区调研价格争议处理工作时得到充分肯定。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:宋体">特别是国家发改委价格认证中心成钢副主任带队到我区调研价格争议调解工作后，随后又带领中国之声、经济日报和中国改革报等三家媒体记者，在听取省、市、区价格主管部门的汇报后，实地采访调研秦淮区夫子庙派出所价格争议调解点，了解了区价格认证中心借力人民调解平台，在价格争议调解中提高了价格争议调解的成效和公信力，并助力人民调解平台，使价格争议双方利益诉求得到公平、公正性处理的做法。</span></p><p style="margin-bottom:16px;text-align:left;text-indent:43px;line-height:40px"><span style="font-size:21px;font-family: 宋体;color:#333333">派出所领导在向成钢副主任和媒体介绍价格争议调解处理工作时也说到：</span><span style="font-size:21px;font-family:宋体">价格部门将价格争议调解点设立在派出所，提高了调解质量，提升价格争议调解效果，也提高工作成效。我们在接处警中，各种矛盾几乎都转化为经济利益诉求，而化解矛盾的大部分的调解工作和价格标准有着密不可分的联系。且各种矛盾转化的价格诉求纠纷涉及到社会经济的方方面面和各行各业，在遇到一些行业性、专业性比较强的价格纠纷时，在调解中由于往往对该行业不了解、缺乏专业知识等，较难提出比较有说服力的、争议双方都能接受的调解意见，这在一定程度上影响了价格争议调解的效率和成功率。而价格部门将价格争议调解站点设在我们的调解室，延伸他们的工作职能，为我们提供专业技术支撑，为争议双方当事人提供一个公正、方便、快捷的价格调解处理平台。并且作为中间方，在调解各种矛盾转化的价格诉求纠纷中充分发挥价格部门对价格、标准的权威性、公正性的优势，形成具有较强的说服力调解意见，提升了价格争议调解的公信力。从而进一步提高了派出所调解的效率和公平、公正性。</span></p><p style="margin-bottom:16px;text-align:left;text-indent:43px;line-height:40px"><span style="font-size:21px;font-family: 宋体">由于调解工作缺乏强制力，强调自愿性，因此多调解一起纠纷，多一份社会和谐。因为价格部门对我们派出所调解工作的介入，使我们调解的成功率得到大幅提高，结案率得到提升，当事人双方也因为价格部门在价格标准方面的权威性，漫天要价的行为得到了遏制。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:宋体">成钢副主任充分肯定秦淮区在涉及到价格矛盾和纠纷中，积极搭建价格争议调解平台的做法，延伸了价格服务职能，在最短的时间、用最小的成本使得价格争议得到解决，让广大群众实实在在感受到价格服务就在身边。成钢副主任指出，价格主管部门开展价格争议调解，是解决价格矛盾纠纷的便捷途径，是缓解社会矛盾、促进社会和谐、减轻司法负担的一项重要举措。而且充分发挥了价格认定机构的专业优势，高效率、低成本地开展调解价格争议纠纷服务工作，将价格争议解决在基层，解决在萌芽状态，既维系了社会的公平正义，也推进了和谐社会的建设。</span></p><p style="text-indent:43px;line-height:40px"><strong><span style="font-size:21px;font-family:宋体">另外，我区还在重点区域进行了价格争议调解点的合理布局。</span></strong><span style="font-size:21px;font-family:宋体">主要是配合市中心在重点区域进行价格争议调解点示范化建设布局。南京夫子庙被评为5A级景区，</span><span style="font-size:21px;font-family:宋体;letter-spacing:1px">具有浓郁的旅游、休闲、购物为一体的人文景区，景区内和周边有江南贡院、大成殿、中华门城堡等景点，可以坐游船欣赏秦淮河的沿河美丽灯光，旅游商品和南京特色小吃等琳琅满目，人气极旺，成为中外游客流连忘返的旅游胜地，每天流动人口达到5-10万人次，特别是节假日有时能达到40多万人次。但由于流动人口密集，经常发生如：物品伤人、损坏物品、商品买卖、饭店消费、买卖商品退换货、雇员劳资、停车、在商家消费顾客受伤、消费时在商家丢失物品、车辆租赁费用等各类纠纷，特别是各类纠纷最终易转换为涉及价格方面争议，因此</span><span style="font-size:21px;font-family:宋体">人民群众需要有一个公平、公正的机构帮助他们解决矛盾和化解价格争议。为此，我中心配合市价格认证中心在老门东景区设立了规范化的价格争议调解点，今年疫情期间以来已经调解了176起涉及价格争议的各类纠纷,调解争议金额为288.9612万元。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><strong><span style="font-size:21px;font-family:黑体;color:black">三、开展价格争议调解处理工作意义的几点看法</span></strong></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:楷体;color:black">1</span><span style="font-size:21px;font-family:楷体;color:black">、价格争议调解工作为价格争议双方当事人提供了一个公正、方便、快捷的价格调解处理平台。</span><span style="font-size:21px;font-family:宋体;color:black">如果争议双方当事人的利益诉求能够得到公正、方便、快捷的调解处理，一些涉及价格的网络热点事件恐怕就很难发生了。而且可以大事化小，小事化了，举个例子：中央媒体采访的当天，正在调解一起停车场收费引起的纠纷，具体情况就不多讲了，在推搡中导致收费员受伤，接警后，在调解平台肇事方主动认错并积极赔偿治疗费和抚慰费，得到受伤方的谅解并达成调解协议，使得可能的行政或治安案件转化为普通民事纠纷结案。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:宋体;color:black">2</span><span style="font-size:21px;font-family:宋体;color:black">、</span><span style="font-size:21px;font-family:楷体;color:black">价格争议调解处理工作要以法律、法规为依据，做到公平、公正。</span><span style="font-size:21px;font-family:宋体;color:black">在调解中如果引用相关法律、法规的规定，争议双方当事人就更能信服了。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:宋体;color:black">3</span><span style="font-size:21px;font-family:宋体;color:black">、</span><span style="font-size:21px;font-family:楷体;color:black">价格争议调解处理工作要以专业技术做支撑，有凭有据。</span><span style="font-size:21px;font-family:宋体;color:black">由于价格纠纷涉及到社会经济的方方面面和各行各业，在遇到一些行业性、专业性比较强的价格纠纷时，能有行业内专家或资深从业人员的参与（手机屏幕案例），比较有说服力，让争议双方都能接受，也进一步提高了价格争议调解的公信力。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:楷体;color:black">4</span><span style="font-size:21px;font-family:楷体;color:black">、价格争议调解处理工作可以节约行政成本。</span><span style="font-size:21px;font-family:宋体;color:black">如果争议双方走诉讼程序，从立案，到法庭调查，再到最终法庭调解或判决，司法系统有许多人围绕此案在工作，产生人员、物资等行政费用，而价格争议调解处理工作使争议双方能达成和解后，起到了诉前调解作用，从而节约了行政成本。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:楷体;color:black">5</span><span style="font-size:21px;font-family:楷体;color:black">、价格争议调解处理工作可以节约双方当事人的经济成本。</span><span style="font-size:21px;font-family:宋体;color:black">如果争议双方走诉讼程序，案件审理、律师、往返法庭的交通等都要产生费用，而价格争议调解处理工作使争议双方能达成和解后，这些诉讼费用都可以省掉了。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:楷体;color:black">6</span><span style="font-size:21px;font-family:楷体;color:black">、价格争议调解处理工作可以节约双方当事人的时间成本。</span><span style="font-size:21px;font-family:宋体;color:black">如果争议双方走诉讼程序，从立案，到法庭调查，再到最终法庭调解或判决，如果一方不服，还可能有二审，这样就需要花费很长一段时间，双方争议事项不能及时处理解决。如装潢纠纷（不能得到及时解决的话，影响居家生活），外地游客纠纷（还要往返事发地进行诉讼）等。而价格争议调解处理工作使争议双方能达成和解后，因是双方自愿达成的协议，使得双方争议事项可以及时处理解决。</span></p><p style="text-align:left;text-indent:43px;line-height:40px;text-autospace:none"><span style="font-size:21px;font-family:楷体;color:black">7</span><span style="font-size:21px;font-family:楷体;color:black">、价格争议调解处理工作可以使双方当事人化干戈为玉帛，增加社会的和谐因素。</span><span style="font-size:21px;font-family:宋体;color:black">如果没有调解平台，争议双方只能走诉讼程序，</span><span style="font-size:21px;font-family:宋体;color:#333333">“有矛盾找法院”，事实上，法院判决的争议解决方式就像我上面所说的会耗费大量时间、精力，增加当事人经济负担与社会维稳成本；另一方面，</span><span style="font-size:21px;font-family:宋体;color:black">使争议双方</span><span style="font-size:21px;font-family:宋体;color:#333333">之间往往</span><span style="font-size:21px;font-family: 宋体;color:black">始终处于敌对状态</span><span style="font-size: 21px;font-family:宋体;color:#333333">而结为仇人。</span><span style="font-size:21px;font-family:宋体;color:black">法庭调解或判决后，总有不服的。而价格争议调解处理工作，可以使双方争议都在“火”头上时进行冷处理，在双方处于平缓期时进行心平气和的调解双方争议，争议双方达成和解后，因是双方自愿达成的协议，</span><span style="font-size:21px;font-family:宋体;color:#333333">矛盾双方还常常因为心悦诚服地接受调解方案，由官司仇人转化为</span><span style="font-size:21px;font-family:宋体;color:black">好邻居（如邻里装潢纠纷案例）或变成</span><span style="font-size:21px;font-family:宋体;color:#333333">不打不相识的朋友</span><span style="font-size:21px;font-family: 宋体;color:black">。因此，价格争议调解处理工作可以将矛盾激化的可能扑灭在萌芽状态，增加社会和谐因素。</span><span style="font-size:21px;font-family:宋体;color:#333333">既维系了社会的公平正义，也推进了和谐社会的建设。</span></p><p style="text-align:left;text-indent:36px;line-height:40px;text-autospace:none"><span style="font-size:18px;font-family:宋体;color:black">&nbsp;</span></p><p><br></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：暂无上篇</td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-540.html'>森林火灾损失评估分类和指标探讨</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>工作动态——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_36'></span>
+<script language='JavaScript'>
+function funcDate_36()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_36.innerHTML = strHTML;
+}
+setInterval(funcDate_36,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">工作动态</a></td> 
+        <td><a href="../col2/articlecolumn.html">政策文件</a></td> 
+        <td><a href="../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>工作动态</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="1">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>“降成本”为实体经济解困 绝不是说说而已</td></tr><tr align='center'><td><span class='x_time'>2020-08-10 11:45:55</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: center; MARGIN: 0px 0px 14px; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">信息来源：中宏网</span></span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">今年以来，各地各部门按照党中央、国务院决策部署，积极出台了阶段性、有针对性的措施。</span>“降成本”已经成为实体经济缓解经营困难的关键词，有力地促进了企业全面复工复产。</span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">近日，国家发展改革委、工信部、财政部、人民银行四部门联合发布《关于做好</span>2020年降成本重点工作的通知》（以下简称《通知》），从减税降费、强化金融支持、降低用能用地成本等六大方面细化23项具体任务。坚持“巩固、增强、提升、畅通”方针，巩固和拓展减税降费成效，阶段性政策与制度性安排相结合，把减税降费政策落到企业，助力市场主体纾困发展。</span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">“我们合规申领到苏州人事局164万元的稳岗补贴，加上国家2月至6月减免‘五险一金’的政策，每月能节约64万元上缴资金。”苏州文化国际旅行社董事长曲雄伟对记者表示，疫情防控进入常态化后，企业把最初的每天两三辆大巴增加到如今的10辆左右，周末会超过16辆，游客数量也已经明显增加。</span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">新冠肺炎疫情是</span>“黑天鹅”，让旅游业成为受影响最大的行业之一。时下，遭受重创的旅游业正在有序复苏，进一步降低企业运行成本、鼓励拓展消费市场、有效促进消费扩容提质成为关键。《通知》指出，将免征公共交通运输、餐饮住宿、旅游娱乐、文化体育等服务增值税政策实施期限延长至今年年底。</span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">实现行业持续健康发展，各省市先后出台实招，帮助解决文旅企业应对疫情带来的生产经营困难和问题。河北省文化和旅游厅印发了《关于有效应对疫情支持全省文旅企业发展的十条政策措施》，提出</span>“对受疫情影响较大住宿、旅行社及相关服务、游览景区等管理行业企业，在2020年度发生的亏损，最长结转年限由5年延长至8年。”</span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">江苏省无锡市委市政府出台《关于进一步降成本、拓市场、促消费，推动服务业平稳健康发展的若干意见》，切实降低企业运营成本，提出</span>“对2020年2月至4月住宿业、餐饮业、零售业、旅游业等服务业企业50万元以上的银行（或银团）贷款，按每月利息的30%给予贴息，期限3个月，单个企业最高贴息不超过200万元。”</span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">这些举措的扎实落地，将有利于改善旅游企业的经营状况，增强盈利能力，为行业经济发展奠定稳固基础。</span></span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">从降低增值税率到减免租金，从降低用电用气价格，到困难企业缓缴社会保险费、公积金</span>……各地一系列“真金白银”的帮扶举措正为中小微企业减压释负。</span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">国务院国资委发布的最新数据显示，中央企业坚决执行国家降电价、降气价、降资费、降路费、降房租政策，今年上半年累计降低全社会运行成本超过</span>1200亿元，上半年主动为中小微企业降本减负，累计减免租金超过40亿元，全力帮助中小企业战疫情、渡难关。</span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">针对中小微企业，《通知》强调，延长中小微企业贷款延期还本付息政策至明年</span>3月底，对普惠型小微企业贷款应延尽延，对其他困难企业贷款协商延期。</span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">聚焦</span>“六保”“六稳”，为更好支持实体经济发展，有针对性地开展援企、稳企、扩大就业，扎实做好“六稳”工作、全面落实“六保”任务，关系经济发展和社会稳定大局。</span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">“降成本”不少企业家认为说起来容易，但是做起来难。上海国家会计学院财税专家葛玉御此前接受媒体采访时表示，今年政府财力极度紧张的情况下，2.5万亿的减税降费政策力度空前。</span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">他认为，结合《通知》来看，接下来减税降费工作的重点有两个。一是落实好已经出台的力度非常大的税收减免政策；二是落实好收费减免政策，尤其要整治目前在部分地区还存在的涉企违规收费，真正为企业降低税费负担。</span></span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">《通知》强调，坚决防止违规征税收费，重点排查</span>“过头税费”等问题，严肃追责问责。部署开展全国涉企收费专项治理，严查各类涉企乱收费行为，建立完善乱收费投诉举报查处机制，加大整治力度。</span></p><p style="BACKGROUND: rgb(255,255,255); TEXT-ALIGN: justify; MARGIN: 0px 8px; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px"><span style="FONT-FAMILY: 仿宋">葛玉御表示，新出炉的《通知》释放不少政策信号，对于企业主来说，一方面要享受好优惠政策，另一方面也不要因为特殊背景而放松对税务合规的要求。</span>“一方面要充分了解、吃透减税降费政策，包括适用政策的行业、条件、时限等，做到税费优惠应享尽享，借力政策实现发展；另一方面要加强税务合规，该减的税费减下来，该交的税费交上去，防控税收风险，规范发展。”</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">&nbsp;</span></p><p></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-547.html'>上半年我省发放价格临时补贴超14亿元</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-545.html'>江苏明确了！这些人可申请低收入家庭“单人保” </a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

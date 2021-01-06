@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>工作动态——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_36'></span>
+<script language='JavaScript'>
+function funcDate_36()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_36.innerHTML = strHTML;
+}
+setInterval(funcDate_36,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">工作动态</a></td> 
+        <td><a href="../col2/articlecolumn.html">政策文件</a></td> 
+        <td><a href="../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>工作动态</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="1">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>国常会：深入做好新增财政资金直接惠企利民工作</td></tr><tr align='center'><td><span class='x_time'>2020-09-01 14:54:50</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="MARGIN-BOTTOM: 20px; VERTICAL-ALIGN: baseline; BACKGROUND: white; TEXT-ALIGN: center; LINE-HEIGHT: 3em; TEXT-INDENT: 2em"><span style="FONT-SIZE: 20px; FONT-FAMILY: 宋体,SimSun; COLOR: black">信息来源：央视网</span></p><p style="MARGIN-BOTTOM: 20px; VERTICAL-ALIGN: baseline; BACKGROUND: white; TEXT-ALIGN: left; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 3em; TEXT-INDENT: 2em"><span style="FONT-SIZE: 20px; FONT-FAMILY: 宋体,SimSun; COLOR: black">国务院总理李克强8月17日主持召开国务院常务会议，部署深入做好新增<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">财政资金</span>直接惠企利民工作，巩固经济恢复性增长基础；要求进一步落实金融支持<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">实体经济</span>的政策措施，助力<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">市场</span>主体纾困发展；决定推进师范毕业生<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">教师</span>资格认定改革，促进师范毕业生从教<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">就业</span>。</span></p><p style="BOX-SIZING: content-box; VERTICAL-ALIGN: baseline; BACKGROUND: white; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-ALIGN: left; MARGIN-LEFT: 0px; WIDOWS: 2; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 3em; MARGIN-RIGHT: 0px; TEXT-INDENT: 2em; phans: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px"><span style="FONT-SIZE: 20px; FONT-FAMILY: 宋体,SimSun; COLOR: black">会议指出，建立特殊转移支付<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none; font-stretch: inherit">机制</span>，中央新增财政资金直达市县基层、直接惠企利民，是做好“六稳”工作、落实“六保”任务的重要内容。截至8月上旬，今年新增2万亿元财政资金中，3000亿元已绝大部分用于<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none; font-stretch: inherit">减税</span>降费；直达<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">管理</span>的1.7万亿元除按规定预留的抗疫特别<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">国债</span>资金外，97.8%已下达市县。这推动了减税降费落实，增强了基层<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">财力</span>，帮扶<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none; font-stretch: inherit">市场主体</span>、稳就业保民生等效应显现，促进了经济恢复性增长。下一步，要指导市县将已下达资金加快用到市场主体和民生上。建立直达资金专项<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">国库对账</span>机制，做到流向明确、账实相符。对虚报冒领、截留挪用的严肃处理。会议要求，要进一步强化<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">宏观政策</span>针对性有效性，放水养鱼，保住和培育市场主体，大力推进改革，坚定发展信心，砥砺实干，努力完成全年发展<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">目标</span>任务。</span></p><p style="BOX-SIZING: content-box; VERTICAL-ALIGN: baseline; BACKGROUND: white; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-ALIGN: left; MARGIN-LEFT: 0px; WIDOWS: 2; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 3em; MARGIN-RIGHT: 0px; TEXT-INDENT: 2em; phans: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px"><span style="FONT-SIZE: 20px; FONT-FAMILY: 宋体,SimSun; COLOR: black">会议指出，今年以来，金融部门贯彻党中央、国务院部署，落实支持实体<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">经济政策</span>措施，按照<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">商业</span>可持续原则，前7个月已为市场主体减负8700多亿元，支持小微<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none; font-stretch: inherit">企业</span>力度明显加大。下一步，要继续落实好<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">金融支持政策</span>。保持流动性合理充裕但不搞大水漫灌，有效发挥结构性直达<span style="FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none"><a style="BOX-SIZING: content-box; font-stretch: inherit; text-size-adjust: 100%; backface-visibility: hidden" href="javascript:;"><span id="Info.3326" style="BOX-SIZING: content-box; FONT-SIZE: 20px; FONT-FAMILY: 仿宋; COLOR: black; font-stretch: inherit">货币</span></a></span></span><span style="FONT-SIZE: 20px; FONT-FAMILY: 宋体,SimSun">政策工具精准滴灌作用，确保新增融资重点流向实体经济特别是小微企业。支持中小<span style="FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 宋体,SimSun; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none"><a style="BOX-SIZING: content-box; font-stretch: inherit; text-size-adjust: 100%; backface-visibility: hidden" href="javascript:;" ohref="http://wap.eastmoney.com/3g/center/BkList.shtml#28002475"><span id="bk_475" style="BOX-SIZING: content-box; FONT-SIZE: 20px; FONT-FAMILY: 宋体,SimSun; COLOR: black; font-stretch: inherit">银行</span></a></span>运用<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; FONT-FAMILY: 宋体,SimSun; font-stretch: inherit" web="1" href="http://baike.eastmoney.com/item/大数据" target="_blank">大数据</span>进行有效银企对接，疏通传导机制，扩大企业受益面。深化市场报价<span style="FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 宋体,SimSun; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none"><a style="BOX-SIZING: content-box; font-stretch: inherit; text-size-adjust: 100%; backface-visibility: hidden" href="javascript:;"><span id="Info.344" style="BOX-SIZING: content-box; FONT-SIZE: 20px; FONT-FAMILY: 宋体,SimSun; COLOR: black; font-stretch: inherit">利率</span></a></span>改革，引导<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 宋体,SimSun; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">贷</span>款<span style="FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 宋体,SimSun; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none"><a style="BOX-SIZING: content-box; font-stretch: inherit; text-size-adjust: 100%; backface-visibility: hidden" href="javascript:;"><span id="Info.391" style="BOX-SIZING: content-box; FONT-SIZE: 20px; FONT-FAMILY: 宋体,SimSun; COLOR: black; font-stretch: inherit">利率</span></a></span>继续下行。确保小微企业全年融资量增、面扩、价降。严禁<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 宋体,SimSun; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">银行</span>乱收费。防范<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 宋体,SimSun; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">金融风险</span>，提高<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 宋体,SimSun; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">银行服务</span>实体经济可持续性。</span></p><p style="BOX-SIZING: content-box; VERTICAL-ALIGN: baseline; BACKGROUND: white; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-ALIGN: left; MARGIN-LEFT: 0px; WIDOWS: 2; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 3em; MARGIN-RIGHT: 0px; TEXT-INDENT: 2em; phans: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px"><span style="FONT-SIZE: 20px; FONT-FAMILY: 宋体,SimSun; COLOR: black">会议决定推进师范毕业生免试认定教师资格改革，由院校考核教学能力。允许教育类硕士及以上学历毕业生、公费师范生免试认定教师资格。开展教师教育院校办学<span style="BOX-SIZING: content-box; FONT-SIZE: 20px; BORDER-TOP: windowtext 1px; FONT-FAMILY: 仿宋; BORDER-RIGHT: windowtext 1px; BORDER-BOTTOM: windowtext 1px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: windowtext 1px; PADDING-RIGHT: 0px; border-image: none">质量</span>审核，审核通过院校的师范毕业生可免试认定教师资格，便利师范毕业生就业，提升教师队伍素质。</span></p><p style="BOX-SIZING: content-box; VERTICAL-ALIGN: baseline; BACKGROUND: white; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-ALIGN: left; MARGIN-LEFT: 0px; WIDOWS: 2; TEXT-JUSTIFY: inter-ideograph; LINE-HEIGHT: 3em; MARGIN-RIGHT: 0px; TEXT-INDENT: 2em; phans: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px"><span style="FONT-SIZE: 20px; FONT-FAMILY: 宋体,SimSun; COLOR: black">会议还研究了其他事项。</span></p><p style="MARGIN-BOTTOM: 20px; TEXT-ALIGN: left; LINE-HEIGHT: 3em; TEXT-INDENT: 2em"><span style="FONT-SIZE: 20px; FONT-FAMILY: 宋体,SimSun">&nbsp;</span></p><p><br></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-561.html'>明年起至2023年江苏53所民办高校学历教育收费拟放开</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-559.html'>关于做好疫情防控期间教育收费退付工作的通知</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

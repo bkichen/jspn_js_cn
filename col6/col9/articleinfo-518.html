@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>培训动态——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../../images/laydate/laydate.js"></script>
+<script src="../../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_207'></span>
+<script language='JavaScript'>
+function funcDate_207()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_207.innerHTML = strHTML;
+}
+setInterval(funcDate_207,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td><a href="../../index.html">首 页</a></td>
+<td><a href="../../col1/articlecolumn.html">工作动态</a></td>
+<td><a href="../../col2/articlecolumn.html">政策文件</a></td>
+<td><a href="../../col3/articlecolumn.html">课题研究</a></td>
+<td><a href="../../col4/articlecolumn.html">专家视点</a></td>
+<td><a href="../../col5/col13/piccolumn.html">预期调查</a></td>
+<td class="menuSelected"><a href="articlecolumn.html">价格培训</a></td>
+<td><a href="../../col7/articlecolumn.html">会员风采</a></td>
+<td><a href="../../col8/articlecolumn.html">联系我们</a></td></tr></tbody></table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>价格培训</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>培训动态</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" height="600" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center">
+			<div id="mainLeftMenuList">
+				<table border="0" cellspacing="0" cellpadding="0"> 
+                  <tr> 
+                    <td id="menuListSelected"><a href="articlecolumn.html">培训动态</a></td> 
+                  </tr> 
+                  <tr> 
+                    <td><a href="../col10/articlecolumn.html">培训信息</a></td> 
+                  </tr> 
+                  <tr> 
+                    <td><a href="../col11/articlecolumn.html">培训调查</a></td> 
+                  </tr> 
+                </table>			</div>
+			</td>
+          </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>如何区别低层、高层、小高层、多层？</td></tr><tr align='center'><td><span class='x_time'>2020-07-17 10:13:40</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="TEXT-ALIGN: center; MARGIN: 0px 0px 14px; LINE-HEIGHT: 37px"><strong><span style="FONT-SIZE: 29px; FONT-FAMILY: 宋体">如何区别低层、高层、小高层、多层？</span></strong></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">信息来源：清华评估</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体">&nbsp;</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋"><a href="javascript:;"><span style="COLOR: windowtext; text-underline: none">清华微评估</span></a></span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">根据楼层高度不同，可分为低层、多层、小高层、高层和超高层，但是详细怎样区分的，却有很多人感觉模糊，今天小编就为大家总结下</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">1</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">层~3层为低层住宅；</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">4</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">层~6层为多层住宅；</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">7</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">层~10层为中高层住宅（也称小高层住宅）；</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">11</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">层~30层为高层住宅；</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">30</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">层（不包括30层）以上为超高层住宅。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">小高层和高层的区别，怎样选择？</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">相较于高层建筑，小高层和高层的区别主要在于高度和层数的不一样，但是二者在楼层选择上的区别还是很大的。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">小高层因其生活的便利性和舒适性赢得了更多购房者的喜爱，11层小高层几楼最好这是很多购房者想要知道的事情。从高度上说具有多层住宅的氛围，但又是较低的高层住宅，故称为小高层。对于市场推出的这种小高层，似乎是走一条多层与高层的中间之道。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">小高层的特点</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">(1)</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">建筑容积率高于多层住宅，节约土地，房地产开发商的投资成本较多层住宅有所降低。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">(2)</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">这种小高层住宅的建筑结构大多采用钢筋混凝土结构，从建筑结构的平面布置角度来看，则大多采用板式结构，在户型方面有较大的设计空间。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">(3)</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">由于设计了电梯，楼层又不是很高，增加了居住的舒适感。但由于容积率的限制，与高层相比，小高层的价格一般比同区位的高层住宅高，这就要求开发商在提高品质方面花更大的心思。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">高层的特点</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">超过一定层数或高度的建筑将成为高层建筑。高层建筑的起点高度或层数，各国规定不一，且多无绝对、严格的标准。高层住宅是城市化、工业现代化的产物，依据外部形体可将其分为塔楼和板楼。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">(1)</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">高层住宅的优点：高层住宅土地使用率高，有较大的室外公共空间和设施，眺望性好，建在城区具有良好的生活便利性，对买房人有很大吸引力。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">(2)</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">高层住宅的缺点：高层住宅，尤其是塔楼，在户型设计方面增大了难度，在每层内很难做到每个户型设计的朝向、采光、通风都合理。而且高层住宅投资大，建筑的钢材和混凝土消耗量都高于多层住宅，要配置电梯、高压水泵、增加公共走道和门窗，另外还要从物业管理收费中为修缮维护这些设备付出经常性费用。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">11</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">层小高层，买房怎么选择楼层，几楼最好?</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">1-6</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">层住宅适合中老年家庭、有儿童的家庭</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">离地面近，同外部世界保持现实联系，如果家中有老人、孩子，也方便出入，一般比较便宜。好地段楼层楼间距较大、位于小区景观区域、金角和银角户型。现在不少高层住宅将户型设计为“短进深、大面宽”，大大拓宽了住户的观景视野，也使室内通风采光效果更佳，一些弧形窗和墙等空间处理手法的应用，使每一面墙体都显得灵动，即使是低层型也都能做到南北朝向和有穿堂风。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">缺点：无法在阳台上看到天空及远处景观;临街低层面临吵闹及空气污染。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">7-11</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">层住宅适合各种年龄和家庭组合</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">兼具高层和多层住宅优势，既可以有较好的通风采光条件，又有比较踏实的居住感觉。价格一般比低楼层贵，与高楼层差不多，也有一些比高楼层更贵。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">缺点：一般无法在阳台上看到远处风景;马路边上的高楼容易形成回音墙，地面交通等噪声会被低层的建筑反射到高层，因此有时在高层的房间内反而会更吵;同时，往往只能看到对面的楼房，景观自然就会稍逊一筹。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">9-11</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">层是扬灰层吗?</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">很多购房者会听到别人的劝告，买房子选择楼层时，最好不要买9到11楼的扬灰层，那几层是灰尘聚集最多的地方。小高层9-11层扬灰层的说法是正确的吗?</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">物理专家指出，10层左右是扬灰层的说法是不符合大气物理常识的。因为在离地面三四十米高的地方，灰尘是不会停顿的。灰尘在距离地面10公里至52公里的大气平流层都不会停下来。也就是说，一般普通高层楼都没有所谓的扬灰层一说。扬灰层只是一种说法,并未科学测定。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">一般情况下，空气中的污染物随气流不断沉降和流动，在空中没有污染源的情况下，楼层越高，空气相对越干净。所谓的“脏空气停顿”，可能是指“逆温层”现象。通常情况下，大气层高度越高温度就越低，空气易对流，使污染物扩散。但当秋冬季节及特殊的气候条件下，气温可能会随高度增加而升高，大气就会出现“逆温层”。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">逆温层的厚度从几十米到几百米不等，像厚被子盖在城市上空，妨碍城市污染物的扩散。但逆温层的高度是变化的，污染物在逆温条件下的分布也在不断变化，并不会固定地停留在一个高度上。因此，仅以层高断定“扬灰层”不准确。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">11</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">层小高层几楼最好这个问题确实是公说公有理，婆说婆有理的事情，几楼最好还是得看家庭成员年龄构成和购房资金的预备，因为买房选楼层，楼层越高价格就越高了。再者低层房源开发商会半卖半送，赠送一些地下室之类的面积。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">板楼和塔楼的区别</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">板楼就是指“东西长、南北短”的楼型，一般板楼同层住户在2到4户，而塔楼则是指外观像塔的楼型，平面的长度和宽度大致相同，一般塔楼的同层住户在6户以上。那么，板楼和塔楼的区别是什么呢?</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">板楼是对建筑结构的构筑物的称呼，板楼一般建筑层数不会超过12层。板楼的平面图上，长度明显大于宽度，板楼有两种类型，一种是长走廊式的，各住户靠长走廊连在一起;第二种是单元式拼接，若干个单元连在一起就拼成一个板楼。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">高品质的板楼全部采用板式结构，让电梯与楼道位于后立面，将朝阳面让位于居室。比较典型的是一梯两户式设计，南北朝向时，位于前面的客厅、主卧等有充足的朝阳面;东西朝向时，前后居室各有半天的朝阳面。在房型的组织上，尽量有利于风的直线流动，常保空气新鲜。同时还强调户与户的独立性，避免因凹凸过多、户与户之间窗户过近而导致互视，很好地保证了私密性。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">塔楼一般是指高层建筑,住房密度比板式楼大，不会有南北通透的户型，塔板结合就是在楼房拐角处设置塔楼户型。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">板楼的优点</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">1</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">、南北通透，便于采光通风</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">板式住宅多是正南北方向，进深在15米左右，南北通透，便于采光与通风，而且户型方正，平面布局合理，各功能空间尺度适宜。通常而言，由于板楼的面宽充裕，因而户型设计更容易出精品。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">2</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">、板楼均好性强</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">眼下一梯两户的小板楼非常受宠，正是因为整栋板楼中各套户型的优劣差距很小，均有若干套朝北的户型难于处理。板楼由于住户不多，居家生活也比较清静。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">3</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">、管理成本不高</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">通常而言，板楼的管理成本普遍较塔楼低廉，多层板式住宅可以不设电梯，不设变频供水系统，包括外墙粉刷在内的日常维护费用当然要比塔楼便宜得多。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">4</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">、住户使用率很高</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">板楼户型的使用率通常高达90%以上，而塔楼户型的使用率通常仅为75%，因为塔楼内的电梯井、候梯厅、变配电机房等都将作为公共面积摊到每个业主的头上。同样是购买建筑面积100平方米的住房，板楼户型的使用面积往往高出塔楼住户约10平方米。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">板楼的缺点</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">1</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">、建筑密度低，房价高。板楼社区多属低层低密度，容积率较低，尽管居住舒适很强，但房价会高，特别是在城区内寸土寸金的地段，主流产品仍旧是塔楼，为数不多的板楼非工薪阶层能消费得起。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">2</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">、户型格局不宜改造 板楼特别是砖混结构的板楼，户内多数墙体起重作用，不可以变化，这一点不如塔楼的可改造性强。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">塔楼的优点</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">1</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">、节约土地资源，房价较低</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">由于塔楼社区的建筑密度较高，因而可以节约宝贵的土地资源，有效降低每平方米的房价，让更多的人安居。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">2</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">、空间结构灵活，宜于改造</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">塔楼多采用大框架结构，除少数承重梁之外，户内分隔墙基本都可以拆改，某些塔楼甚至可以将整层楼面打通，灵活分割户型。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">3</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">、结构强度高，抗震性好</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">高耸的塔楼由于采用了框架结构，现场浇筑楼板，因而其结构强度比板楼高，抗震性与安全性很好。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">4</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">、居高望远，视野开阔</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">塔楼住户可尽览都市美景，相信低层板楼的住房是无法领略这一份心旷神怡的感受的。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">塔楼的缺点</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">1</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">、均好性差，居住密度高 塔楼每层的住户多为6户以上，甚至高达12户，数百户人家挤在一栋大塔楼里，居住环境当然不如板楼优越。而且，塔楼每层都有部分住户的采光、通风、景观等条件比较落后，且不可改变。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">2</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">、使用率不高，存在灰色空间 塔楼户型的使用率普遍低于板楼10个百分点左右，而且户型内部的厨房、餐厅与洗手间往往不可直接采光、通风，这样的地方被称为“灰色空间”。</span></p><p style="VERTICAL-ALIGN: baseline; BACKGROUND: white; MARGIN: 0px 0px 30px; LINE-HEIGHT: 37px; TEXT-INDENT: 32px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">塔楼、板楼哪个好，其实取决于购房者个人在选房中的价值取向更看重哪一条，应该说塔楼与板楼肯定各有利弊。</span></p><p></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：暂无上篇</td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-521.html'>你的音量，暴露了你的修养</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

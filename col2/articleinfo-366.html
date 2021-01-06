@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>政策文件——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_66'></span>
+<script language='JavaScript'>
+function funcDate_66()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_66.innerHTML = strHTML;
+}
+setInterval(funcDate_66,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">政策文件</a></td> 
+        <td><a href="../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>政策文件</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="2">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>江苏省物价局-江苏省物价局网站和江苏省价格认证协会关于防控新型冠状病毒肺炎稳价安民倡议书</td></tr><tr align='center'><td><span class='x_time'>2020-01-29 13:23:42</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p><img title="1580448185540694.jpg" alt="疫情防控发文红头图片.jpg" src="../information/picfile/20200131/1580448185540694.jpg"></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 39px"><strong><span style="FONT-FAMILY: 宋体; FONT-SIZE: 29px; FONT-WEIGHT: bold"><span style="FONT-FAMILY: 宋体">江苏省物价局-江苏省物价局网站和江苏省价格认证协会</span></span></strong></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 39px"><strong><span style="FONT-FAMILY: 宋体; FONT-SIZE: 29px; FONT-WEIGHT: bold"><span style="FONT-FAMILY: 宋体">关于防控新型冠状病毒肺炎稳价安民</span></span></strong></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 39px"><strong><span style="FONT-FAMILY: 宋体; FONT-SIZE: 29px; FONT-WEIGHT: bold"><span style="FONT-FAMILY: 宋体">倡</span> <span style="FONT-FAMILY: 宋体">议</span> <span style="FONT-FAMILY: 宋体">书</span></span></strong></p><p style="LINE-HEIGHT: 39px"><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px">&nbsp;</span></p><p style="LINE-HEIGHT: 39px; TEXT-INDENT: 41px"><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">新型冠状病毒肺炎疫情防治关系到千家万户，关乎每一个消费者的安全健康。为切实做好疫情防控工作，坚定不移贯彻落实党中央国务院和省委省政府关于疫情防控重要指示精神，我们向</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">协会各</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">会员单位</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">以及</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">全省各医疗器械、药店、医院、超市、农贸市场、外卖商品、快递、餐饮、酒店、宾馆、旅游、交通、教</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">培</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">等相关企业、各行业协会</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">和</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">广大消费者发出倡议如下：</span></span></p><p style="LINE-HEIGHT: 39px; TEXT-INDENT: 41px"><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">一</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">、</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">各会员单位</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">、</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">相关行业协会、企业</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">，</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">要树立大局意识，高度重视，依法有序参与疫情防控工作，积极主动履行社会责任，加强价格自律，自觉遵守价格法律法规和各项政策，坚持合法经营，诚实守信，做到不制假售假、不以次充好，不哄抬价格，不搭车涨价，杜绝价格欺诈行为，积极维护市场价格秩序，自觉接受政府有关部门、社会各界和消费者的监督。</span></span></p><p style="LINE-HEIGHT: 39px; TEXT-INDENT: 41px"><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">二</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">、各药店、医疗器械、医院、超市、农贸市场、商品外卖和快递等企业、单位对涉及新型冠状病毒肺炎防治的药品、医疗器械、食品等要明码标价，强化价格内控，不得随意</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">涨</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">价，坚决抵制囤积居奇、相互串通操纵市场价格、以次充好、以假乱真、价格欺诈等违法行为，要积极调配货源，加大采购及投放稳供力度，配合政府部门稳定市场价格。</span></span></p><p style="LINE-HEIGHT: 39px; TEXT-INDENT: 41px"><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">三</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">、各饭店、酒店、宾馆、超市、农贸市场等企业要拒绝采购交易野生动物、活体动物和不明来源的食品，严把食材的进货质量关，把保质稳价工作落到实处。</span></span></p><p style="LINE-HEIGHT: 39px; TEXT-INDENT: 41px"><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">四</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">、各交通运输、餐饮、娱乐、酒店、宾馆、旅游、教培等企业、单位要积极为消费者取消预订消费和服务提供</span>“绿色通道”，做到全额退款或以合理价格清退尚未提供的服务。要顾全大局，特殊时期，做到舍小利讲大义、讲人格、讲风格，</span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">自觉</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">履行好企业的社会责任，承担好服务公众义务，维护好消费者的</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">权</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">益。</span></span></p><p style="LINE-HEIGHT: 39px; TEXT-INDENT: 41px"><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">五</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">、各价格认定、鉴证、评估单位对社会捐赠的防疫物品，涉及价格、价值评估（认证）的要特事特办，免予收费。</span></span></p><p style="LINE-HEIGHT: 39px; TEXT-INDENT: 41px"><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">六</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">、广大消费者要做文明人、做文明事，遵守政府各项防疫规定和措施，不误导误传商品和服务价格信息，对市场违规价格行为积极主动向政府市场价格监管部门举报投诉。</span></span></p><p style="LINE-HEIGHT: 39px"><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px">&nbsp;</span></p><p style="LINE-HEIGHT: 39px"><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px">&nbsp;</span></p><p style="TEXT-ALIGN: right; LINE-HEIGHT: 39px"><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">江苏省物价局-江苏省物价局网站</span></span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px">&nbsp;&nbsp;&nbsp;<span style="FONT-FAMILY: 仿宋">江苏省价格认证协会</span></span></p><p style="TEXT-ALIGN: right; LINE-HEIGHT: 39px; MARGIN: 0px 85px 0px 0px"><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px">2020年1月2</span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px">9</span><span style="FONT-FAMILY: 仿宋; FONT-SIZE: 21px"><span style="FONT-FAMILY: 仿宋">日</span></span></p><p>&nbsp;</p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-368.html'>江苏省物价局-江苏省物价局网站江苏省价格认证协会关于疫情防控期间维护市场价格秩序提醒告知书</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-373.html'>《江苏省价格条例》</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

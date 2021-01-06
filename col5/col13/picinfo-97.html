@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>往期查看——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../../images/laydate/laydate.js"></script>
+<script src="../../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_127'></span>
+<script language='JavaScript'>
+function funcDate_127()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_127.innerHTML = strHTML;
+}
+setInterval(funcDate_127,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../../index.html">首 页</a></td> 
+        <td><a href="../../col1/articlecolumn.html">工作动态</a></td> 
+        <td><a href="../../col2/articlecolumn.html">政策文件</a></td> 
+        <td><a href="../../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../../col4/articlecolumn.html">专家视点</a></td> 
+        <td class="menuSelected"><a href="piccolumn.html">预期调查</a></td> 
+        <td><a href="../../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../../index.html'>首页</a> >>&nbsp;<a href='../articlecolumn.html' target='_self' class='x_column_link'>预期调查</a> >>&nbsp;<a href='piccolumn.html' target='_self' class='x_column_link'>往期查看</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" height="600" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center">
+			<div id="mainLeftMenuList">
+				<table border="0" cellspacing="0" cellpadding="0"> 
+                  <tr> 
+                    <td><a href="#">调查填报</a></td> 
+                  </tr> 
+                  <tr> 
+                    <td id="menuListSelected"><a href="piccolumn.html">往期查看</a></td> 
+                  </tr> 
+                </table>			</div>
+			</td>
+          </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td colspan='3' class='x_content_title'>2016年第四季度居民消费价格预期调查报告</td></tr><tr align='center' colspan='3'><td>作者：<span class='x_author'></span>&nbsp;&nbsp;编辑：<span class='x_author'>系统管理员</span>&nbsp;&nbsp;<span class='x_time'>2017-02-23 15:24:29</span></td></tr><tr align='center' colspan='3'><td>&nbsp;</td></tr><tr>
+						<td><div id='divMainContentID'><div align='center'><img width='650' alt='2016年第四季度居民消费价格预期调查报告' src='../../information/picfile/1/20170223152501_22222222222222.jpg' valign='top'></div><span class='x_content'><p>&nbsp;&nbsp;&nbsp; </p>
+<div align="center"><font size="6">2016年四季度居民消费价格预期调查报告</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 参加四季度问卷调查的专家学者300余人，收回有效问卷261份，绝大多数人对居民消费价格总水平、主副食品价格均持稳中缓升的预期，其中缓和上涨预期占据主导。与上期相比，四季度居民消费价格总水平上涨预期小幅上升，看平和下降的预期均有所下降；与去年同期相比，居民消费价格总水平预期基本没有变化。四季度主副食品价格预期与往年同期有所不同，上涨预期较上期略有回落，看平预期有所增加。商品房价格方面，随着9月底及10月初住房限购、限贷新政的密集出台，房地产市场过热城市的商品房价格过快上涨势头将得到遏制。</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 一、居民消费价格总水平预期继续保持稳中缓升，其中以缓和上涨为主</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 与三季度相比，预计2016年四季度居民消费价格总水平上涨183人，占比70.12%，其中预计缓和上涨158人，明显上涨25人，分别占86.34%、13.66%；预计基本持平74人，占比28.35%；预计有所下降4人，占比1.53%；无人预计明显下降。</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 调查结果显示，预计居民消费价格总水平上涨的人数达七成，其中接近九成的人预计缓和上涨；预计平稳的人数近三成。绝大部分的人预计居民消费价格总水平呈稳中缓升态势。</font></div>
+<div><img border="0" src="../../information/picfile/webeditor/20170228091224_33333333333333.jpg" width="700"></div>
+<div><font size="5" face="宋体"></font></div>
+<div><font size="5" face="宋体"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><font size="5" face="宋体"></font></div>
+<div><font size="5" face="宋体"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 从居民消费价格总水平预期走势图看，四季度（本期）居民消费价格总水平预期和往年同期一致，上涨预期较上期小幅上升，比上期的60%增加了10.12个百分点；和去年同期69.03%的上涨预期相比，本期基本没有变化，略增1.09个百分点。</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 与上涨预期走势不同，本期居民消费价格总水平基本持平的预期较上期的34.17%有所回落，减少了5.82个百分点；与去年同期的27.74%相比，本期基本没有变化，略增0.61个百分点。</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 与上期4.58%的人预计居民消费价格总水平下降相比，本期继续回落，减少了3.05个百分点；与去年同期的2.58%相比，本期减少1.05个百分点，继续保持极低占比。</font></div>
+<div><font size="5" face="宋体">调查表明，与上期相比，本期绝大部分人继续保持居民消费价格总水平稳中缓升的预期，其中预计上涨的人数小幅增加，看平人数有所减少；与去年同期相比，居民消费价格总水平预期基本没有变化。</font></div>
+<div><font size="5" face="宋体"></font></div>
+<div><font size="5" face="宋体"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><img border="0" src="../../information/picfile/webeditor/20170301105642_11111111111111.jpg" width="700"></div>
+<div>&nbsp;</div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309162829_33333333333333.jpg" width="700"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309162847_44444444444444.jpg" width="700"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309162903_22222222222222.jpg" width="700"></font></div>
+<div><font size="5" face="宋体"></font>&nbsp;</div>
+<div><font size="5" face="宋体"></font>&nbsp;</div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 二、主副食品价格预期继续保持稳中有升，缓和上涨预期占据主导</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 与三季度相比，预期2016年四季度主副食品价格上涨159人，占比60.92%，其中预计缓和上涨139人，明显上涨20人，分别占87.43%、12.57%；预计基本持平90人，占比34.48%；预计有所下降11人，占比4.22%；不能确定1人，占比0.38%；无人预期明显下降。</font></div>
+<div><font size="5" face="宋体">调查结果显示，达六成的人预计主副食品价格上涨，其中近九成的人预计缓和上涨；看平人数超过三成。绝大部分的人预计主副食品价格稳中缓升。</font></div>
+<div><font size="5" face="宋体"></font>&nbsp;</div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309162917_66666666666666.jpg" width="700"></font></div>
+<div><font size="5" face="宋体"></font>&nbsp;</div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 从主副食品价格预期走势图看，四季度（本期）主副食品价格预期走势与往期及居民消费价格总水平走势有所不同，主副食品价格上涨的预期较上期有所回落，看平的预期继续上升。</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 与上期64.58%的人预计主副食品价格上涨相比，本期减少3.66个百分点，低于居民消费价格总水平上涨预期9.2个百分点；与去年同期77.42%的上涨预期相比，本期减少了16.5个百分点。</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 与上期27.92%的人预计主副食品价格基本持平相比，本期增加6.56个百分点，高于居民消费价格总水平看平预期6.13个百分点；与去年同期的20%相比，本期大幅上升，增加了14.48个百分点。</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 主副食品价格下降的预期继续保持极低位占比，与上期的7.5%相比，本期继续回落，减少了3.28个百分点；与去年同期的1.93%相比，本期增加2.29个百分点。</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 调查表明，本期绝大多数的人继续保持主副食品价格稳中缓升的预期。但与往年同期主副食品价格上涨预期继续上升不同，本期主副食品价格上涨的预期较上期出现回落，而保持平稳的预期则上升。与居民消费价格总水平预期相比，本期主副食品价格虽仍以上涨预期为主，但上涨预期低于居民消费价格总水平约十个百分点，看平预则稍高于居民消费价格总水平。这与近期粮食价格平稳，猪肉价格下跌，进一步强化了主副食品价格趋稳的预期有关。</font></div>
+<div><font size="5" face="宋体">关于大米、食用油和猪肉价格预期情况。本期预计大米价格上涨58人，占比22.22%，其中缓和上涨55人，明显上涨3人，分别占94.82%、5.18%；基本持平183人，占比70.12%；有所下降20人，占比7.66%；无人预计明显下降。预计食用油价格上涨78人，占比29.89%，其中缓和上涨74人，明显上涨4人，分别占94.88%、5.12%；基本持平167人，占比63.98%；有所下降15人，占比5.75%；不能确定1人，占比0.38%；无人预计明显下降。预计猪肉价格上涨145人，占比55.56%，其中缓和上涨116人，明显上涨29人，分别占80%、20%；基本持平80人，占比30.65%；有所下降32人，占比12.26%；明显下降1人，不能确定3人，分别占0.38%、1.15%。</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 调查结果显示：与上期相比，本期大米和食用油价格继续以平稳预期为主，其中大米价格看平人数约七成，食用油价格看平人数超过六成，均远高于上涨预期。本期猪肉价格上涨预期基本没有变化，超过半数，看平预期有所上升。近期虽然猪肉价格进入周期性下降阶段，但随着年底及节日消费到来，大部分专家预计四季度猪肉价格呈现稳中缓涨。</font></div>
+<div><font size="5" face="宋体"></font>&nbsp;</div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309162934_66666666666666.jpg" width="700"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309162948_11111111111111.jpg" width="700"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309163003_88888888888888.jpg" width="700"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309163021_00000000000000.jpg" width="700"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309163036_55555555555555.jpg" width="700"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309163050_00000000000000.jpg" width="700"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309163105_77777777777777.jpg" width="700"></font></div>
+<div><font size="5" face="宋体"></font>&nbsp;</div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 三、受调控政策影响，商品房价格过快上涨将得到有效控制</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 此次商品房价格预期调查，是在政府出台限购令之前就已开展。从调查情况看，与三季度相比，预计2016年四季度商品房总体价格上涨209人，占比80.08%，其中预计缓和上涨147人，明显上涨62人，分别占70.34%、29.66%；预计总体价格基本持平36人，占比13.79%；预计总体价格有所下降10人，占比3.83%；不能确定6人，占比2.3%；无人预计明显下降。四季度商品房总体价格预期呈上升趋势，并以缓和上涨为主。</font></div>
+<div><font size="5" face="宋体"></font></div>
+<div><font size="5" face="宋体"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><img border="0" src="../../information/picfile/webeditor/20170309163120_33333333333333.jpg" width="700"></div>
+<div><font size="5" face="宋体"></font></div>
+<div><font size="5" face="宋体"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; 与上期相比，四季度商品房价格上涨预期增长约十个百分点，看平预期减少十多个百分点。这表明，在房地产调控政策收紧前，房地产市场过热、房价上涨过快，导致了对商品房价格上涨的预期进一步增强。从商品房价格预期走势图可以看出，从去年三季度以来，南京、苏州等部分城市商品房价格呈现出过快上涨态势，期间虽然地方政府出台了商品房稳控政策，部分月份商品房价格也有所回落，但很快又出现反弹，商品房市场持续走热。</font></div>
+<div><font size="5" face="宋体">九月底到十月初，房价过快上涨的热点城市相继密集出台了限购、限贷政策，加码调控力度。从近期市场情况看，这些地区的商品房市场交易量大幅下降，价格过快上涨的势头也得到有效控制。</font></div>
+<div><font size="5" face="宋体"></font>&nbsp;</div>
+<div><font size="5" face="宋体"></font>&nbsp;</div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309163137_33333333333333.jpg" width="700"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309163151_88888888888888.jpg" width="700"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309163205_33333333333333.jpg" width="700"></font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp; </font></div>
+<div><font size="5" face="宋体"><img border="0" src="../../information/picfile/webeditor/20170309163219_66666666666666.jpg" width="700"></font></div>
+<div><font size="5" face="宋体"></font>&nbsp;</div>
+<div><font size="5" face="宋体"></font>&nbsp;</div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 江苏省物价局-江苏省物价局网站</font></div>
+<div><font size="5" face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二○一六年十月</font></div>
+<div></div></span></div></td>
+					   </tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

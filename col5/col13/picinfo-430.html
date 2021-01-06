@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>往期查看——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../../images/laydate/laydate.js"></script>
+<script src="../../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_127'></span>
+<script language='JavaScript'>
+function funcDate_127()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_127.innerHTML = strHTML;
+}
+setInterval(funcDate_127,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../../index.html">首 页</a></td> 
+        <td><a href="../../col1/articlecolumn.html">工作动态</a></td> 
+        <td><a href="../../col2/articlecolumn.html">政策文件</a></td> 
+        <td><a href="../../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../../col4/articlecolumn.html">专家视点</a></td> 
+        <td class="menuSelected"><a href="piccolumn.html">预期调查</a></td> 
+        <td><a href="../../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../../index.html'>首页</a> >>&nbsp;<a href='../articlecolumn.html' target='_self' class='x_column_link'>预期调查</a> >>&nbsp;<a href='piccolumn.html' target='_self' class='x_column_link'>往期查看</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" height="600" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center">
+			<div id="mainLeftMenuList">
+				<table border="0" cellspacing="0" cellpadding="0"> 
+                  <tr> 
+                    <td><a href="#">调查填报</a></td> 
+                  </tr> 
+                  <tr> 
+                    <td id="menuListSelected"><a href="piccolumn.html">往期查看</a></td> 
+                  </tr> 
+                </table>			</div>
+			</td>
+          </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td colspan='3' class='x_content_title'>2020年第二季度居民消费价格预期调查报告</td></tr><tr align='center' colspan='3'><td>作者：<span class='x_author'></span>&nbsp;&nbsp;编辑：<span class='x_author'>系统管理员</span>&nbsp;&nbsp;<span class='x_time'>2020-03-28 15:32:29</span></td></tr><tr align='center' colspan='3'><td>&nbsp;</td></tr><tr>
+						<td><div id='divMainContentID'><div align='center'><img width='650' alt='2020年第二季度居民消费价格预期调查报告' src='../../information/picfile/1/20200403153725_22222222222222.jpg' valign='top'></div><span class='x_content'><p style="MARGIN-BOTTOM: 5px; TEXT-ALIGN: center; MARGIN-TOP: 5px; LINE-HEIGHT: normal; TEXT-INDENT: 28px"><span style="FONT-FAMILY: Times New Roman">2020</span><span style="FONT-FAMILY: 宋体">年二季度居民消费价格预期调查报告</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">参加二季度居民消费价格预期调查的专家及相关专业人士</span><span style="FONT-FAMILY: Times New Roman">302</span><span style="FONT-FAMILY: 宋体">人，收回有效问卷</span><span style="FONT-FAMILY: Times New Roman">302</span><span style="FONT-FAMILY: 宋体">份。受新冠肺炎疫情和生猪价格波动的影响，二季度（本期）居民消费价格总水平和主副食品价格继续以缓涨预期为主，随着国内疫情防控形势转好，看涨预期较上期有所减弱，较去年同期有所增强。疫情对我省房地产市场的影响总体有限可控。二季度，我省商品房市场价格继续保持平稳预期，与上期和去年同期相比，看涨预期均有明显降低。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">一、居民消费价格总水平预期继续缓涨</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">二季度，预计居民消费价格总水平上涨</span><span style="FONT-FAMILY: Times New Roman">220</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">72.85%</span><span style="FONT-FAMILY: 宋体">；预计基本持平</span><span style="FONT-FAMILY: Times New Roman">44</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">14.57%</span><span style="FONT-FAMILY: 宋体">；预计有所下降</span><span style="FONT-FAMILY: Times New Roman">37</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">12.25%</span><span style="FONT-FAMILY: 宋体">；预计不能确定</span><span style="FONT-FAMILY: Times New Roman">1</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">0.33%</span><span style="FONT-FAMILY: 宋体">。</span></p><p><span style="FONT-SIZE: 14px; FONT-FAMILY: 宋体">调查结果表明，由于国内疫情传播基本阻断，海外输入风险持续加大，二季度有超七成的人预计居民消费价格总水平上涨，其中预计缓和上涨的人数占六成；预计居民消费价格总水平基本持平和下降的人数相近，均略超一成。总体来看，绝大多数人持居民消费价格总水平上涨预期，并以缓涨为主。</span> &nbsp;</p><p><span style="FONT-FAMILY: Times New Roman">&nbsp;<img title="1585899399131578.jpg" alt="1.jpg" src="../../information/picfile/20200403/1585899399131578.jpg"></span></p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">从居民消费价格总水平预期走势看，与上期</span><span style="FONT-FAMILY: Times New Roman">86.8%</span><span style="FONT-FAMILY: 宋体">的人预计居民消费价格总水平上涨相比，本期减少了</span><span style="FONT-FAMILY: Times New Roman">13.95</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Times New Roman">48.22%</span><span style="FONT-FAMILY: 宋体">相比，本期增加了</span><span style="FONT-FAMILY: Times New Roman">24.63</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">与上期</span><span style="FONT-FAMILY: Times New Roman">10.23%</span><span style="FONT-FAMILY: 宋体">的人预计居民消费价格总水平基本持平相比，本期增加了</span><span style="FONT-FAMILY: Times New Roman">4.34</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Times New Roman">45.95%</span><span style="FONT-FAMILY: 宋体">相比，本期减少了</span><span style="FONT-FAMILY: Times New Roman">31.38</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">二季度居民消费价格总水平下降预期仍处低位占比，与上期的</span><span style="FONT-FAMILY: Times New Roman">2.97%</span><span style="FONT-FAMILY: 宋体">和去年同期的</span><span style="FONT-FAMILY: Times New Roman">5.83%</span><span style="FONT-FAMILY: 宋体">相比，分别增加了</span><span style="FONT-FAMILY: Times New Roman">9.28</span><span style="FONT-FAMILY: 宋体">和</span><span style="FONT-FAMILY: Times New Roman">6.42</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">调查表明，与上期相比，本期居民消费价格总水平继续以缓涨预期为主，但较上期看涨预期有所下降；与去年同期相比，本期看涨预期明显升温，由稳中缓涨预期转为缓涨预期。</span></p><p><span style="FONT-FAMILY: Times New Roman"><img title="1585899968108758.jpg" alt="表1.jpg" src="../../information/picfile/20200403/1585899968108758.jpg"></span></p><p>&nbsp;<img title="1585899999844197.jpg" alt="2.jpg" src="../../information/picfile/20200403/1585899999844197.jpg"></p><p><img title="1585900011133054.jpg" alt="3.jpg" src="../../information/picfile/20200403/1585900011133054.jpg"></p><p><img title="1585900021673576.jpg" alt="4.jpg" src="../../information/picfile/20200403/1585900021673576.jpg"></p><p>&nbsp;</p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">二、主副食品价格预期保持缓涨</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">二季度，预计主副食品价格上涨</span><span style="FONT-FAMILY: Times New Roman">213</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">70.53%</span><span style="FONT-FAMILY: 宋体">；预计基本持平</span><span style="FONT-FAMILY: Times New Roman">48</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">15.89%</span><span style="FONT-FAMILY: 宋体">；预计下降</span><span style="FONT-FAMILY: Times New Roman">40</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">13.25%</span><span style="FONT-FAMILY: 宋体">；预计不能确定</span><span style="FONT-FAMILY: Times New Roman">1</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">0.33%</span><span style="FONT-FAMILY: 宋体">。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">调查结果表明，约七成的人预计二季度主副食品价格上涨，其中预计缓和上涨人数占比超五成；预计主副食品价格基本持平和下降的人数相近，均超一成。总体来看，绝大部分人预计主副食品价格上涨，并以缓涨为主。</span></p><p style="TEXT-INDENT: 28px">&nbsp;</p><p style="TEXT-INDENT: 28px">&nbsp;</p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体"></span><img title="1585900079133226.jpg" alt="5.jpg" src="../../information/picfile/20200403/1585900079133226.jpg"><span style="FONT-FAMILY: Times New Roman"></span></p><p style="TEXT-INDENT: 28px">&nbsp;<span style="FONT-FAMILY: Times New Roman">&nbsp;</span></p><p style="TEXT-INDENT: 28px">&nbsp;</p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">从主副食品价格预期走势看，与上期</span><span style="FONT-FAMILY: Times New Roman">88.12%</span><span style="FONT-FAMILY: 宋体">的人预计主副食品价格上涨相比，本期减少了</span><span style="FONT-FAMILY: Times New Roman">17.59</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Times New Roman">44.01%</span><span style="FONT-FAMILY: 宋体">相比，本期增加了</span><span style="FONT-FAMILY: Times New Roman">26.52</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">与上期</span><span style="FONT-FAMILY: Times New Roman">9.57%</span><span style="FONT-FAMILY: 宋体">的人预计主副食品价格基本持平相比，本期增加了</span><span style="FONT-FAMILY: Times New Roman">6.32</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Times New Roman">43.69%</span><span style="FONT-FAMILY: 宋体">相比，本期减少了</span><span style="FONT-FAMILY: Times New Roman">27.8</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">与上期</span><span style="FONT-FAMILY: Times New Roman">2.31%</span><span style="FONT-FAMILY: 宋体">的人预计主副食品价格下降相比，本期增加了</span><span style="FONT-FAMILY: Times New Roman">10.94</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期相比，则变化不大。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">调查表明，二季度主副食品价格继续保持缓涨预期，与上期相比，持看涨预期人数占比有所回落；与去年同期相比，持看涨预期人数占比则明显提升。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">大米、食用油和猪肉价格预期：二季度预计大米价格上涨</span><span style="FONT-FAMILY: Times New Roman">124</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">41.06%</span><span style="FONT-FAMILY: 宋体">；基本持平</span><span style="FONT-FAMILY: Times New Roman">159</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">52.65%</span><span style="FONT-FAMILY: 宋体">；有所下降</span><span style="FONT-FAMILY: Times New Roman">18</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">5.96%</span><span style="FONT-FAMILY: 宋体">；不能确定</span><span style="FONT-FAMILY: Times New Roman">1</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">0.33%</span><span style="FONT-FAMILY: 宋体">。预计食用油价格上涨</span><span style="FONT-FAMILY: Times New Roman">123</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">40.73%</span><span style="FONT-FAMILY: 宋体">；基本持平</span><span style="FONT-FAMILY: Times New Roman">161</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">53.31%</span><span style="FONT-FAMILY: 宋体">；有所下降</span><span style="FONT-FAMILY: Times New Roman">17</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">5.63%</span><span style="FONT-FAMILY: 宋体">；不能确定</span><span style="FONT-FAMILY: Times New Roman">1</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">0.33%</span><span style="FONT-FAMILY: 宋体">。预计猪肉价格上涨</span><span style="FONT-FAMILY: Times New Roman">196</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">64.9%</span><span style="FONT-FAMILY: 宋体">；基本持平</span><span style="FONT-FAMILY: Times New Roman">53</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">17.55%</span><span style="FONT-FAMILY: 宋体">；下降</span><span style="FONT-FAMILY: Times New Roman">53</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">17.55%</span><span style="FONT-FAMILY: 宋体">。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">调查表明，受疫情影响，二季度大米和食用油价格均呈稳中缓涨预期，与上期相比，对大米价格持看涨预期的人数占比明显增多，食用油价格预期变化不大；与去年同期相比，大米和食用油价格预期均由平稳预期转为稳中缓涨预期，看涨预期增长比较明显。在新冠肺炎疫情、非洲猪瘟和春节因素的叠加影响下，春节前后我省猪肉市场价格持续攀升，成为</span><span style="FONT-FAMILY: Times New Roman">CPI</span><span style="FONT-FAMILY: 宋体">连续两个月“破</span><span style="FONT-FAMILY: Times New Roman">5</span><span style="FONT-FAMILY: 宋体">”的重要推手。</span><span style="FONT-FAMILY: Times New Roman">3</span><span style="FONT-FAMILY: 宋体">月中旬以来，随着国内疫情防控形势转好，生猪产能逐步恢复，猪肉价格从前期较高水平连续回落，市场看涨情绪也随之降温。调查数据也验证了这一点，二季度猪肉价格虽仍以缓涨预期为主，但与上期相比，持上涨预期人数占比有所下降。二季度，在生猪产能稳步恢复的情况下，猪肉供应将得到改善，预计猪肉价格也会随之回落，但考虑到当前生猪产能仍处历史低位，加之海外疫情发展对猪肉进口的冲击，整体供给偏紧局面恐还将持续一段时间。物价稳则民心稳，当前猪肉价格仍处高位，各级政府和相关部门仍需继续密切关注生猪市场价格变化，加强监测预警和产销对接，并适时做好冻猪肉收储、市场投放和价格补贴发放等工作，确保猪肉价格基本稳定，困难群众生活不受影响。</span></p><p style="TEXT-INDENT: 28px">&nbsp;<img title="1585900107457858.jpg" alt="表2.jpg" src="../../information/picfile/20200403/1585900107457858.jpg"></p><p>&nbsp;<img title="1585900261186499.jpg" alt="表3.jpg" src="../../information/picfile/20200403/1585900261186499.jpg"></p><p>&nbsp;</p><p><img title="1585900441105462.jpg" alt="表4.jpg" src="../../information/picfile/20200403/1585900441105462.jpg"></p><p>&nbsp;</p><p><img title="1585900461126246.jpg" alt="表5.jpg" src="../../information/picfile/20200403/1585900461126246.jpg"></p><p>&nbsp;</p><p><img title="1585900477733175.jpg" alt="6.jpg" src="../../information/picfile/20200403/1585900477733175.jpg"></p><p>&nbsp;</p><p><img title="1585900509345717.jpg" alt="7.jpg" src="../../information/picfile/20200403/1585900509345717.jpg"></p><p><img title="1585900519867348.jpg" alt="8.jpg" src="../../information/picfile/20200403/1585900519867348.jpg"></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">三、商品房价格继续保持平稳预期</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">二季度，预计商品房总体价格上涨</span><span style="FONT-FAMILY: Times New Roman">87</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">28.81%</span><span style="FONT-FAMILY: 宋体">；预计总体价格基本持平</span><span style="FONT-FAMILY: Times New Roman">169</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">55.96%</span><span style="FONT-FAMILY: 宋体">；预计总体价格下降</span><span style="FONT-FAMILY: Times New Roman">43</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">14.23%</span><span style="FONT-FAMILY: 宋体">；预计不能确定</span><span style="FONT-FAMILY: Times New Roman">3</span><span style="FONT-FAMILY: 宋体">人，占比</span><span style="FONT-FAMILY: Times New Roman">0.99%</span><span style="FONT-FAMILY: 宋体">。</span></p><p><span style="FONT-SIZE: 14px; FONT-FAMILY: 宋体">调查结果表明，近三成的人预计二季度商品房总体价格上涨；超五成的人预计商品房总体价格基本持平；超一成的人预计商品房价格下降。总体来看，二季度商品房总体价格以平稳预期为主。</span> &nbsp;</p><p><span style="FONT-FAMILY: Times New Roman">&nbsp;<img title="1585900542657181.jpg" alt="9.jpg" src="../../information/picfile/20200403/1585900542657181.jpg"></span></p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">从商品房价格预期走势看，二季度商品房总体价格上涨预期有所回落，较上期减少了</span><span style="FONT-FAMILY: Times New Roman">9.55</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Times New Roman">41.1%</span><span style="FONT-FAMILY: 宋体">相比，减少</span><span style="FONT-FAMILY: Times New Roman">12.29</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">与上期</span><span style="FONT-FAMILY: Times New Roman">54.75%</span><span style="FONT-FAMILY: 宋体">的人预计商品房总体价格基本持平相比，本期持看平预期的人数略有增加，增加</span><span style="FONT-FAMILY: Times New Roman">1.21</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Times New Roman">47.9%</span><span style="FONT-FAMILY: 宋体">相比，本期增加了</span><span style="FONT-FAMILY: Times New Roman">8.06</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">与上期</span><span style="FONT-FAMILY: Times New Roman">6.89%</span><span style="FONT-FAMILY: 宋体">的人预计商品房总体价格下降相比，本期持下降预期的人数有所上升，增加</span><span style="FONT-FAMILY: Times New Roman">7.34</span><span style="FONT-FAMILY: 宋体">个百分点；与去年同期的</span><span style="FONT-FAMILY: Times New Roman">10.68%</span><span style="FONT-FAMILY: 宋体">相比，增加</span><span style="FONT-FAMILY: Times New Roman">3.55</span><span style="FONT-FAMILY: 宋体">个百分点。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">调查表明，二季度商品房总体价格继续呈平稳预期，相对于上期，持看涨预期人数占比继续回落；与去年同期相比，本期持看涨预期人数占比回落明显，由稳中缓涨预期转为平稳预期。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">从全省各地商品房价格预期情况来看，与上期相比</span><span style="FONT-FAMILY: Times New Roman">, </span><span style="FONT-FAMILY: 宋体">全省各地商品房价格看涨预期普遍有所回落。其中，常州市商品房价格以缓涨预期为主；南通商品房价格以稳中缓涨预期为主；镇江商品房价格以稳中缓降预期为主；其余南京、无锡、徐州、苏州、连云港、淮安、盐城、扬州、泰州、宿迁等</span><span style="FONT-FAMILY: Times New Roman">10</span><span style="FONT-FAMILY: 宋体">个市商品房价格以看平预期为主。</span></p><p style="TEXT-INDENT: 28px"><span style="FONT-FAMILY: 宋体">作为国民经济的重要组成部分，房地产在我省经济发展中发挥着“压舱石”和“稳定器”的作用，具有很强的韧性。疫情之下，销售缩量与施工暂停成为了房地产行业的常态，短期内必然会使房企资金承压，但疫情期间积压的刚性购房需求并不会因疫情的出现而消失，随着疫情防控形势转好，这部分需求将集中释放，所以疫情对房地产市场的影响是短期的、可控的。为缓解疫情对房地产市场的冲击，近期，省内的南京、无锡、苏州等城市均出台了针对性政策，包括延期或者分期缴纳土地出让款、调整预售监管条件、延期缴纳税款、减免缴纳房产税和城镇土地使用税等一系列纾困房企的政策措施，且央行采取的降准降息举措也将对房地产市场形成间接利好，但这并不意味着房地产调控的放松。近期，财政部、统计局、央行等部门已多次重申“房住不炒”、“稳地价、稳房价、稳预期”的调控主基调不会变，结合调查结果分析，我省房地产市场发展趋势仍将以“稳”为主。二季度，前期积压的购房需求有望集中释放，届时成交也将企稳回升，省内个别住房消费的热点城市不排除房价会有进一步上涨的可能，同时部分房企可能会因消费需求不足、资金回笼受限而面临偿债与资金压力，各级政府及有关部门要密切关注后疫情时期的房地产市场变化以及疫情对房企的潜在和滞后影响，因城因势精准施策，合理引导住房消费，确保房地产市场平稳健康运行。</span></p><p style="TEXT-INDENT: 28px">&nbsp;<img title="1585900566334873.jpg" alt="表6.jpg" src="../../information/picfile/20200403/1585900566334873.jpg"></p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"><img title="1585900591116426.jpg" alt="10.jpg" src="../../information/picfile/20200403/1585900591116426.jpg"></span></p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"><img title="1585900608117132.jpg" alt="11.jpg" src="../../information/picfile/20200403/1585900608117132.jpg"></span></p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"><img title="1585900650649349.jpg" alt="12.jpg" src="../../information/picfile/20200403/1585900650649349.jpg"></span></p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p style="TEXT-ALIGN: right"><span style="FONT-FAMILY: 宋体">江苏省物价局-江苏省物价局网站</span></p><p style="TEXT-ALIGN: right"><span style="FONT-FAMILY: 宋体">二○二○年三月</span></p><p>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p><span style="FONT-FAMILY: Times New Roman"></span>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></span></div></td>
+					   </tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

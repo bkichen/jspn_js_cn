@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>课题研究——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_86'></span>
+<script language='JavaScript'>
+function funcDate_86()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_86.innerHTML = strHTML;
+}
+setInterval(funcDate_86,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td><a href="../col2/articlecolumn.html">政策文件</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>研究课题</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="3">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>价格举报投诉案件办理的法律风险防控对策研究</td></tr><tr align='center'><td><span class='x_time'>2020-04-14 09:33:39</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%"></span>&nbsp;</p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">价格举报投诉案件办理是价格部门的重要职责，关系到消费者合法权益的保护和市场价格秩序的有效维护。受多种因素影响，近一段时期以来，因价格举报投诉案件办理引起的政府信息公开、行政复议和行政诉讼案件明显增多，价格部门依法行政工作面临着新的挑战。本文通过对当前价格举报投诉案件办理工作面临严峻形势，特别是法律风险的客观分析，从保障举报人的权益、妥善处理关键环节、健全长效工作机制等方面提出了应对之策，对当前价格举报投诉案件的具体办理工作具有一定实践参考价值。</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 150%; TEXT-INDENT: 37px"><span style="FONT-SIZE: 19px; FONT-FAMILY: 黑体; LINE-HEIGHT: 150%">一、现状与问题</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">2015</span><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">年10月，《中共中央 国务院关于推进价格机制改革的若干意见》将价格举报工作纳入“完善社会价格监督体系”、“加强市场价格监管”的重要内容，提出要“充分发挥全国四级联网的12358价格举报管理信息系统作用，鼓励消费者和经营者共同参与价格监督” 。中央的这一要求，将价格举报工作提升到了新的重要位置，为做好新形势下的价格举报工作提出了明确要求。但是，近年来随着越来越多以谋取利益为驱动的职业举报人的出现，导致价格举报投诉案件数量激增，一旦诉求得不到满足，动辄提起行政复议、行政诉讼，给价格举报投诉案件办理工作带来了巨大困扰。就基层价格部门而言，当前价格举报投诉案件办理工作面临着新的形势和问题，主要体现在：</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">1</span></strong><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">．举报投诉总量增多。</span></strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">当前，我国经济社会处于深刻转型之中，市场主体发育尚不成熟、法制规则尚不完善、诚信体系尚不健全、竞争文化相对缺失，导致价格欺诈等不正当价格行为易发多发，相应的价格举报投诉日益增多。以苏州市为例，2015年苏州市两级价格部门共受理价格举报投诉2103件，其中举报1018件，投诉1085件；而2016年仅前10个月，苏州市共受理价格举报3041件，同比增加44.6%，其中举报2397件，同比增加134.48%。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">2</span></strong><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">．疑难案件存量增加。</span></strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">特别随着网络电商等新型业态的兴起，网上购物越发便捷，交易量逐年上升，而相应的网上价格举报频发，特别是职业举报案件增多，给办理工作带来不小难度。以苏州为例，2015年苏州市两级价格部门共受理职业举报102件，办结76件，未办结26件，办结率为75%。2016年前10个月，苏州市两级价格部门共受理职业举报837件，数量激增8倍多，职业举报件办结282件，未办结555件，办结率仅为33.7%。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">3</span></strong><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">．复议诉讼风险增大。</span></strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">由于职业举报人往往以价格举报投诉办理作为其主张权利、获得利益，或是作为获取经营者价格欺诈证据的手段，导致价格部门在办理职业举报案件过程中，可能遭致复议、诉讼的风险增加。而随着2015年新修订的《行政诉讼法》的实施，明确复议维持类案件复议机关和被申请人共同作为被告，改变了长期以来许多地方和部门复议维持率高的现状，在价格系统内也是如此。数据显示，2016年上半年，江苏省各级价格部门作为被申请人的行政复议案件共56件。其中，因不服价格举报或投诉处理提起的复议案件有50件，占89.29%。2016年上半年全省共审结行政复议案件42件。其中作出维持决定20件，占审结数的47.62%；作出终止决定11件（经过调解、和解后申请人自愿撤回）占审结数的26.19%；作出驳回决定7件，占审结数的16.67%；作出撤销决定3件，占审结数的7.14%；确认违法1件，占审结数的2.38%。2016年上半年，全省价格系统共发生行政诉讼应诉案件33件。因不服价格举报办理提起的诉讼16件，占48.49%；对政府信息公开行为不服提起的诉讼7件，占21.21%；不服驳回复议决定提起的诉讼5件，占15.15%；认为行政不作为或违法履行法定职责提起的诉讼4件，占12.12%。对价格行政处罚行为不服提起的诉讼1件，占3.03%。2016年上半年全省共审结价格行政诉讼案件16件，其中判决驳回原告诉讼请求的11件，占审结数的68.75%；原告申请撤回起诉的案件5件，占审结数的31.25%。行政诉讼未发生价格主管部门败诉的案件。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">就苏州而言，2015-2016年行政复议案件撤销各1件，终止各2件，但复议案件总量从5件增长至10件，数量增加了一倍。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 37px"><span style="FONT-SIZE: 19px; FONT-FAMILY: 黑体; LINE-HEIGHT: 150%">二、对策与建议</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">针对价格举报投诉案件频发，特别是职业举报案件明显增加，办理难度加大，法律风险提升的现实问题，亟需各级价格部门切实加强分析研究，寻找有效应对措施，切实防范可能发生的法律风险。笔者认为，有效防范价格举报投诉案件办理中的法律风险，核心是要充分保障举报人的权益，重点在于处理好几个关键环节，从长远来看则要建立健全依法行政工作的长效机制。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">1</span></strong><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">．保障举报人的权益。</span></strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">《行政复议法》第二条：“公民、法人或者其他组织认为具体行政行为侵犯其合法权益，向行政机关提出行政复议申请，行政机关受理行政复议申请、作出行政复议决定，适用本法”。《行政诉讼法》第二条：“公民、法人或者其他组织认为行政机关和行政机关工作人员的行政行为侵犯其合法权益，有权依照本法向人民法院提起诉讼”。从以上两个条款可以看出，提起行政复议、行政诉讼的前提是行政管理相对人认为其合法权益受到侵害。因此，价格部门要防范价格举报投诉办理的法律风险，首先要正确认识到办理过程中举报人、投诉人所享有合法权益。笔者认为，按照现行相关法律法规规定，举报人、投诉人享有下列权利，应道依法得到保护：</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（1）举报权。即举报人享有的向价格主管部门举报价格违法行为的权利。按照《价格违法行为举报处理规定》第四条规定，“举报人可以通过12358举报电话、信件、互联网、传真、走访等形式向价格主管部门提出价格举报”。上述途径皆为合法的实现其权利的方式。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（2）投诉权。即商品和服务交易过程中，为了保障自身的合法权益，一方可以检举对方违规，并提请政府价格部门助其协调解决纠纷。按照《价格违法行为举报处理规定》第十二条规定，“因生活消费需要购买商品或者接受服务的消费者，可以单独或者在进行价格举报时一并对涉及自身价格权益的民事争议提出投诉”。由此可见，价格投诉既可和价格举报一并提出，也可单独提出，价格主管部门应当保障消费者实现投诉权。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（3）知情权。即举报人有权获取与举报违法行为有关情况的权利。 《价格违法行为举报处理规定》第八条规定，“价格主管部门应当自收到举报之日起7个工作日内告知举报人是否受理或者转办”。第十一条，“价格主管部门应当在举报办结后 15 个工作日内告知举报人对被举报的价格违法行为的处理结果”。第十二条规定，“价格主管部门应当自收到消费者价格投诉之日起7个工作日内，作出是否受理的决定并告知消费者”，“价格投诉应当自受理之日起 60 日内办结，并告知消费者”。上述规定了举报人有权知晓相关举报的办理进度、办理结果等信息。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（4）获得补偿和赔偿的权利。即举报人因价格违法行为导致其权益受到侵害的，有权要求价格主管部门责令侵害人补偿其受损权益，甚至要求侵害人进行赔偿。《价格违法行为举报处理规定》第十四条规定，“被举报人因价格违法行为致使消费者多付价款的，价格主管部门应当在对被举报的价格违法行为作出行政处罚决定前，责令被举报人将多收价款退还消费者，但应当扣除被举报人在价格投诉中已经退还的多收价款部分”。《消费者权益保护法》第四十条规定，“消费者在购买、使用商品时，其合法权益受到损害的，可以向销售者要求赔偿”。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（5）隐私权和受益权。即举报人享有的个人隐私受到依法保护，不被他人非法知悉和公开的权利，同时因价格举报有功的，还应受到相应的物质或精神鼓励。这两项权利体现在《价格违法行为举报处理规定》第十六条，“价格主管部门应当为举报人保密，并对符合相关规定的举报人给予鼓励”。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">&nbsp;</span><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（6）监督权和救济权。监督权是公民享有的监督国家机关工作人员的权利，举报人作为一名普通公民，在任何时候都享受监督权，这也是《价格法》所保护的。同时，举报人在其合法权益受到侵害时，还有依法保障其合法权益得到实现的权利。实践中，举报人可以通过以下途径实现其监督权和救济权，包括：向价格部门申请公开政府信息，向行政复议机关提起行政复议，向人民法院提起行政诉讼，向有关行政机关提出信访事项，向监察机关提出控告或者检举等。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">2</span></strong><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">．妥善处理关键环节。</span></strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">细节决定成败。防范价格举报投诉案件办理中的法律风险，还需要注意处理好几个关键环节，这几个环节，也是相关行政复议、行政诉讼的争议点，必须引起重视。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（1）受理。价格举报和价格投诉受理的原则基本一致，即由违法行为或争议发生地价格主管部门管辖。实践中，争议比较大的是网络交易行为的发生地如何确定。有的认为应当由平台所在地价格主管部门管辖，有的认为应当由电商所在地价格主管部门管辖。笔者认为，这两种观点都不够全面。根据国家发改委《网络交易价格举报管辖规定》，“受理、办理网络交易价格举报遵循行为发生地管辖原则”，“网络交易进行时，被举报经营者所在地即行为发生地”。如果被举报的网络交易价格行为系由平台实施，由于网络交易平台具有不可移动的特点，则应由平台所在地价格主管部门管辖。如果被举报的网络交易价格行为系由电商实施，由于电商的住所地和实际经营地可能并不一致，因此还应当作区分处理，并不必然由电商住所地价格主管部门管辖。关键是要认定网络交易发生的那个时间节点，电商经营所在地是哪里，如果当时实际经营地与住所地不一致的，应由实际经营地价格主管部门管辖。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">还有一点需要关注的是对移送管辖的管辖权发生争议如何处理的问题。对其他价格主管部门移动过来的价格举报案件，如果被移送机关认为不属本机关管辖的，不能再退回移送机关或再移送其他机关，而应当报请共同的上一级价格主管部门指定管辖，即不得再自行移送。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（2）价格欺诈认定。之所以职业举报案件频发，一大原因是根据《消费者权益保护法》“退一赔三”的规定，职业举报人可以通过职业举报获利。因此，价格主管部门在对被举报人违法事实进行认定上，尤其要关注的是对价格欺诈行为的认定。笔者认为，认定价格欺诈必须具备两方面的要求，一是被举报人有主观上的故意，二是有欺诈的客观行为和事实（包括行为、结果及其因果关系）。价格欺诈是否需要主观故意作为成立的条件，在实践中争议颇大。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">首先，从法律规定来看，《价格法》对价格欺诈的定义是“经营者利用虚假的或者使人误解的标价形式或者价格手段，欺骗、诱导消费者或者其他经营者与其进行交易的行为”。这一表述中，关于“欺骗”、“诱导”等行为描述，明显具有指向主观的意味。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">其次，从国家价格主管部门的解释来看，国家发改委就价格欺诈的解释明确规定，“经营商品种类、数量较多，采用消费者自选方式，统一收银的超市、商场，个别商品的标示价格与结算价格不一致，但是能够及时更正，建立了明确的错收价款退赔制度并能够有效实施的”不属于价格欺诈。这一解释，也是基于价格欺诈必须具有主观故意的前提。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">从司法审判实践来看，人民法院判定是否价格欺诈也需要考量其主观故意情节。以下面这个案件为例：天津市消费者洪先生因超市在结账时将1.65元的饮料四舍五入，收取1.7元，将超市诉至法院，要求法院根据《消费者权益保护法》的相关规定，判决经营者有欺诈行为，加倍赔偿其受到的损失。超市辩称其无欺诈主观故意，也未故意隐瞒各项信息，四舍五入的收款方式在存包柜旁及每个收银台前均有公告，购物小票上也清晰体现，洪先生刷卡结账后，在银行回单上签字，表明其接受交易条件。法院最终采信了超市方的主张，未认定其价格欺诈，判令其退还洪先生0．05元，驳回其他诉讼请求。此案例，如果从价格欺诈现有规定来看，基本符合《禁止价格欺诈行为的规定》第六条第（一）项的规定，即“标价签、价目表等所标示商品的品名、产地、规格、等级、质地、计价单位、价格等或者服务的项目、收费标准等有关内容与实际不符”。但如同司法审判实践一样，必须考虑其主观故意的情节，若经营者不存在欺诈的主观故意，亦不能认定其价格欺诈。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">主观故意是人的思想活动，依据现有的科学技术水平，尚不能在一个研究对象十分配合的情况下去判定他的思想活动情况。认定主观故意，无非两种途径：一是当事人愿意如实说出自己实施行为时的思想活动，另一种则是通过行为人所实施的客观行为推测其主观心理。比如，应当知晓、二次违法等。但是，如果当事人表示非主观故意，执法机关亦无法证明其存在主观故意的，则不能认定其存在价格欺诈行为和事实。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（3）价格欺诈的罚则适用。执法实践中，由于《价格法》和《价格违法行为行政处罚规定》对价格欺诈行为的罚则适用作出了并不一致的规定，导致对被举报人的价格欺诈行为如何进行行政处罚有所争议。《价格法》第四十条第一款规定，“经营者有本法第十四条所列行为之一的，责令改正，没收违法所得，可以并处违法所得五倍以下的罚款；没有违法所得的，予以警告，可以并处罚款；情节严重的，责令停业整顿，或者由工商行政管理机关吊销营业执照” 。而《价格违法行为行政处罚规定》第七条规定，“经营者违反价格法第十四条的规定，利用虚假的或者使人误解的价格手段，诱骗消费者或者其他经营者与其进行交易的，责令改正，没收违法所得，并处违法所得5倍以下的罚款；没有违法所得的，处5万元以上50万元以下的罚款；情节严重的，责令停业整顿，或者由工商行政管理机关吊销营业执照”。比较《价格法》和《价格违法行为行政处罚规定》，区别在于前者将并处罚款作为可以选择的处罚方式，并将警告作为没有违法所得条件下必选的处罚方式，而后者将罚款作为必选的处罚方式，警告则未提及。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">就法律层级和效力来讲，《价格法》作为法律明显高于作为行政法规的《价格违法行为行政处罚规定》，因此在具体适用上，不能机械地单纯适用《价格违法行为行政处罚规定》，而要将两者有机结合起来，首先要符合法律规定，其次要符合行政法规规定。具体来说，由于一般价格欺诈的违法所得都是难以确定的，因此只要认定被举报人存在价格欺诈的事实，就至少应当予以警告。如果被举报人存在主动消除和减轻价格违法行为危害后果的，比如与当事人达成调解协议，或进行了退款和适当赔偿，导致价格违法行为的危害后果消除或明显减轻的，则可以减轻其行政处罚，即只警告，不再罚款。如果没有减轻情节的，则除了进行警告外，还应当根据其情节轻重作出一定数额的罚款。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（4）价格投诉调解。《价格违法行为举报处理规定》对价格投诉实行调解制度作了明确规定，即“因生活消费需要购买商品或者接受服务的消费者，可以单独或者在进行价格举报时一并对涉及自身价格权益的民事争议提出投诉”。正确把握这一规定，需要从三个层面进行理解：</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">首先，提出价格投诉的主体是消费者。消费者是与经营者对应的概念，在经营活动中提供商品或服务的为经营者，购买商品或接受服务的为消费者。认定投诉人是否具有消费者主体资格，首先要认定其与被投诉人之间是否存在消费行为。如果没有实质上的消费行为，则不能认定其为消费者，不能使用价格投诉调解制度。比如，行政收费行为的双方，行政机关和行政管理相对人之间，就不是经营者与消费者的关系，因此不适用价格投诉调解制度。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">其次，价格投诉调解的对象是双方的民事争议。民事争议是平等主体之间因民事权利发生的争议纠纷。如果争议双方不是平等主体关系，或争议不是民事权利，则也不适用价格调解投诉制度。例如，申请人申请仲裁机构仲裁，并由仲裁机构向其收费，如对收费标准有争议，就不适用价格投诉调解制度，因其与仲裁机构本不是平等的主体，且双方之间的争议也非普通的民事权利纠纷。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">再次，价格投诉调解的性质是行政机关的居间行政调解。行政调解是在当事人双方自愿的前提下，由行政机关居间协调，促使双方达成协议，解决矛盾纠纷的行为。行政调解不具有强制执行的法律效力，即不能强制当事双方参与调解、达成或执行调解协议。一方当事人拒不履行调解协议的，另一方当事人只能通过民事途径解决。但对行政机关来讲，发起并组织开展行政调解又是其法定义务，必须履行。如果价格主管部门对投诉人提出的投诉事项不履行行政调解职责的，投诉人可以就此提起行政复议和诉讼。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（5）价格举报处理结果告知。价格举报处理结果告知是一个十分关键的环节，处理不好容易引起不利的法律后果。执法实践中，有的故意回避主要问题，导致问题没有阐述清楚，遭致举报人提起复议、诉讼；有的因工作粗心大意，告知的内容“答非所问”，完全说错了内容；有的则过于热心，话讲过了头，反而给抓住“把柄”，产生“次生灾害”。因此，必须正确把握告知要求，防范法律风险。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">首先，明确告知的内容。《价格违法行为举报处理规定》明确的告知内容是“对举报的价格违法行为的处理结果”，即举报人举报的是何种价格违法行为，价格主管部门对被举报价格违法行为是如何处理的，有没有具体处理结果。需要注意的是，价格主管部门因举报人提供线索，在全面调查过程中查实的被举报人的其他价格违法行为，可以告知被举报人，也可以不告知。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">其次，明确告知的方式。根据规定，价格举报处理结果的告知，可以是口头的，也可以是书面的，两者都是符合规定的告知形式。具体采用哪一种，要根据实际情况妥善把握。采取书面形式的告知，有利于仔细斟酌，防止告知过程和内容产生失误，特别是针对职业举报人的告知，更应当谨慎小心，以书面形式为妥。但书面告知为职业举报人提供了书证，一旦告知书的表述有误，则为其提供了有利的证据。另外，如果举报人对告知的形式提出了明确的要求，则应当按照举报人的要求提供相应形式的告知。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">再次，明确告知的时限。按照规定，价格主管部门应当在举报办结后 15 个工作日内告知举报人，这一时限要求一般而言能够比较好的掌握。但实践中的问题是，在举报尚未办结时，举报人提出相关申请，要求告知举报处理结果，价格主管部门应当如何告知？笔者认为，应当按照《信访条例》的规定，作为信访事项进行处理，并遵守有关办理事项的告知和时限要求。需要特别指出的是，虽然目前相关规定未明确规定价格举报的办理时限，但价格主管部门也不能久拖不办，否则有不利的法律后果。根据新的《行政诉讼法》，人民法院不仅要审查行政行为的合法性，也要审查其合理性，如果行政行为明显不当的，人民法院可以变更、撤销或判决被告重新作出行政行为。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（6）政府信息公开。在办理价格举报投诉过程中，因对举报办理结果不满提起政府信息公开的情况很多，要求公开举报办理结果，要求公开相关法律文书，甚至要求公开执法人员信息等屡见不鲜。如何正确因对，减少因此产生的法律风险，值得认真研究。笔者认为，做好与办理价格举报投诉相关的政府信息公开工作，关键要把握好公开与不予公开两个方面。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">一方面，该公开的要公开。凡是属于“行政机关在履行职责过程中制作或者获取的，以一定形式记录、保存的信息”，举报人提出公开申请的，都应当公开。特别是对举报人举报的价格违法行为，作出行政处罚的，处罚决定书应当自信息形成或者变更之日起20个工作日内主动公开。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">另一方面，无须公开不要公开。这里要重点把握好三种情况：一是过程性信息不予公开。在办理价格举报过程中制作或者获取的内部管理信息以及处于调查、研究、讨论、审查中的过程性信息，一般都不需要公开。二是需要进行汇总、加工或重新制作的信息不予公开。举报人申请公开的信息应当是现有的，一般不需要价格主管部门进行汇总、加工或重新制作，当然能够作区分处理的除外。三是已归档的价格行政处罚案卷不予公开。如果根据举报线索，对被举报人立案进行了查处，并按档案管理要求进行了立卷归档，价格主管部门可以根据《价格行政处罚案卷管理规定》要求，不予公开已归档的处罚案卷。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">3</span></strong><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">．健全长效工作机制。</span></strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">防范价格举报投诉案件办理的法律风险，从长远来看，还应当建立完善相关工作机制，从制度上规范权利运行，固化办理流程，提高依法办理的能力和水平。从当前价格部门的现实问题来看，需要着力建立完善以下几方面工作制度：</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（1）建立完善价格执法疑难案件会商制度。对价格举报办理过程中遇到的很多疑难案件，如果光靠几个执法人员或是某个单位的力量，有时很难解决好。同时，对大量职业举报人在多地提起的同类价格举报投诉，也十分需要统一办理要求、统一答复口径。为此，有必要建立价格执法疑难案件会商制度，对办理价格举报过程中遇到的疑难案件，组织一定区域或跨区域价格执法人员进行集中讨论，就其行为定性、执法程序、裁量标准、文书规范等进行研究会商，共同商讨处置办法。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（2）建立完善重大价格执法决定法制审核制度。党的十八届四中全会决定和《法治政府建设实施纲要（2015—2020年）》明确提出，要“严格执行重大执法决定法制审核制度”。重大行政执法决定法制审核制度，说到底是行政执法的一项内部程序机制，各级行政执法机关作出重大行政执法决定前，必须对拟作出的决定进行法制审核，目的就是要努力保证重大行政执法决定合法、有效，避免因执法违法或不当损害公民、法人和其他组织的合法权益。在办理价格举报投诉过程中，如果对相关价格违法行为进行调查处理的，其作出的重大价格执法决定，应当由价格主管部门的法制机构进行审核，从主体、职权、事实、证据、法律适用、程序、文书规范等方面，提出法制机构的审查意见。如果未通过审查的，不能作出执法决定。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（3）建立完善价格执法全过程记录制度。执法全过程记录制度，是全面规范行政执法行为的一项重要制度，其目的是针对过去行政执法过程不记录、记录不完整、记录方式单一、记录不规范的问题，通过明确相关记录制度要求，形成完整的执法过程记录。就办理价格举报投诉而言，要在举报投诉的受理、调查、审查、调解、告知、送达等执法活动的全过程信息进行真实、准确、完整、及时的记录，以保证办理举报投诉、实施行政处罚、应对复议诉讼时证据确凿充分、事实清楚。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（4）建立完善价格行政处罚自由裁量权基准制度。上文提及，随着新的《行政诉讼法》的实施，人民法院既要审查行政行为的合法性，也要审查行政行为的合理性。在办理价格举报投诉过程中，为防止发生价格执法行为合法但不合理的问题，有必要建立并全面推行价格行政处罚自由裁量权基准制度，对价格行政处罚的自由裁量权进行必要的细化和规范，实现对各类价格违法行为，在依法考量其违法情节的基础上，合理合法地作出不予行政处罚、减轻、从轻或从重处罚的决定，更好地保护好当事人的合法权益，提高价格执法的公正性和权威性。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（5）建立完善价格执法责任制。有权必有责，权责要相当，侵权要追究，这是行政执法责任制的基本内涵。法律法规赋予价格主管部门在办理价格举报投诉过程中执行法律、作出决定、提出处理措施的职权，在行使相关权力的同时，也必然要求其承担相应的责任和义务。这就要求价格主管部门要明确开展价格执法过程中各个部门、各个岗位的责任分工，梳理执法流程，排查执法风险，明确执法过错所需承担的责任，对违反程序规定作出的价格执法决定，或者由于决定错误、决定实施不力造成重大损失的，严格追究决策人、实施人的责任。</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 24px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">（6）建立完善价格部门聘请法律顾问、公职律师制度。“普遍建立法律顾问制度”是党的十八届三中全会确立的改革任务，四中全会对推行公职律师公司律师制度也提出了要求。2016年6月，中办国办联合下发《关于推行法律顾问制度和公职律师公司律师制度的意见》，提出要在2017年底前，县级以上地方各级党政机关普遍设立法律顾问、公职律师。建立这两项制度，目的是要发挥法律顾问、公职律师的专业特长，为行政机关依法行政提出专业的法律意见，从而有效规范执法行为，防范执法风险。价格主管部门也要按照上级统一部署，聘请法律顾问、公职律师参与价格执法工作，在办理价格举报投诉案件，特别是一些疑难案件，要充分征求、听取法律顾问、公职律师的意见，全面防范与化解法律风险，确保案件依法规范办理。（作者:颜艳平）</span></p><p style="LINE-HEIGHT: 150%; TEXT-INDENT: 32px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; LINE-HEIGHT: 150%">&nbsp;</span></p><p><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p>&nbsp;</p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-184.html'>新形势下价格工作督查的思考与实践</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-222.html'>网络交易价格行为界定存在的问题及对策</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

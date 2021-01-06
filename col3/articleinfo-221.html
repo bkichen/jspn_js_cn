@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>课题研究——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_86'></span>
+<script language='JavaScript'>
+function funcDate_86()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_86.innerHTML = strHTML;
+}
+setInterval(funcDate_86,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td><a href="../col2/articlecolumn.html">政策文件</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>研究课题</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="3">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>以清费减负为抓手  助推镇江“产业强市”</td></tr><tr align='center'><td><span class='x_time'>2017-09-18 12:38:12</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="LINE-HEIGHT: 40px"><strong><span style="FONT-SIZE: 29px; FONT-FAMILY: 宋体"></span></strong>&nbsp;</p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">田先华　郑丹</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 28px"><span style="FONT-FAMILY: Calibri">&nbsp;</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">清费降本减负是供给侧结构性改革的重要内容，是价格部门最易发力、易见成效的工作抓手。去年，镇江市价格系统以减负帮困“轻风”行动为载体，大力度开展清费减负工作，取得明显成效。收费统计数据显示，镇江涉企收费呈逐年下降趋势，2016年全市行政事业性收费总额29.18亿元，占一般公共预算收入的比重由五年前的29.74%降至9.96%。在此基础上，今年，继续将清费降本减负列为全年价格工作重点，多措并举，扎实推进，努力为镇江“产业强市”增添动力、增强活力。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">一、建机制，加大清费减负推进力度</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">国家对降低企业成本负担工作高度重视，“两会”记者会上，李克强总理承诺，今年要推进更大力度的减税降费。镇江市认真落实国家和省各项清费政策，上半年，先后取消、停征行政事业性、经营服务性收费项目37项，降低标准3项（经营服务性收费2项），转为国有资源有偿使用收入的7项，全市全年可减轻企业负担约5.18亿元；在降本方面，落实工商业用电降价政策，联合经信委，继续对列入镇江十大产业链的核心企业实行优惠的用水、用气价格政策，同时承诺今年对企业不增加政府定价的要素成本，上半年共为企业降本500多万元。在此基础上，着重强化清费减负机制建设，努力提升清费减负工作层次。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）建立全市协同机制。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">主动向市委市政府汇报清费降本减负形势和年度工作要求，围绕全市全年为企业减负100亿元的工作目标，主动认领任务，推动涉企收费“做减法”。今年，清费降本减负工作列入《市委常委会2017年工作要点》《市政府2017年度“百项工作”》，成为价格部门CPI重点目标之外的另一个重点考核任务，不仅在工作推进上力度加大，按月分解任务、责任到人，政府定时督查、按季上报，更是打破了以往清费减负价格部门单兵作战的局面，形成了与经信、财政、人社、住建、环保等多部门齐抓共管、共担责任的协同机制。将涉企收费政策落实情况纳入全市机关作风建设管理考核，建立纪委、市级机关工委、市物价局三方联席机制，定期通报、交流情况，形成了严防严治的高压态势，为清费减负工作提供了有力支撑。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）健全上下联动机制。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">强化对辖市区政策落实的指导和督促，每年年初，都将各辖市区物价局清费减负政策落实情况纳入全系统“争先创优”考核，对政策落实乏力、数据和材料上报不及时的扣减一定分值。同时，在工作中进一步健全了“三到位”的工作机制。一是思想认识到位，要求两级价格部门统一认识，认真学习上级文件、吃透精神，增强工作的积极性和政策落实的精准性，不仅从细节上把握政策范围、政策要求，更要从原则上领会政策方向、政策目标。二是政策落实到位，国家财政部、发改委20号文和省政府70号文件下发后，两级价格系统逐一对照收费单位、收费项目，在市级文件转发前，先行通知收费单位停止相关收费，切实维护企业和群众利益。同时，要求各辖市区局限时完成政策影响分析，准确上报政策落实情况，形成有项目数据、有政策效果的降费工作“明白账”。三是后续工作到位，根据政策变化，及时调整公布行政事业性、经营服务性收费目录清单，确保清单之外无收费。目前，镇江市的收费目录清单不仅仅是加强社会监督、实行阳光收费的载体，更被市政务服务办公室（行政服务中心）作为考核窗口单位规范化运作的依据之一，凡是被发现有乱收费行为的单位，都要在日常考评中给予扣分，直接与该单位的年度评等定级、奖金发放挂钩。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）强化矛盾协调机制。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">清费减负工作是一项自上而下推进的宏大工程，尤其是今年，减负力度不断加大。然而，由于各地财政状况、机构设置等原因，在推进过程中不可避免地出现了一些问题。比如，一些取消的行政事业性收费，应当由地方财政给予资金保障，但在财政财力不足的情况下，一时间出现无力负担的状况，给一些单位的生存带来压力，增加了政策落实的阻力。面对这些情况，一方面加强沟通，讲解政策，明确国家和省的刚性要求；另一方面，及时向政府及省物价局反映情况，帮助收费单位解决问题，确保政策落实平稳有序，杜绝一些单位改换名称、转移项目，继续收费的现象。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（四）明确案件审理机制。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">局党组统一思想，讲政治、讲大局，明确凡是涉企收费案件，必须从重从严查处，不姑息、不妥协，绝不办人情案。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">二、强监管，提升清费减负工作实效</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">加大涉企收费专项检查力度，以收费“e”监管平台为载体，将线上监管与线下巡访相结合，实现了收费监管全覆盖。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）创新收费监管手段。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">建立收费“e”监管平台，对接财政非税系统，依法依规设定收费主体和项目，凡是未经价格部门认可的收费，收费单位无法领取收费项目代码，无法实施收费行为，有效避免了监管漏洞；明确收费标准和上限，实现了对涉企收费情况的实时监控和管理，从根源上杜绝涉企乱收费。组织线下巡访，四个业务处室分领任务，组成巡访组，以“凡收费必巡访”为目标，明确年内对所有收费单位均要走访一次以上，通过线上线下的互动，进一步规范收费单位收费行为，完善收费政策。上半年，累计巡访单位65家，及时纠正不规范收费行为，提高了监管针对性。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）强化涉企价费服务。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">开展“清费减负、暖企惠民”专项行动，制定方案，明确时间、内容和责任，局领导带队，组成服务小组，选择建设行业、生产企业、流通行业以及全市重大项目建设单位开展走访调查，通过发放《涉企收费情况调查表》、座谈调研等形式，宣传政策、听取建议，帮助企业解决实际价费问题。及时发现并查处涉企乱收费行为，严查红顶中介强制收费行为，并将责任单位提交市纪委进行问责，提高了监管服务效能。联合经信委，帮助企业节能降耗，降低成本，对完成技改、转型升级的企业，及时向省局请示，取消差别电价政策，近五年来共推动50多家企业淘汰了落后产能。创新开发“供给侧价格信息展牌”，借助网络、APP等载体，集中发布涉及“三去一降一补”和农业供给的生产资料、钢材、成品油、煤炭、银行业收费等各类价格信息，加大了价格变动分析及预警，积极为“去、降、补”提供价格信息服务和数据支撑。积极为“入园企业代言”，立足服务新区企业，由价格部门牵头，召集镇江新区各乡镇、街道、园区召开专题会议，动员部署规范园区收费各项工作。围绕园区矛盾较多、企业意见较大的物业、工业污水处理等实行市场调节价的收费，摸排问题、研究对策，多批次深入20多家重点企业，形成《当前全区涉企收费现状和问题》的调研报告，向新区管委会进行专题汇报，得到新区管委会领导的认可和支持。在此基础上，制定《镇江新区关于进一步规范涉企收费、减轻企业负担的通知》，全面部署规范新区涉企收费。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）推进公平竞争审查。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">作为全省较早落实公平竞争审查制度的设区市，制度的落实时间、落实要求实现了与全省保持一致。为了解制度在各地各部门的落实情况，上半年，我们以政府办名义下发《关于推进公平竞争审查工作落实的通知》，进一步重申审查主体、审查范围、审查标准、审查时间要求，同时要求各地各部门开展自查、上报进度、提出建议，推动了公平竞争审查制度在全市深扎根、快成长。同时，进一步构建价格诚信环境，建立价格信用承诺工作制度，开展2016-2017年度江苏省价格诚信区域考核、认定工作，倡导成立镇江市价格诚信联盟，12家省价格诚信单位和16家A级价格信用单位联手共推价格诚信，进一步浓厚了社会价格诚信氛围。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">三、实基础，完善清费减负保障措施</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">以效能建设为抓手，强队伍、优理念、重宣传，为清费减负工作的推进提供了有力保障。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）以巡察为契机，找准弱点，对症下药</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">。将巡察作为发现问题、解决问题、提升效能的有力抓手，围绕行政执法、行政事业性收费管理等方面的巡察反馈意见，逐条对照，制定整改措施，一一对应地明确了加强标准化价格举报中心建设、增强执法主动性和严肃性、完善自由裁量权标准、严格案件审查审理程序等工作措施，在思想上、行动上进一步增强了履职意识、担当意识和法治意识。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）以学习为抓手，补足短板，提升能力。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">以“价格论坛”为载体，继续开展个人自学与专题辅导相结合、主题教育与理论调研相结合的学习研究活动，将收费监管、降本减负列为年度价格研究课题，分管局领导作为第一责任人，主动承担领学、领研责任。组织全市价格行政执法人员，举行了为期三天的集中封闭式培训，围绕反垄断执法、价格举报、行政诉讼和复议、提升工作效能等进行系统学习和培训，进一步提高一线执法人员的执法水平。组织开展全系统工作人员“一法一条例”知识测试，将试题制作成PPT，借助视频会议系统，160多名工作人员不分年龄、不分职务，同时开展闭卷测试，不仅检验了学习成效，而且增强了干部职工对法律法规的理解和认识。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）以宣传为载体，加强沟通，营造氛围。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">在清费降本减负工作中，宣传起着联系企业与政府、沟通上下的桥梁和纽带作用，为清费减负各项工作的顺利推进提供了强有力的思想保证和舆论支持。我们高度重视信息宣传工作，在物力上，借助价格调节基金，每年都给予50－60万元的资金保障；在人力上，配备专业人才，统筹协调全局信息与宣传工作。1－7月份，围绕清费降本减负，开展系列宣传报道一百多篇次，“镇价格”微信公众号几乎每个工作日都有关于国家、省、市降本减负工作的宣传内容；4月1日国家降费政策实施后，“我市减负超亿”的新闻报道在《镇江日报》头版头条刊登。清费降本减负，在镇江实现了电视电台有专题、报纸有头条、网络有平台、微博微信有专栏的宣传声势，既宣传了价格工作，更增强了政策落实透明度。</span></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-222.html'>网络交易价格行为界定存在的问题及对策</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-220.html'>价格杠杆在强市富民战略中的运用</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

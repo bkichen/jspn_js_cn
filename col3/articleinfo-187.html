@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>课题研究——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_86'></span>
+<script language='JavaScript'>
+function funcDate_86()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_86.innerHTML = strHTML;
+}
+setInterval(funcDate_86,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td><a href="../col2/articlecolumn.html">政策文件</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>研究课题</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="3">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>发挥价格杠杆调节作用  促进养老产业健康发展</td></tr><tr align='center'><td><span class='x_time'>2020-05-14 09:31:49</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">&nbsp;</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">南京市是我国最早进入老龄化的城市之一，截至去年底，全市60岁以上户籍老人超过130万，预计到2020年，全市老年人将达到150万人。为了解全市养老行业的发展现状和价格水平，进一步发挥价格政策对行业发展的引导作用，促进行业健康发展，为此，选择了养老产业发展较为完善的秦淮区，尝试性开展重点价格监测调查。现将调查情况分析如下：</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">一、秦淮区养老产业现状</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">截止2016年10月底，全区60岁以上老人17.02万余人（其中70岁以上老人7.51万余人），区内共有养老福利机构67家，有养老床位7049张。其中：公办民营15家，民办民营52家。全区有托老所30家，托老床位350张，全区共有养老床位合计7399张，每千名老人拥有床位43.5张，完成市民政局2016年新增养老床位182张的目标任务。医养融合进一步推进，全区所有养老机构实现医养融合服务，护理型床位占养老机构床位比达95%以上。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">二、价格监测点养老机构运营情况</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">2016</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">年9月完成了区域内养老机构的重点摸排工作，为提高调研的针对性与准确性，经与区民政部门协商，综合考虑各运营机构资金性质、服务水平、规模等代表性，最终确定悦华安养院、正阳护理院、欢乐时光老年公寓、礼拜寺巷老年公寓、真美好老人公寓、常青树老年公寓六家社会养老机构作为长期监测点，根据养老机构服务等级和收费水平，确定了监测内容，主要包括床位费、护理费、伙食费、水电费等项目，第一期基础监测数据已于2016年4季度起以季报的形式上报。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">图略</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">目前，悦华安养院为秦淮区服务档次最高的养老机构，正阳护理院为中高档养老机构，欢乐时光老年公寓、礼拜寺巷老年公寓为中档养老机构，瑞金路真美好老人公寓为中低档养老机构，常青树老年公寓为低档养老机构，主要提供临终照顾服务为主。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">三、当前养老机构服务收费的主要特点</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）社会养老机构基本能够实现收支平衡，略有盈利。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">2016</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">年各养老机构的总收入、总支出及各项支出占总运营成本的百分比情况，如下表：</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">被调研的六家养老机构均为在民政部门注册的非营利性质组织，日常运营中基本支出项目有房租、人员工资、水电气费、维护保养费、伙食费和日杂费等，其中正阳护理院处于后续建设过程，主要支出项目增列了在建工程。欢乐时光老年公寓、礼拜寺巷老年公寓、真美好老人公寓、常青树老年公寓2016年实现了营利，悦华安养院微亏，正阳护理院亏损38.1万元。据了解，亏损的两家开业时间不长，入住人数相对较少；悦华安养院还在逐步完善中，正阳护理院二期工程在建，如往后入住率提高，实现营利应无问题。在所列的支出项目中，房租、人员工资、伙食费三项费用是主要支出项目，因正阳护理院二期在建中，欢乐时光老年公寓因延用老单位的房子，房租便宜，二者无可比性。其余四家的房租、人员工资、伙食费占总运营成本的平均比例分别为21.87%、34.83%、19.38%。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）收费标准依赖于行业内约定，收费构成具备同质性。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">当前行业内尚没有可参照的服务规范和收费标准。2008年，市物价局会同市财政局、市民政局联合下发了《南京市老年人社会福利机构服务收费管理规定》（下文简称《规定》），对公办公营养老机构的服务等级、收费标准进行了规范。随着经济快速发展，《规定》收费标准已严重偏低，加之现养老机构均为公办民营或民办民营，《规定》已失去约束力和实际参照意义。目前各养老机构的收费标准普遍按行业内约定执行，造成了随意性较大的局面，往往行业内较有影响力的机构率先调价，即导致全行业收费水平上涨。调查走访期间，各养老机构尤其是新开设的养老机构，普遍希望政府能够出台相关文件，规范行业行为和收费标准，减少新兴资本进入这一市场盲目性。同时，在院老人家属反映养老机构收费较为随意，缺乏制约，增加任意一项服务，甚至简单的服务细节调整，都要收费，家属感觉费用支出无法控制，对让老人入院养老心存顾虑，期盼政府出台相应政策，规范行业收费行为，增强消费的透明度，提高针对性，能够依据自身的条件为老人选择合适的养老机构。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">目前各养老机构虽然规模不同，对护理细分等级也有差异，但核心收费构成具有趋同性。收费标准基本由食、宿、护理三方面组成，其中，悦华安养院服务收费最高，介助和介护老人的费用分别达6765元、9730元；中高服务档次的费用在4000－5000元之间；中间服务档次的费用一般在3000－4000元之间；中低服务档次的费用在3000元左右；低档次服务的费用在2000元左右。各养老机构基本收费结构如下表：</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）入住率显示市场对中低档养老院社会接受度较高。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">图略 </span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">表中高端的悦华安养院和中高端的正阳护理院入住率最低，但也分别达到59.2%和60.91%，显示当前养老机构的社会需求度较高。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">中档养老机构欢乐时光老年公寓和礼拜寺巷老年公寓入住率分别达94.74%，83.08%，低端养老院常青树老年公寓入住率达到82.98%，中档养老机构欢乐时光老年公寓和礼拜寺巷老年公寓床位较为紧张，老人需要预约才能优先入住。中低端养老机构的社会认同度较高，据分析，目前在院的老人以企业退休居多，约占总入院人数的80%以上，此类老人月均养老金3000元左右，因此中低档次养老机构收费水平社会接受程度较高。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（四）养老机构入住老人以失能者居多，硬件配置、护理服务水平尚处初级阶段。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">养老机构入住老人以失能者居多。据统计，秦淮区养老机构在院老人的平均年龄在80岁以上，90%以上的老人生活不能自理。在六家养老机构中，只有欢乐时光老年公寓入住3位自理老人，其他五家均无自理老人，仅占入住总人数0.43%；需提供介助服务的老人共80人，占入住总人数11.51%；需提供介护服务的老人为612人，占入住总人数88.58%。说明现在的养老机构主要为失能、病重和临终关怀的老人提供护理照顾为主，服务功能单一，距健康养老的产业发展目标差距较大。各监测点养老机构入住情况如下表： </span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">图略</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">养老机构硬件配置、护理服务水平、能力尚处于初级阶段。入院老人多以退休职工失能老人为主的现状，决定了目前养老机构硬件配置只能满足老人基本的生存需求，虽然大部分养老机构也设有活动室，但提供的器材少，可供活动项目也不多。护工配置严重不足，专业素质有待提高。调查数据显示，监测范围内养老机构护工总人数138人，拥有总床位901张，配置比例为15.31%，远低于行业内普遍认同的1:3配置指标，缺口较大。且各养老院护工多为进城务工的农业人口，文化素质普遍较低，能力仅局限在照顾失能老人的日常生活，取得相应护理资质人数极少。人员配置和人员自身素质决定了目前养老机构只能提供老人日常食宿的要求，人员配置的不足和从业人员自身素质起点较低，制约了服务质量和服务能力的进一步提升，当前健康层面的养老概念尚无从谈起。高质量精神抚慰意识和手段缺失，无法满足老人对精神生活层面的需求，导致多数较高收入、具备自理能力的老人群体对当前养老机构的服务模式并不认同，行业发展尚处于初级阶段，未来养老产业的拓展空间巨大。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">四、发挥价格杠杆的调节作用，促进养老产业有效配置资源，构建完善的行业自主定价机制</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）强化政策制定，规范收费行为，加强市场引导，促进养老产业构建“相互制约、合理有序”的价格形成机制。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">建议尽快出台相应收费行为规范，对住宿、餐饮、娱乐、人员配置等指标进行标准化设置，结合服务水平等软件指标，进行等级评定，通过官方平台统一公示，后期通过年审和随机抽查的方法，对养老机构等级进行动态评定，促使养老机构保持标准化建设的延续性。提高消费者选择性，有效增强现有养老机构标准化建设意识，同时减少新兴资本进入养老产业的盲目性，促进区域内养老机构布局逐步形成合理梯次，营造“相同等级比价格，相同价格比等级”的相互制约氛围，逐步构建合理有序的价格形成机制。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）建立养老产业价格监测、信息发布体系，建立养老行业和相关行业价格水平的联动机制，引导全行业逐步提高价格自律意识</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">。建议尽快建立市区联动、分工明确的养老产业价格监测制度，注重覆盖面和代表性，定点监测和动态监测相结合，密切贴近市场，掌握行业价格变化，加大信息发布力度，定位行业价格水平及运行趋势，研究相关行业价格变动与养老行业价格之间的相互作用关系，发现内在规律，通过两者间互动关系，将养老行业价格纳入价格监测体系。建立可行的价格联动机制，如主副食品价格变化情况和养老机构伙食费标准形成联动，家政服务人员工资与护理人员工资成本形成联动，医疗机构床位费与养老机构住宿费之间形成联动等。通过养老行业和相关行业的价格变化，揭示价格运行的内在合理性，提高养老机构的价格自律意识，逐步形成“调价有依据、涨跌有参照”的行业自主定价机制。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）发挥价格杠杆有效引导资源配置功能，促进行业优化布局。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">加大价格政策扶持力度，给予新建商品房和高端物业相应价格政策支持，鼓励先期规划预留养老用房，引导有实力和良好信誉的民办养老院来经营，将高端养老理念延伸至社区，缓解目前城区养老产业居无定所的发展瓶颈；提供相应政策扶持，鼓励养老机构和社会培训机构开展护理资格培训项目，将社会上相对素质较高的失业人员和新踏入社会的学生群体集中起来，对他们进行养老护理员培训，既提高养老产业从业人员整体素质，又可以逐步改善养老护理员紧缺的不利局面；给予高端养老产业更多的价格自主权利，着重体现价格政策对市场培育的引导作用，鼓励社会资本进入高端养老产业，促进生态养老，高端物业养老等创新模式的发展，开展具有文化含量和精神追求的养老服务项目，满足高收入健康老人群体的实际需求，逐步引导政府补助资金有序进入高端养老领域，将政府对养老产业的政策关怀惠及全体老人，同时通过高端养老机构高起点运作，全面优化养老产业布局，强化服务意识、提升服务水平，逐步构建覆盖全社会全生命周期的养老体系。探索价格监测“柔性介入”促进价格管理的新思路，尝试通过掌握情况，发现问题，加强市场信息发布，围绕市场价格信息构建行业价格约束机制，促进相关行业价格自律，逐步形成合理有序的行业自主定价机制，探索传统价格管理模式的创新性补充。同时，要加强与相关职能部门的长期合作，协作推进，逐步完善监测机制，择机在全市范围内执行养老产业价格监测报告制度，全面监测养老产业发展状况，通过信息采集和发布引导消费者理性消费，引导相关经营者理性定价，促进养老产业的健康发展。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体"></span>&nbsp;</p><p>&nbsp;</p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-188.html'>机动车停车收费 管理的几点思考</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-184.html'>新形势下价格工作督查的思考与实践</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

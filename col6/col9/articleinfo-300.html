@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>培训动态——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../../images/laydate/laydate.js"></script>
+<script src="../../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_207'></span>
+<script language='JavaScript'>
+function funcDate_207()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_207.innerHTML = strHTML;
+}
+setInterval(funcDate_207,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td><a href="../../index.html">首 页</a></td>
+<td><a href="../../col1/articlecolumn.html">工作动态</a></td>
+<td><a href="../../col2/articlecolumn.html">政策文件</a></td>
+<td><a href="../../col3/articlecolumn.html">课题研究</a></td>
+<td><a href="../../col4/articlecolumn.html">专家视点</a></td>
+<td><a href="../../col5/col13/piccolumn.html">预期调查</a></td>
+<td class="menuSelected"><a href="articlecolumn.html">价格培训</a></td>
+<td><a href="../../col7/articlecolumn.html">会员风采</a></td>
+<td><a href="../../col8/articlecolumn.html">联系我们</a></td></tr></tbody></table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>价格培训</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>培训动态</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" height="600" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center">
+			<div id="mainLeftMenuList">
+				<table border="0" cellspacing="0" cellpadding="0"> 
+                  <tr> 
+                    <td id="menuListSelected"><a href="articlecolumn.html">培训动态</a></td> 
+                  </tr> 
+                  <tr> 
+                    <td><a href="../col10/articlecolumn.html">培训信息</a></td> 
+                  </tr> 
+                  <tr> 
+                    <td><a href="../col11/articlecolumn.html">培训调查</a></td> 
+                  </tr> 
+                </table>			</div>
+			</td>
+          </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>关于举办全省价格系统初任岗前培训班的通知(1)</td></tr><tr align='center'><td><span class='x_time'>2018-05-09 09:15:30</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="LINE-HEIGHT: 39px"><span style="FONT-SIZE: 21px; FONT-FAMILY: &#39;Times New Roman&#39;,&#39;serif&#39;; COLOR: black">&nbsp;</span></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 39px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">各设区市、县（市、区）物价局（发改委、发改局），省局各部门：</span></p><p><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black"><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">为促进价格系统新进人员加快了解价格业务知识，熟悉掌握新时代价格工作，尽快适应工作岗位需要，根据《江苏省价格业务培训管理办法》（苏价研〔</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">2014</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">〕</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">258</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">号）有关精神，按照《省物价局关于印发</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">2018</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">年全省价格系统干部教育培训计划的通知》（苏价人〔</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">2018</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">〕</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">42</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">号）要求，经研究，定于</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">5</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">月</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">29</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">日至</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">6</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">月</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">1</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">日在南京举办全省价格系统初任岗前培训班。现将有关事项通知如下：</span></p></span><p></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">一、培训对象</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">2017</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">年以来未参加省局初任岗前培训的省局新进人员、设区市、县（市、区）物价局（发改委、发改局）的新任物价局长和转业、录用、调入的新进人员。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">二、培训内容</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">（一）基础篇：价格理论基础知识。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">（二）监管篇：价格法规及依法行政、收费价格、医药价格、工业品价格、价格检查与反价格垄断等领域的业务基础知识、现行政策规定及新时代改革发展要求。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">（三）服务篇：成本监审、价格监测、价格认定等价格领域的专业服务知识、现行政策规定及新时代发展趋势与总体要求。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">三、培训时间及地点</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">（一）培训时间：</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">5</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">月</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">29</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">日上午报到，</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">29</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">日下午至</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">6</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">月</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">1</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">日上午培训，</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">6</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">月</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">1</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">日下午返程；</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">（二）培训地点：南京市新世纪大酒店（地址：南京市玄武区龙蟠路</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">133</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">号，地铁</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">1</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">号线</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">4</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">号出口向东</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">300</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">米。总台电话：</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">025-86888636</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">）。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">四、其他</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">（一）请各设区市物价局统一汇总本市及所属县、市（区）参训人员名单，填写《初任岗前培训班回执》，于</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">5</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">月</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">18</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">日前报省物价局价格研究所（请将电子文档通过省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">eo</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">办公网平台报送名单，无</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">eo</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">办公网平台请电邮至</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">zzcy2001@live.com</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">）。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">联系人：张超，联系电话：</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">025-83275223</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">17712881266</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">，传真：</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">025-83275220</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">（二）请各设区市物价局指定一名参训人员为领队，负责培训期间本市及所属县（市、区）人员组织、协调、召集等工作。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 39px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">（三）根据省委关于落实中央八项规定的具体办法，请各参训人员严格按照有关规定自行前往到会，本次培训班只安排参训人员食宿。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 38px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;</span></span></p><p style="BACKGROUND: white; LINE-HEIGHT: 38px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">附件：《初任岗前培训班回执》</span></p><p style="LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;</span></span></p><p style="LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;</span></span></p><p style="BACKGROUND: white; TEXT-ALIGN: center; MARGIN: 0px 7px 0px 203px; LINE-HEIGHT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; BACKGROUND: white; COLOR: black">江苏省物价局办公室</span></p><p style="TEXT-ALIGN: center; MARGIN: 0px 7px 0px 203px; LINE-HEIGHT: 43px"><span style="FONT-SIZE: 21px; BACKGROUND: white; COLOR: black"><span style="FONT-FAMILY: Times New Roman">2018</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; BACKGROUND: white; COLOR: black">年</span><span style="FONT-SIZE: 21px; BACKGROUND: white; COLOR: black"><span style="FONT-FAMILY: Times New Roman">5</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; BACKGROUND: white; COLOR: black">月</span><span style="FONT-SIZE: 21px; BACKGROUND: white; COLOR: black"><span style="FONT-FAMILY: Times New Roman">7</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; BACKGROUND: white; COLOR: black">日</span></p><p>&nbsp;</p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-521.html'>你的音量，暴露了你的修养</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-209.html'>江苏省价格系统干部轮训班在宁成功举办</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

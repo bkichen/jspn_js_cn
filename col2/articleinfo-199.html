@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>政策文件——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_66'></span>
+<script language='JavaScript'>
+function funcDate_66()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_66.innerHTML = strHTML;
+}
+setInterval(funcDate_66,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">政策文件</a></td> 
+        <td><a href="../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>政策文件</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="2">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>省物价局 省价格协会关于表彰江苏省第五届优秀价格研究成果的通报</td></tr><tr align='center'><td><span class='x_time'>2017-10-18 08:52:57</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;</span></span></p><p style="TEXT-ALIGN: center">苏价研〔2017〕179号</p><p><br></p><p style="TEXT-ALIGN: left; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"></span></span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">各设区市物价局、价格协会（学会），省直管县（市）物价局（发改局），本局各部门：</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">近年来，全省各级价格部门、价格协会（学会）紧紧围绕服务经济社会发展和价格中心工作，深化价格改革，深入开展价格理论和调查研究，取得了丰硕的研究成果。为进一步调动全省价格系统干部开展价格研究的积极性，把价格研究工作不断引向深入，同时为参评第七届</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">“</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">薛暮桥价格研究奖</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">”</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">打下基础，江苏省物价局、省价格协会联合《价格理论与实践》杂志社开展了全省第五届优秀价格研究成果评选活动。在各市物价局、价格协会（学会）和部分价格决策专家委员、省价格协会理事会员、省兼职价格研究员等申报推荐的基础上，评委会依据评选规则，经初评、复评和终评，评选产生了</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">49</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">篇优秀价格研究成果，现予以通报表彰：</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">一、一等奖（12篇）</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">1</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《构建和完善价格工作“五大机制”研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">张卫东、孔祥平、许伟、于红琴、朱广云、耿立强、王飞、戴群</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">2</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《药品价格评估机制研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">中国药科大学</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">孔祥平、马爱霞、吴爱琴、袁冬梅、黄伟民、李洪超、张丹、张静</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">3</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《江苏省推进农业水价综合改革经验与理论探索》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省水利厅</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">扬州大学</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">祝井贵、武春、贾仁甫、徐元亮、何滨、束凡玮</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">4</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《新常态下加强价格调控监管政策研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">张卫东、孔祥平、许伟、陆波、华文、于红琴、毛海斌、王瑞、王飞、张</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: black">虓</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">5</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《公交公司营运成本分析及其规制研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">徐州市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">李振芝</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">6</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《常州市区公共停车场汽车停放收费问题研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">常州市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">李罗保、严斌臻、黄健</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">7</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《创新医药价格形成机制和管理机制</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">深化公立医院医药价格改革》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">南京医科大学</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">孔祥平、黄晓光、万向华、黄伟民、张丹</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">8</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《江苏高等教育中外合作办学收费政策研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">南京师范大学</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">祝井贵、唐万宏、刘璐、</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">周世贵、陈原渊、孙鹏、高正</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">9</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《公立医院价格改革路径探讨及政策研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">南京市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">夏德智、王国宝、谢志颖、温韬</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">10</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《江苏省主要农副产品成本指数监测分析系统研究》&nbsp;</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">南京农业大学</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">曹俊生、周应恒、华文、严斌剑、靳宝明、刘君</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">11</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《我国定价听证制度缺陷、执行偏差及对策研究》</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">苏州市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">颜艳平</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">12</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《电商恶性价格竞争的成因与对策》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">南通大学</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">南通市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">王卫平、胡平</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">二、二等奖（16篇）</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">1</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《论反垄断执法调查的权力边界》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">陈琪宏、鞠汉芳、王超</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">2</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&lt;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">价格法</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&gt;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">与</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&lt;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">反不正当竞争法</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&gt;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">法律竞合研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">淮安市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">严定保</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">3</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《供给侧改革背景下完善房地产价格监管机制的路径选择》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">淮海工学院</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">连云港市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏财会职业学院</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">蔡阳、祁建球、李保国、柳青</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">4</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《放开价格管理后民办学校收费定价方法与监管体系研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">淮海工学院</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">连云港市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">王朋才、万兴军、严文书</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">5</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《完善资源环境价格政策体系</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">促进经济结构调整和转型升级研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">张卫东、祝井贵、许伟、袁军、陈原渊</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">6</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《城市供水价格管理实践与改革对策研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">常州市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">严斌臻、赵伟中、贺华平</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">7</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《江苏省价格监控平台建设探索与研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">张卫东、孔祥平、陆波、许华兰、毛海斌、潘文</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">8</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《江苏省价格信用体系建设探索与研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">南京财经大学</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">祝井贵、刘璐、曹信邦、唐钢、沈强</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">9</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《关于电力价格改革的几点思考》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">镇江市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">田先华、陈云</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">10</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《排污权有偿使用和交易路径初探》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">扬州市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">潘建民、管宏喜、周兵兵、王庭庆、陆长昀</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">11</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《城镇养老服务定价方法及其应用研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">淮海工学院</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">连云港市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">王朋才、万兴军、史爱东</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">12</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《关于建立计税价格认定制度的研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">徐州市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">刘宏、梁向东、吴保喜、张厚杰</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">13</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《对药价放开后价格部门如何加强监管的思考》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">徐州市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">王蔚东、马晓栋、杨柳</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">14</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《新形势下多元化市场价格监管体系建设研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">淮海工学院</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">连云港市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">赵巍、郭海堂</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">15</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《发挥价格杠杆作用</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">助推徐州生态文明建设》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">徐州市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">刘宏、张思胜</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">16</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《对公立医院停车收费情况的调研与思考》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">徐州市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">闫莉</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体; COLOR: black">三、三等奖（21篇）</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">1</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&lt;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">政府信息公开条例</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&gt;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">实施的问题与对策探讨》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">曹俊生、郭奇、赵婧、赵助、文龙</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;&nbsp; </span></span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">2</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&lt;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">政府制定价格成本监审办法</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&gt;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">后评估报告》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">曹俊生、张跃祥、秦国华、周霖、宋海涛、周蕾</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">3</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《关于城市生活垃圾处理收费定价的研究与思考》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">南京市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">毛国华</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">4</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《低价药走入尴尬境地的原因分析及改革建议》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">无锡市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">季盈</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">5</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《江苏省尖峰电价政策研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省电力公司</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">长沙理工大学</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">祝井贵、武春、芮进成、卢吉、徐帅、丁晓、叶泽、谢志明</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">6</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《江苏省排污收费差别化政策研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">祝井贵、刘璐、陈原渊、孙鹏</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">7</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《开展重大价格决策社会稳定风险评估的实践与思考》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">泰州市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">杨建国、孙勇、钱小萍</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">8</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《关于运用差别化价格政策促进养老机构健康发展的研究与思考》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">南京市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">范凌霞</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">9</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《药品价格放开背景下医药行业原料药反垄断机制研究》</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">淮海工学院</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">连云港市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">陈建芸、陈波、匡乐甫、郑淼松</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">10</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《浅析价格备案制度适用与效力》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">兴化市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">吕加太</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">11</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《应对行政诉讼案件引发的思考》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">泗洪县物价局 </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">胡永放</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">12</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《我国蔬菜市场价格波动成因分析及政策措施建议》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">孔祥平、陆波、倪健、林敏、王瑞、花纯标、邢晋、毛海斌</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">13</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《网购维权中“价格之公”如何实现？》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">丹阳市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">蒋云清、张林生、景锐、吴延</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">14</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《价格举报奖励的可诉性与风险影响分析》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">兴化市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">吕加太</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">15</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《价格改革助推生态文明建设的探索实践与政策建议》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">扬州市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">潘建民、管兴余、周兵兵、陆长昀</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">16</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《新常态下价格改革的思考与对策》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">华文、林敏</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">17</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《城市管道天然气定价模式的选择及问题研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">南京市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">潘晓春</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">18</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《收费高速公路与非收费普通公路运营长期性理论与实践研究》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; &nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">陈主志、万学群、吴宏壮、顾瑾</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">19</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《关于推进区域供水同网同价的调研及政策建议》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">南京市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">王国宝、芮有富、宫华、庞涛</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">20</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《新形势下价格机构建设与职能定位问题探析》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">淮海工学院</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏财会职业学院</span><span style="FONT-SIZE: 21px; COLOR: black"> </span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">连云港市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">赵巍、柳青、司彩霞、丁元奎、李保国、张金保、郑淼松</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">21</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">、《探索我国生猪价格波动与生产能力的关系》</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman"> &nbsp;&nbsp;</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">南通市物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">李明、王利荣、葛林霞、许明、张建冰</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">希望获奖的同志发扬成绩，再接再厉，更加积极主动地开展调查研究，不断探索新时期价格工作和改革发展的新思路、新方法、新举措、新机制。各级价格部门要继续关心和支持价格研究工作，营造重视价格研究的工作氛围，加强价格研究队伍的建设，完善价格研究成果的奖励机制，注重价格研究成果的转化运用，为全面深化价格改革，推动价格工作创新发展作出更大的贡献！</span></p><p style="LINE-HEIGHT: 38px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;</span></span></p><p style="LINE-HEIGHT: 38px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;</span></span></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 38px; TEXT-INDENT: 11px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">江苏省物价局-江苏省物价局网站</span></p><p style="LINE-HEIGHT: 38px; TEXT-INDENT: 352px"><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">2017</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">年</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">10</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">月</span><span style="FONT-SIZE: 21px; COLOR: black"><span style="FONT-FAMILY: Times New Roman">11</span></span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋_GB2312; COLOR: black">日</span></p><p><span style="FONT-SIZE: 21px"><span style="FONT-FAMILY: Times New Roman">&nbsp;</span></span></p><p></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-216.html'>省物价局 省价格协会关于开展全省价格系统课题研究成果评选活动的通知</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-190.html'>省物价局关于举办全省价格系统干部轮训班的通知</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

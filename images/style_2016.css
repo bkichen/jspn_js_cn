@@ -1,0 +1,515 @@
+/* CSS Document */
+/*********************** 页面设定 开始 ***********************/
+body {
+	margin: 0px;
+	font-size:14px;
+}/*background:#FFFFFF;*/
+
+td {
+	
+	font-size:14px;
+	line-height:30px;
+	color: #333333;
+	
+}/*letter-spacing:1.5;word-break:break-all;font-family: "微软雅黑";*/
+
+img{border:0;}
+
+.tableStyle50{
+	margin-top:50px;
+}
+.tableStyle30{
+	margin-top:30px;
+}
+.tableStyle20{
+	margin-top:20px;
+}
+.tableStyle15{
+	margin-top:15px;
+}
+.tableStyle10{
+	margin-top:10px;
+}
+.tableStyle5{
+	margin-top:5px;
+}
+.tableStyle2{
+	margin-top:2px;
+}
+
+
+
+.tableStyleTB10{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+.bgTd{
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#E5E5E5", endColorStr="#FFFFFF", gradientType="0");
+}/* 天气背景 */
+
+.td1Style{
+   filter: Alpha(style=1,opacity=50,finishOpacity=100,startX=50,finishX=100,startY=50,finishY=100);
+}
+
+
+
+/******************************** 样式2014 开始 ********************************/
+
+
+/******************************** 样式2014 结束 ********************************/
+
+
+
+/*********************** 界面样式定义 开始 ***********************/
+.tableMainStyle{
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+}
+.tableMainStyle_F{
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+}
+
+.tableLineLTRB_Gr{
+	border:1px solid #C9C9C9;
+}
+.tableLineLTRB_G{
+	border:2px solid #00B4AE;
+}
+.tableLineLTRB_B{
+	border:2px solid #1571C8;
+}
+.tableLineLTRB_Dotted{
+	border:1px dashed #DDDDDD;
+	border-collapse:collapse;  
+}/*dotted*/
+
+.tableLineLTRB_GE{
+	border:1px solid #9ADFFC;
+	border-collapse:collapse;  
+}
+
+
+
+
+/*********************** 界面样式定义 结束 ***********************/
+
+
+/*********************** 表单样式 开始 ***********************/
+.textLoginTitle{
+	font-family: "微软雅黑";
+}
+.inputSearch_N{
+	font-family: "微软雅黑";
+	border: #FF5D5D 2px solid; 
+	height:58px; 
+	font-size:26px;
+	width:650px;
+	color:#999999;
+	padding:5px;
+}
+.inputSearch{
+	font-family: "微软雅黑";
+	border: #FF5D5D 2px solid; 
+	height:58px; 
+	font-size:26px;
+	width:650px;
+	color:#333333;
+	padding:5px;
+}/*** 检索框 ***/
+
+
+.inputLogin{
+	font-family:Arial, Helvetica, sans-serif;
+	border: #C9C9C9 1px solid; 
+	height:22px; 
+	font-size:14px;
+	width:150px;
+	color:#333333;
+}/*** 登录框 ***/
+
+.intputMessage{
+	font-family:"微软雅黑";
+	border: #C9C9C9 1px solid; 
+	height:22px; 
+	font-size:14px;
+	width:280px;
+	color:#333333;
+}
+.textareaMessage{
+	font-family:"微软雅黑";
+	border: #C9C9C9 1px solid;  
+	font-size:14px;
+	color:#333333;
+}
+
+.textInputTitle{
+	line-height:35px;
+	width:100px;
+	text-align:right;
+	font-size:15px;
+	font-family:"微软雅黑";
+}
+
+.fileMessage{
+	font-family:Arial, Helvetica, sans-serif;
+	border: #C9C9C9 1px solid; 
+	height:23px; 
+	font-size:16px;
+	width:300px;
+	color:#333333;
+}
+.btnMessage{
+	border-left: #002D96 1px solid;
+	border-right: #002D96 1px solid;
+	border-bottom: #002D96 1px solid;
+	border-top: #002D96 1px solid;
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#000000;
+	
+	cursor:pointer;
+	height:25px;
+	width:60px;
+	
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FFFFFF,endColorStr=#9DBCEA); /*IE 6 7 8*/ 
+	background: -ms-linear-gradient(top, #FFFFFF,  #9DBCEA);        /* IE 10 */
+	background: -moz-linear-gradient(top,#FFFFFF,#9DBCEA);/*火狐*/ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#FFFFFF), to(#9DBCEA));/*谷歌*/ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#9DBCEA));      /* Safari 4-5, Chrome 1-9*/
+	background: -webkit-linear-gradient(top, #FFFFFF, #9DBCEA);   /*Safari5.1 Chrome 10+*/
+	background: -o-linear-gradient(top, #FFFFFF, #9DBCEA);  /*Opera 11.10+*/
+	
+}
+
+.btnSubmitLogin{
+	background:#0D7BDA;
+	border:0px;
+	cursor:pointer;
+	height:50px;
+	width:50px;
+	
+	font-family:"微软雅黑";
+	font-size:16px;
+	font-weight:bold;
+	color:#FFFFFF;
+	
+}
+/*********************** 表单样式 结束 ***********************/
+
+.zhicss01 {
+	font-family: "微软雅黑";
+	font-size: 13px;
+	line-height: 20px;
+	color: #13732B;
+	letter-spacing: 1px;
+	word-spacing: normal;
+	font-weight:bold;
+}
+
+.x_content_title{
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: #0E0E0E;
+	font-weight:bold;
+	line-height:35px;
+}
+
+.x_content{
+
+	font-size: 14px;
+}
+
+
+
+
+.textIndexMenuName_1{
+	color:#FFFFFF;
+	width:120px;
+	background:url(index_2016_img_15.jpg);
+	text-align:center;
+	font-size:14px;
+	font-family: "微软雅黑";
+}
+.textIndexMenuName_2{
+	color:#0A3DB0;
+	text-align:left;
+	padding-left:10px;
+	font-size:15px;
+	font-weight:bold;
+	line-height:32px;
+	font-family: "微软雅黑";
+}
+.textIndexMenuName_3{
+	color:#FFFFFF;
+	text-align:left;
+	padding-left:20px;
+	font-size:15px;
+	font-family: "微软雅黑";
+}
+.tableIndexStyle_1{
+	margin-top:2px;
+	padding-left:2px;
+	border-bottom:2px solid #1265CB;
+}
+.tableIndexStyle_2{
+	border-top:2px solid #3B7AB0;
+	border-left:1px solid #E0E0E0;
+	border-right:1px solid #E0E0E0;
+	border-bottom:1px solid #E0E0E0;
+}
+.tableIndexStyle_3{
+	border-top:2px solid #0F76E8;
+	margin-top:5px;
+}
+
+.tableMainStyle_1{
+	border-bottom:2px solid #0F76E8;
+}
+
+#divIndexImgID_1 img{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#divIndexImgID_1 td,#divIndexImgID_2 td{
+	font-family: "微软雅黑";
+	text-align:center;
+}	
+#divIndexImgID_2 img{
+	margin-top:5px;
+}	
+
+.tdColumns{ border-bottom:2px solid #F12608;}
+#divColumnsID td{ width:120px; text-align:center; font-size:16px; font-weight:bold; line-height:35px;cursor:pointer; font-family: "微软雅黑";}
+#divColumnsID .textColumns_Y{
+	color:#F12608;
+	background-image:url(index_2016_img_54.jpg);
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	font-family: "微软雅黑";
+}
+#divColumnsID .textColumns_N{
+	color:#105BD0;
+	font-family: "微软雅黑";
+}
+
+
+#divMainLocID td,#divMainLocID a{ font-size:14px; font-family:"微软雅黑"; text-decoration:none; color:#126ED1; line-height:35px;}
+#divMainLocID table{padding-left:15px;}
+
+#divSearchID td{ line-height:50px; text-align:center; color:#126ED1; font-size:16px; font-family:"微软雅黑";}
+#divSearchID .inputKeySearch{ border:1px solid #9D9D9D; height:25px; width:180px; font-size:16px; font-family:"微软雅黑";}
+#divSearchID .inputDateSearch{ border:1px solid #9D9D9D; height:25px; width:150px; font-size:16px; font-family:"微软雅黑";}
+
+#mainLeftMenuList td{width:185px; background:url(menu_2016_bg_04.jpg); line-height:40px; text-align:center;} 
+#mainLeftMenuList td a{
+	color:#010101;
+	text-decoration:none!Important;
+	font-family:"微软雅黑";
+	font-size:15px;
+	line-height:40px;
+	width:100%;
+	display:block;
+}
+#mainLeftMenuList div:hover, #mainLeftMenuList a:hover{ background-image:url(menu_2016_bg_02.jpg); color:#126ED1!Important;}
+#menuListSelected a{background-image:url(menu_2016_bg_02.jpg); color:#126ED1!Important;}
+
+
+
+#textMainInfoID p,#textMainInfoID td, #textMainInfoID span,#textMainInfoID a,#textMainInfoID font,#textMainInfoID div{
+	font-family: "微软雅黑"!important;
+	font-size:14px!important;
+	line-height:30px!important;
+	color: #333333 !important;
+}
+
+
+#divMainContentID p,#divMainContentID td, #divMainContentID span,#divMainContentID a,#divMainContentID font,#divMainContentID div{
+	/*font-family: "微软雅黑"!important;
+	font-size:14px!important;
+	line-height:30px!important;
+	color: #333333 !important;*/
+}
+#divMainContentID img{
+	width:700px !important;
+}
+
+
+
+#divBookID td{line-height:50px; text-align:center; color:#126ED1; font-size:16px;}
+#divBookID select{border:1px solid #9D9D9D; height:25px; width:180px; font-size:14px; font-family:"微软雅黑";}
+
+.textBookTitle{line-height:30px; font-size:16px; color:#0A3DB0;}
+#diveBookHomeImgID img { margin:5px; border:1px solid #0F76E8;}
+
+
+/******** 首页  ********/
+A.x_x_title:link    {color: #4C4C4C; font-size:24px; font-weight:bold; line-height:50px; letter-spacing:1px; font-family: "微软雅黑"; text-decoration: none;}
+A.x_x_title:visited {color: #4C4C4C; font-size:24px; font-weight:bold; line-height:50px; letter-spacing:1px; font-family: "微软雅黑"; text-decoration: none;}
+A.x_x_title:hover   {color: #4C4C4C; font-size:24px; font-weight:bold; line-height:50px; letter-spacing:1px; font-family: "微软雅黑"; text-decoration: underline;}
+A.x_x_title:active  {color: #4C4C4C; font-size:24px; font-weight:bold; line-height:50px; letter-spacing:1px; font-family: "微软雅黑"; text-decoration: none;}
+
+
+A.x_x_more:link    {color: #BC0000; font-size:15px; letter-spacing:1px; font-family: "微软雅黑"; text-decoration: underline;}
+A.x_x_more:visited {color: #BC0000; font-size:15px; letter-spacing:1px; font-family: "微软雅黑"; text-decoration: underline;}
+A.x_x_more:hover   {color: #BC0000; font-size:15px; letter-spacing:1px; font-family: "微软雅黑"; text-decoration: underline;}
+A.x_x_more:active  {color: #BC0000; font-size:15px; letter-spacing:1px; font-family: "微软雅黑"; text-decoration: underline;}
+
+
+
+A:link    {color: #4C4C4C; font-size:14px; font-family: "微软雅黑"; text-decoration: none;} /* 未访问的链接 */
+A:visited {color: #4C4C4C; font-size:14px; font-family: "微软雅黑"; text-decoration: none;} /* 已访问的链接 */
+A:hover   {color: #866D34; font-size:14px; font-family: "微软雅黑"; text-decoration: none;} /* 鼠标在链接上 left: 1px; top: 1px; position: relative;*/ 
+A:active  {color: #4C4C4C; font-size:14px; font-family: "微软雅黑"; text-decoration: none;} /* 点击激活链接 */
+
+.x_time{ font-family: "微软雅黑"; }
+
+
+/******** 首页更多 链接 ********/
+A.linkMore {color: #FFFFFF; font-size:14px; font-family: "微软雅黑"; text-decoration: none;}
+
+
+
+/******** 头尾部信息 链接 ********/
+#divTextTopID td, #divTextTopID a, #divTextTopID div{
+	color:#FFFFFF;
+	font-family: "微软雅黑";
+}
+
+#divTopMenuID table{background:url(index_2016_img_09.jpg);}
+#divTopMenuID td{width:11%; text-align:center; border-right:1px solid #7CB6E8; line-height:37px;}
+#divTopMenuID td a{
+	color:#FFFFFF;
+	text-decoration:none;
+	font-family:"微软雅黑";
+	font-size:16px;
+	line-height:37px;
+	width:100%;
+	display:block;
+}
+#divTopMenuID div:hover, #divTopMenuID a:hover{ background:url(index_2016_img_07.jpg);}
+.menuSelected{background:url(index_2016_img_07.jpg)!Important;}
+
+
+
+
+
+.textFoot_1{
+	color: #FFFFFF; 
+	font-size:16px; 
+	font-family: "微软雅黑";
+	text-align:left;
+	padding-left:200px;
+}
+
+.textFoot_2{
+	color: #0051BF; 
+	font-size:16px; 
+	font-family: "微软雅黑";
+	text-decoration: none;
+}
+
+
+
+#divFootID td{
+	font-family: "微软雅黑";
+}
+
+
+
+/**************************** 弹出DIV居中 开始 ****************************/
+.textModJoinUs_R{
+	font-family:"微软雅黑";
+	font-size:20px;
+	line-height:30px;
+	color:#FF0000;
+}
+
+.mydiv {
+	/*border: 1px solid #333333;*/
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+	z-index:999;
+	
+	width: 100%;
+	height: 100%;
+	
+	left:0;
+	top:0;
+	
+	vertical-align:top;
+	margin-left:0px!important;
+	margin-top:0px!important;
+
+	position:fixed!important;/* FF IE7*/
+	position:absolute;/*IE6*/
+	_top:       expression(eval(document.compatMode &&
+				document.compatMode=='CSS1Compat') ?
+				documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+				document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+
+}
+/*
+	width: 1200px;
+	height: 100%;
+	
+	left:50%;
+	top:0%;
+	
+	vertical-align:top;
+	margin-left:-600px!important;
+	margin-top:0px!important;
+
+margin-left:-325px!important;/ *FF IE7 该值为本身宽的一半 * /
+margin-top:-180px!important;/ *FF IE7 该值为本身高的一半* /
+
+
+filter:alpha(opacity=95);/ *IE* /
+opacity:0.95;/ *FF* /
+
+*/
+
+.bg {
+	background-color: #000000; 
+	display:none;
+	width: 100%;
+	height: 100%;
+	left:0;
+	top:0;/*FF IE7*/
+	
+	
+	z-index:1;
+	position:fixed!important;/*FF IE7*/
+	position:absolute;/*IE6*/
+	_top:       expression(eval(document.compatMode &&
+				document.compatMode=='CSS1Compat') ?
+				documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+				document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);
+}
+/**************************** 弹出DIV居中 结束 ****************************/
+
+
+
+
+
+
+
+.hodePage5 { width:100%!important;}
+.hodePage5 { font-size:1em!important; margin-bottom:10px; margin-top:5px; }
+.hodePage5 a, .hodePage5 a:visited, .hodePage5 a:link { border:1px solid #ddd; color:#2c98c7; cursor:pointer; height:30px!important; line-height:30px!important; padding:0 8px; text-decoration:none; display:inline-block; overflow:hidden; margin-right:4px; }
+.hodePage5 a:hover { background:#044580 none repeat scroll 0 0; color:#FFFFFF; border-color:#044580 }
+.hodePage5 span.hodePage5_cur_page { color:#000; cursor:default; font-weight:bold; height:30px!important; line-height:30px!important; padding:0 8px; display:inline-block; overflow:hidden; margin-right:4px; }
+
+
+
+
+#textMainInfoID{
+	width:855px;
+	height:1300px;
+	text-align:left;
+	overflow:hidden;
+}

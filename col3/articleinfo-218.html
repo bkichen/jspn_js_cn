@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>课题研究——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_86'></span>
+<script language='JavaScript'>
+function funcDate_86()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_86.innerHTML = strHTML;
+}
+setInterval(funcDate_86,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td><a href="../col2/articlecolumn.html">政策文件</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>研究课题</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="3">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>应用物价大数据开展大服务的思考</td></tr><tr align='center'><td><span class='x_time'>2017-08-17 12:34:16</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p>&nbsp;</p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><strong><span style="FONT-SIZE: 29px; FONT-FAMILY: 宋体"></span></strong>&nbsp;</p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 40px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">李罗保 王世春 姚文萍</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">&nbsp;</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">二十一世纪是数据爆炸的时代，一方面，由于计算机技术的飞速发展使得海量存储成为可能，且成本不断下降；另一方面，随着互联网和信息行业的发展，大数据引起了人们的关注。“大数据”应用在金融、通讯、军事等行业已有时日，但主要集中在企业经营决策领域，价格工作的信息化以及互联网+物价也催生了物价大数据时代的到来，这既是物价工作转型升级的机遇，也是挑战，本文就如何抓住机遇应用物价大数据开展大服务进行探讨。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">一、大数据的概述和应用</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">大数据是指巨大的数据量无法通过目前主流软件工具，在合理时间内达到提取、管理、并整理成为有用信息。大数据到底有多大？有人估算全球平均每人产生200GB以上的数据,而到了2020年，全世界所产生的数据规模将达到今天的50倍。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">关于大数据的应用，“大数据商业应用第一人”维克托·迈尔-舍恩伯格在其《大数据时代》一书中举例甚多，主要是通过找出一个关联物并监控它，就可以预测未来。最著名的莫过于“啤酒＋尿布”全球零售业巨头沃尔玛在对消费者购物行为分析时发现，男性顾客在购买婴儿尿片时，常常会顺便搭配几瓶啤酒来犒劳自己，于是尝试推出了将啤酒和尿布摆在一起的促销手段，这个举措居然使尿布和啤酒的销量都大幅增加了。还有如Google利用搜索记录进行数据挖掘从而预测流感爆发趋势、亚马逊商店利用购买和浏览记录数据进行针对性购买推荐以提升销售量等等。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">二、常州市“大数据”平台建设基本情况</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">从1996年开始，常州信息化建设先后经历“电子”、“政务”、“应用”、“绩效”等四个不同发展阶段。通过前期的积累酝酿于2011年起依托多年来的信息化建设经验，着手信息化智慧监管、智慧服务的探索，以“治价惠民生”为品牌，以“治价惠民、稳价安民”为主线打造“智慧物价”信息化系统工程，致力于实现“大数据”的归集处理、发挥“大平台”的应用价值，努力助推新形势下的价格工作乘风展翅、创新发展。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">“智慧物价”大数据平台围绕民生价格、管理政策和监管服务对象，分别建立数据库，并统一归集为常州智慧物价的“数据中心”。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）民生价格数据库。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">依托数字监测手段和常州云计算中心，联动全市1400多家经营企业和单位，对菜场、超市、家电卖场、医药等9大类、10万多种商品和服务，建立民生价格数据库，为信息服务、预警预报和调控监管提供了数据保障和市场参照。例如，超市商品有6万余种，涵盖了大众食品、日用消费、母婴用品等类别；菜场价格，对全市40多家农贸市场、20多家超市菜区，通过移动网络实现菜价在线上传；对全市120家平价商店，自动抓取每台POS机的开市价格，并每2分钟刷新更新价格；与市卫计委、市人社局等部门实现市区医院、社区、药店等400余家医疗机构结算数据的对接。通过民生商品的晒价、比价，既方便市民理性消费，又挤干虚假价格水分，进而达到稳价目的。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）管理政策数据库。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">按照价格管理职能，分条线、分层次梳理汇总价格政策，并建立价格政策数据库，既用作对公众的信息服务，又为价格监管的自动分析比对提供对照标准。例如，收费监管，按收费主体整理了近50个类别、涵盖近5000项收费标准；医疗服务价格，按照医疗服务项目进行编码归类，涵盖近8000项收费标准；物业服务价格，按照住宅小区和服务项目进行分类，涵盖市区500个住宅小区，以及5大类、近300个物业服务项目；“停车收费”涵盖市区近300家停车场信息，并对接部分公共停车场的实时计费数据，实现了实时停车场信息智慧服务、智能分析；“成本调查”涉及农本调查、成本监审二大类数据，涵盖近10年的农本调查数据及成本监审数据，特别是农本调查数据通过指数模型进行相关分析。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）监管服务对象数据库。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">以减负助企专项行动、平价商店和价格惠民药店建设、物业服务公示、价格诚信单位创建、明码实价等工作为契机，建立监管服务对象数据库，使监管服务在重点领域发挥带动效果，也使对口指导更具操作性和实效性。例如，在“收费在观察、减负在行动”专题活动中，不断扩充了近200家重点项目和企业的信息；在历年的价格诚信单位创建和商贸流通领域明码实价工作中，收集了1000多家民生商品经营企业的信息；还有全市120多家平价商店和70家价格惠民药店的信息等。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">三、物价大数据应用成效和存在问题</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）应用成效。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">从2011年开始，通过五年时间努力，完成“民生价格公示平台”的建设任务，打造“常州价格通”服务品牌，开发了“常州价格通”网站、“掌上价格通”手机应用、“常州价格通”政务微信。以此为依托，整合“常州物价局门户网站”，搭建“价格公共服务平台—常州价格通”的基础框架。该平台建设内容按照服务对象划分为2个网站、2个手机应用、2个价格频道，涵盖百姓关心的医、食、住、行各个方面，实现报纸、刊物、广播、电视、网络、APP、微信等7大媒介、15大载体联动的信息传播格局。此外，借助“平台”的桥梁纽带作用，倡导广大群众“关注物价、感知物价”，充分运用互联网手段便民惠民，维护各方的合法权益，营造良好的价格环境。平台的应用价值主要体现在以下四个方面：</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">一是为智慧生活增加便利。民生价格发布平台，通过网络信息联动、后台数据保障、智能应用整合，为市民提供衣食住行等多方面的价格服务，帮助市民随时掌握市场行情和价格动态，为生活消费提供智慧支持。同时，通过自动采集筛选市场价格、市民网友互动反馈等方式，智能监控市场价格动态，努力保持价格总水平的基本稳定；通过加强以12358价格维权为主体的民生诉求处理平台建设，充分运用手机载体，维护各方的合法权益，营造良好的价格环境。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">二是为企业健康促进发展。通过内部系统与外部发布平台联动实现收费信息的及时公示，畅通企业获取收费信息渠道，杜绝乱收费、乱摊派现象。建立诉求快速响应机制，主动做好政策推送服务。广大企业也可以借助这个大舞台，及时了解同行信息，调整经营策略，通过合理的市场竞争手段，全方位展示自己，着力提升整体形象。同时，借助“价格通”，通过政府搭台、企业唱戏、社会参与的方式，引导企业谋求自身发展，积极参与价格诚信建设，树立良好的社会现象。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">三是为创新方式强化监管。在深化价格改革、推进简政放权的同时，结合技术不断健全和完善价格监测预警、市场价格监管、价格公共服务和机构队伍建设等保障机制，确保价格改革有序推进、取得实效。在技术应用上弥补业务应用盲点，加强价格监测预警建设、完善价格监管体系、强化市场监管、优化价格公共服务等业务，从而进一步提升价格工作水平，促进全市经济社会持续健康发展。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">四是为“智慧城市”智能建设。以建设“智能化、信息化、网络化的智慧城市”为目标，充分运用技术手段，对获取的有一定标准规范的、与价格关联的海量数据信息进行智能处理和分析，对公众服务、民生保障、社会管理、产业发展等活动的各种需求做出智能化响应和智能化决策支持，从而构建起城市发展的智能环境和全新城市形态。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）存在问题。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">一是为民生服务的大数据分散在政府有关部门，由于共享思维缺失，数据格式不统一，形成诸多“信息孤岛”和“应用烟囱”，应用效果欠佳，资源利用率不高，需要各级政府在高度重视的同时，强化顶层设计。二是数据采集的正确性和时效性不能适应大数据应用的需求，不少数据采用人工采集方式，加重基层和服务对象负担，影响他们的使用积极性。需要在项目总体设计上，尽可能减少或屏弃人工采集方式，采用业务过程采集（即伴随采集）、智能采集、物联网采集等方式。三是对物价大数据应用模型研究不够。借鉴国家发改委、省物价局好兄弟单位的研究成果，大力开展政府、企业和大专院校合作，把政府、企业的业务优势，与大专院校的人才、技术优势紧密结合，研制出符合常州市物价局实际需要的大数据应用模型，使大数据应用落地转化为惠企惠民、加强管理、科学决策的实际效果。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 黑体">四、进一步做好物价大数据应用服务的思考</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">近年以来，国家、省、常州出台了一系列大数据应用的政策，要求各级政府建设大数据共享平台，建立政务信息资源目录和交换体系，开展政务信息资源采集、存储、交换和共享工作，实现信息资源跨地区、跨层级、跨部门共享，推进“互联网+政务服务”。物价信息化建设经过十多年的不懈努力在体制、机制、信息、应用、人才等方面也有了良好的基础，由此可见做好物价大数据应用不仅有一个很好的客观和微观层面，且时不我待。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（一）大数据带来大支撑。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">要以解决问题的应用为中心，对其进行不断的积累、改进、维护，使之在解决问题的应用中成长。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">要根据国家、省、市统一规定的政务信息化总体标准数据、通用业务标准和政务信息资源目录体系，逐步整理和规范市物价局的信息资源，制订出具有常州特色物价信息资源数据标准，实现跨地区、跨部门、跨层级数据互认共享，最终实现数据有效、稳定、长效的无缝对接，确保信息有序开放、共享和双向使用。要构建物价预警预测数据模型，充分利用已有的物价数据信息资源，横向部门信息资源，经加工处理、分析统计，结合决策导向、经验与智库建议判断，通过BI分析软件，以图形化或表格形式，向领导和管理层展示物价趋势数据模型与决策方案，通过大数据的挖掘和深度分析，加强对创新体制、机制，以及政府出台价格、补贴等惠民政策的支撑作用。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（二）大数据服务大民生。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">“大数据”所展现出的精确分析、相关作用、统合集成等鲜明特点，也给社会公共服务管理带来了一场新的革命。一方面，应积极适应大数据时代的发展要求，运用大数据集成思维，积极更新公共服务管理理念，推行信息化服务，不断提高公共服务管理水平。要充分用好用足常州大数据平台资源，完善产、学、研合作机制，利用统计、税务、农委、粮食、企业等信息资源，探索建立大宗产品的价格波动规律和趋势分析的计算模型，为企业、合作经济组织、种粮和养殖大户等提供订单式服务，为经营、生产提供参考和指导。另一方面，我们要实现保障基本民生、提供社会服务、加强监督管理等具体职能，就应适应国内外信息化发展大趋势，积极探索信息化条件下服务群众的新方法、新途径，更新信息化发展理念，充分借鉴、运用“大数据”的新理念、新技术，采集、分析、运用各类社会数据信息，构建常州物价一站式公共服务平台，全面推进管理服务人性化。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（三）大数据服务强监管。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">依托“大数据”分析、研判、预警价格监管工作中的“短板”和“缺位”、“不到位”等现象，主动作为、靠前服务，创新推动价格监管工作，把握重要的时间节点，发现、预判可能出现的价费矛盾，主动作为，及时化解价费矛盾纠纷。如通过“12358价格举报”数据及时分析全市热点价格问题，结合监管平台联动从数据中找“短板”和“缺位”，“对症下药”弥补 “不到位”地方，化被动监管为主动“找差”，强化“事前、事中、事后”监管能力，同时通过“大数据”越来越多的数据资源积累,以及整合和智能分析,建立“用数据说话、用数据监管、用数据决策、用数据创新”的管理机制,就可以实现基于数据的科学决策,可以不断提升政务数据保障和辅助决策能力。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体">（四）大整合带来大方便。</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">推行大数据信息公开，引导社会参与共建共享。《2015年政府信息公开工作要点》紧紧围绕党和政府中心工作以及公众关切，已对今年政府信息公开工作细致地作出部署。需要我们从国家层面统筹规划，尽快着手制定全国统一的政府开放数据标准，加大信息公开惠民政策的落实力度，注重多方参与合作，众人拾柴火焰高，让“大数据”形成合力，通过数据的整合量增带动质变，提升综合服务能力水平，并以用户为中心，整合政务服务资源和流程，提供个性化政务服务，实现一站式办理。创新应用云计算、大数据、移动互联网等新技术，分级分类推进新型智慧城市建设。对政务服务办理过程和结果进行大数据分析，创新办事质量控制和服务效果评估，大幅提高政务服务的在线化、个性化、智能化水平。</span></p><p style="LINE-HEIGHT: 40px; TEXT-INDENT: 43px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 楷体"></span>&nbsp;</p><p></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-219.html'>深化中介收费改革  促进减负助企新提升</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-217.html'>与时俱进　改革创新　做好新形势下的价格协会工作</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

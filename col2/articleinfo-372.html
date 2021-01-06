@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>政策文件——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_66'></span>
+<script language='JavaScript'>
+function funcDate_66()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_66.innerHTML = strHTML;
+}
+setInterval(funcDate_66,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">政策文件</a></td> 
+        <td><a href="../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>政策文件</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="2">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>置顶：《中华人民共和国价格法》</td></tr><tr align='center'><td><span class='x_time'>2019-12-31 11:54:54</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"></span>&nbsp;</p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px">　</span><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); FONT-WEIGHT: bold; COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px">第一章　总　则</span></strong></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第一条　为了规范价格行为，发挥价格合理配置资源的作用，稳定市场价格总水平，保护消费者和经营者的合法权益，促进社会主义市场经济健康发展，制定本法。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第二条　在中华人民共和国境内发生的价格行为，适用本法。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　本法所称价格包括商品价格和服务价格。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　商品价格是指各类有形产品和无形资产的价格。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　服务价格是指各类有偿服务的收费。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第三条　国家实行并逐步完善宏观经济调控下主要由市场形成价格的机制。价格的制定应当符合价值规律，大多数商品和服务价格实行市场调节价，极少数商品和服务价格实行政府指导价或者政府定价。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　市场调节价，是指由经营者自主制定，通过市场竞争形成的价格。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　本法所称经营者是指从事生产、经营商品或者提供有偿服务的法人、其他组织和个人。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　政府指导价，是指依照本法规定，由政府价格主管部门或者其他有关部门，按照定价权限和范围规定基准价及其浮动幅度，指导经营者制定的价格。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　政府定价，是指依照本法规定，由政府价格主管部门或者其他有关部门，按照定价权限和范围制定的价格。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第四条　国家支持和促进公平、公开、合法的市场竞争，维护正常的价格秩序，对价格活动实行管理、监督和必要的调控。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第五条　国务院价格主管部门统一负责全国的价格工作。国务院其他有关部门在各自的职责范围内，负责有关的价格工作。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　县级以上地方各级人民政府价格主管部门负责本行政区域内的价格工作。县级以上地方各级人民政府其他有关部门在各自的职责范围内，负责有关的价格工作。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span></span><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); FONT-WEIGHT: bold; COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">第二章　经营者的价格行为</span></span></strong></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第六条　商品价格和服务价格，除依照本法第十八条规定适用政府指导价或者政府定价外，实行市场调节价，由经营者依照本法自主制定。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第七条　经营者定价，应当遵循公平、合法和诚实信用的原则。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第八条　经营者定价的基本依据是生产经营成本和市场供求状况。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第九条　经营者应当努力改进生产经营管理，降低生产经营成本，为消费者提供价格合理的商品和服务，并在市场竞争中获取合法利润。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第十条　经营者应当根据其经营条件建立、健全内部价格管理制度，准确记录与核定商品和服务的生产经营成本，不得弄虚作假。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第十一条　经营者进行价格活动，享有下列权利：</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(一)自主制定属于市场调节的价格;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(二)在政府指导价规定的幅度内制定价格;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(三)制定属于政府指导价、政府定价产品范围内的新产品的试销价格，特定产品除外;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(四)检举、控告侵犯其依法自主定价权利的行为。</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第十二条　经营者进行价格活动，应当遵守法律、法规，执行依法制定的政府指导价、政府定价和法定的价格干预措施、紧急措施。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第十三条　经营者销售、收购商品和提供服务，应当按照政府价格主管部门的规定明码标价，注明商品的品名、产地、规格、等级、计价单位、价格或者服务的项目、收费标准等有关情况。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　经营者不得在标价之外加价出售商品，不得收取任何未予标明的费用。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第十四条　经营者不得有下列不正当价格行为：</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(一)相互串通，操纵市场价格，损害其他经营者或者消费者的合法权益;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(二)在依法降价处理鲜活商品、季节性商品、积压商品等商品外，为了排挤竞争对手或者独占市场，以低于成本的价格倾销，扰乱正常的生产经营秩序，损害国家利益或者其他经营者的合法权益;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(三)捏造、散布涨价信息，哄抬价格，推动商品价格过高上涨的;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(四)利用虚假的或者使人误解的价格手段，诱骗消费者或者其他经营者与其进行交易;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(五)提供相同商品或者服务，对具有同等交易条件的其他经营者实行价格歧视;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(六)采取抬高等级或者压低等级等手段收购、销售商品或者提供服务，变相提高或者压低价格;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(七)违反法律、法规的规定牟取暴利;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(八)法律、行政法规禁止的其他不正当价格行为。</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第十五条　各类中介机构提供有偿服务收取费用，应当遵守本法的规定。法律另有规定的，按照有关规定执行。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第十六条　经营者销售进口商品、收购出口商品，应当遵守本章的有关规定，维护国内市场秩序。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第十七条　行业组织应当遵守价格法律、法规，加强价格自律，接受政府价格主管部门的工作指导。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span></span><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); FONT-WEIGHT: bold; COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">第三章　政府的定价行为</span></span></strong></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第十八条　下列商品和服务价格，政府在必要时可以实行政府指导价或者政府定价：</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(一)与国民经济发展和人民生活关系重大的极少数商品价格;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(二)资源稀缺的少数商品价格;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(三)自然垄断经营的商品价格;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(四)重要的公用事业价格;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(五)重要的公益性服务价格。</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第十九条　政府指导价、政府定价的定价权限和具体适用范围，以中央的和地方的定价目录为依据。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　中央定价目录由国务院价格主管部门制定、修订，报国务院批准后公布。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　地方定价目录由省、自治区、直辖市人民政府价格主管部门按照中央定价目录规定的定价权限和具体适用范围制定，经本级人民政府审核同意，报国务院价格主管部门审定后公布。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　省、自治区、直辖市人民政府以下各级地方人民政府不得制定定价目录。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第二十条　国务院价格主管部门和其他有关部门，按照中央定价目录规定的定价权限和具体适用范围制定政府指导价、政府定价</span>;其中重要的商品和服务价格的政府指导价、政府定价，应当按照规定经国务院批准。</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　省、自治区、直辖市人民政府价格主管部门和其他有关部门，应当按照地方定价目录规定的定价权限和具体适用范围制定在本地区执行的政府指导价、政府定价。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　市、县人民政府可以根据省、自治区、直辖市人民政府的授权，按照地方定价目录规定的定价权限和具体适用范围制定在本地区执行的政府指导价、政府定价。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第二十一条　制定政府指导价、政府定价，应当依据有关商品或者服务的社会平均成本和市场供求状况、国民经济与社会发展要求以及社会承受能力，实行合理的购销差价、批零差价、地区差价和季节差价。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第二十二条　政府价格主管部门和其他有关部门制定政府指导价、政府定价，应当开展价格、成本调查，听取消费者、经营者和有关方面的意见。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　政府价格主管部门开展对政府指导价、政府定价的价格、成本调查时，有关单位应当如实反映情况，提供必需的帐簿、文件以及其他资料。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第二十三条　制定关系群众切身利益的公用事业价格、公益性服务价格、自然垄断经营的商品价格等政府指导价、政府定价，应当建立听证会制度，由政府价格主管部门主持，征求消费者、经营者和有关方面的意见，论证其必要性、可行性。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第二十四条　政府指导价、政府定价制定后，由制定价格的部门向消费者、经营者公布。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第二十五条　政府指导价、政府定价的具体适用范围、价格水平，应当根据经济运行情况，按照规定的定价权限和程序适时调整。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　消费者、经营者可以对政府指导价、政府定价提出调整建议。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span></span><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); FONT-WEIGHT: bold; COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">第四章　价格总水平调控</span></span></strong></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第二十六条　稳定市场价格总水平是国家重要的宏观经济政策目标。国家根据国民经济发展的需要和社会承受能力，确定市场价格总水平调控目标，列入国民经济和社会发展计划，并综合运用货币、财政、投资、进出口等方面的政策和措施，予以实现。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第二十七条　政府可以建立重要商品储备制度，设立价格调节基金，调控价格，稳定市场。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第二十八条　为适应价格调控和管理的需要，政府价格主管部门应当建立价格监测制度，对重要商品、服务价格的变动进行监测。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第二十九条　政府在粮食等重要农产品的市场购买价格过低时，可以在收购中实行保护价格，并采取相应的经济措施保证其实现。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第三十条　当重要商品和服务价格显著上涨或者有可能显著上涨，国务院和省、自治区、直辖市人民政府可以对部分价格采取限定差价率或者利润率、规定限价、实行提价申报制度和调价备案制度等干预措施。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　省、自治区、直辖市人民政府采取前款规定的干预措施，应当报国务院备案。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第三十一条　当市场价格总水平出现剧烈波动等异常状态时，国务院可以在全国范围内或者部分区域内采取临时集中定价权限、部分或者全面冻结价格的紧急措施。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第三十二条　依照本法第三十条、第三十一条的规定实行干预措施、紧急措施的情形消除后，应当及时解除干预措施、紧急措施。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span></span><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); FONT-WEIGHT: bold; COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">第五章　价格监督检查</span></span></strong></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第三十三条　县级以上各级人民政府价格主管部门，依法对价格活动进行监督检查，并依照本法的规定对价格违法行为实施行政处罚。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第三十四条　政府价格主管部门进行价格监督检查时，可以行使下列职权：</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(一)询问当事人或者有关人员，并要求其提供证明材料和与价格违法行为有关的其他资料;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(二)查询、复制与价格违法行为有关的帐簿、单据、凭证、文件及其他资料，核对与价格违法行为有关的银行资料;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(三)检查与价格违法行为有关的财物，必要时可以责令当事人暂停相关营业;</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span>(四)在证据可能灭失或者以后难以取得的情况下，可以依法先行登记保存，当事人或者有关人员不得转移、隐匿或者销毁。</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第三十五条　经营者接受政府价格主管部门的监督检查时，应当如实提供价格监督检查所必需的帐簿、单据、凭证、文件以及其他资料。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第三十六条　政府部门价格工作人员不得将依法取得的资料或者了解的情况用于依法进行价格管理以外的任何其他目的，不得泄露当事人的商业秘密。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第三十七条　消费者组织、职工价格监督组织、居民委员会、村民委员会等组织以及消费者，有权对价格行为进行社会监督。政府价格主管部门应当充分发挥群众的价格监督作用。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　新闻单位有权进行价格舆论监督。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第三十八条　政府价格主管部门应当建立对价格违法行为的举报制度。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　任何单位和个人均有权对价格违法行为进行举报。政府价格主管部门应当对举报者给予鼓励，并负责为举报者保密。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span></span><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); FONT-WEIGHT: bold; COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">第六章　法律责任</span></span></strong></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第三十九条　经营者不执行政府指导价、政府定价以及法定的价格干预措施、紧急措施的，责令改正，没收违法所得，可以并处违法所得五倍以下的罚款</span>;没有违法所得的，可以处以罚款;情节严重的，责令停业整顿。</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第四十条　经营者有本法第十四条所列行为之一的，责令改正，没收违法所得，可以并处违法所得五倍以下的罚款</span>;没有违法所得的，予以警告，可以并处罚款;情节严重的，责令停业整顿，或者由工商行政管理机关吊销营业执照。有关法律对本法第十四条所列行为的处罚及处罚机关另有规定的，可以依照有关法律的规定执行。</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　有本法第十四条第</span>(一)项、第(二)项所列行为，属于是全国性的，由国务院价格主管部门认定;属于是省及省以下区域性的，由省、自治区、直辖市人民政府价格主管部门认定。</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第四十一条　经营者因价格违法行为致使消费者或者其他经营者多付价款的，应当退还多付部分</span>;造成损害的，应当依法承担赔偿责任。</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第四十二条　经营者违反明码标价规定的，责令改正，没收违法所得，可以并处五千元以下的罚款。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第四十三条　经营者被责令暂停相关营业而不停止的，或者转移、隐匿、销毁依法登记保存的财物的，处相关营业所得或者转移、隐匿、销毁的财物价值一倍以上三倍以下的罚款。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第四十四条　拒绝按照规定提供监督检查所需资料或者提供虚假资料的，责令改正，予以警告</span>;逾期不改正的，可以处以罚款。</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第四十五条　地方各级人民政府或者各级人民政府有关部门违反本法规定，超越定价权限和范围擅自制定、调整价格或者不执行法定的价格干预措施、紧急措施的，责令改正，并可以通报批评</span>;对直接负责的主管人员和其他直接责任人员，依法给予行政处分。</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第四十六条　价格工作人员泄露国家秘密、商业秘密以及滥用职权、徇私舞弊、玩忽职守、索贿受贿，构成犯罪的，依法追究刑事责任</span>;尚不构成犯罪的，依法给予处分。</span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　</span></span><strong><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); FONT-WEIGHT: bold; COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">第七章　附　则</span></span></strong></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第四十七条　国家行政机关的收费，应当依法进行，严格控制收费项目，限定收费范围、标准。收费的具体管理办法由国务院另行制定。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　利率、汇率、保险费率、证券及期货价格，适用有关法律、行政法规的规定，不适用本法。</span></span></p><p style="BACKGROUND: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 22px 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px"><span style="FONT-SIZE: 16px; FONT-FAMILY: 宋体; BACKGROUND: rgb(255,255,255); COLOR: rgb(51,51,51); FONT-STYLE: normal; LETTER-SPACING: 0px"><span style="FONT-FAMILY: 宋体">　　第四十八条　本法自</span>1998年5月1日起施行。</span></p><p><span style="FONT-SIZE: 14px; FONT-FAMILY: Calibri">&nbsp;</span></p><p>&nbsp;</p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-507.html'>置顶：中华人民共和国资产评估法</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-529.html'>转发中价协 关于《2020年价格鉴证师职业能力水平评价考试统一考试报名简章》报考条件的补充通知</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

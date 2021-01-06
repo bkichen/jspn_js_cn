@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>协会章程——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../../images/laydate/laydate.js"></script>
+<script src="../../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_327'></span>
+<script language='JavaScript'>
+function funcDate_327()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_327.innerHTML = strHTML;
+}
+setInterval(funcDate_327,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../../index.html">首 页</a></td> 
+        <td><a href="../../col1/articlecolumn.html">工作动态</a></td> 
+        <td><a href="../../col2/articlecolumn.html">政策文件</a></td> 
+        <td><a href="../../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../../index.html'>首页</a> >>&nbsp;<a href='../col15/articlecolumn.html' target='_self' class='x_column_link'>协会介绍</a> >>&nbsp;<a href='' target='_self' class='x_column_link'>协会制度</a></td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center">
+			<div id="mainLeftMenuList">
+				<table border="0" cellspacing="0" cellpadding="0"> 
+                  <tr> 
+                    <td><a href="../col15/articlecolumn.html">协会简介</a></td> 
+                  </tr> 
+                  <tr> 
+                    <td id="menuListSelected"><a href="">协会制度</a></td> 
+                  </tr> 
+                  <tr> 
+                    <td><a href="javascript:;">协会机构</a></td> 
+                  </tr> 
+                   
+                  <tr> 
+                    <td><a href="javascript:;">加入协会</a></td> 
+                  </tr> 
+                  <tr> 
+                    <td><a href="javascript:;">理事名单</a></td> 
+                  </tr> 
+                </table>			</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>江苏省物价局-江苏省物价局网站章程</td></tr><tr align='center'><td></td></tr><tr align='center'><td>&nbsp;</td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style=";text-align: center;line-height: 40px"><br></p><p><span style="font-size: 13px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";text-align: center;line-height: 40px"><span style="font-size: 21px;font-family: 黑体;color: black">第一章</span> <span style="font-size: 21px;font-family: 黑体;color: black">总则</span></p><p><span style="font-size: 13px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第一条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会的名称是江苏省物价局-江苏省物价局网站。英文译名为</span><span style="font-size: 21px;color: black">JIANGSU PRICE ASSOCIATION</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">，缩写为</span><span style="font-size: 21px;color: black">JSPA</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第二条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会是从事价格理论、价格政策研究，开展市场价格协调，提供价格服务的全省专业性社会团体，是由价格系统工作者，与价格工作联系密切和有志于价格研究的专家、学者、有关部门、行业组织和企事业单位自愿联合而组成的非营利性社会组织。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第三条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会以马列主义、毛泽东思想、邓小平理论为指导，遵守宪法、法律法规和国家政策，遵循市场经济规律，尊重社会道德风尚，依照《中华人民共和国价格法》及《江苏省行业协会条例》开展价格业务活动。完善社会主义市场价格机制，协调价格关系、规范市场价格行为，反对价格垄断和价格欺诈，促进公平有序竞争，保护会员权益，服务江苏经济社会发展。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第四条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会接受业务主管单位江苏省物价局和登记管理机关江苏省民政厅的业务指导和监督管理。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第五条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会住所：南京市北京西路</span><span style="font-size: 21px;color: black">24</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">号，邮编：</span><span style="font-size: 21px;color: black">210024</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";text-align: center;line-height: 40px"><span style="font-size: 21px;font-family: 黑体;color: black">第二章 业务范围</span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第六条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会在价格领域履行中介服务职能，通过开展相关业务活动，发挥沟通交流、咨询协助、组织协调作用，为政府价格决策服务，为放开价格协调服务、为会员和企事业单位生产经营服务，为协调生产者和消费者价格关系，维护生产者、经营者、消费者价格权益服务。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">业务范围：</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（一）搭建政府与会员及社会各界联系的平台，协调解决会员有关价格矛盾和争议，反映会员合理建议和诉求，维护会员合法权益，发挥桥梁和纽带作用。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（二）接受政府价格主管部门委托，协助搞好价格调控和管理，承担价格管理某些基础性、事务性、辅助性工作，参与或承担价格诚信、价格听证、专家咨询、企业价格业务培训等工作。接受会员和社会有关方面的委托，为其提供调查研究、价格协调、价格培训、价格信息等方面的服务。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（三）根据经济社会发展的需要，组织开展价格改革、价格监管、价格理论及相关问题的研究，举办价格研讨论坛，探讨价格改革和价格监管的理论、战略与政策，探讨企业价格策略，为政府价格决策和企业价格决策提供智力支持。对价格研究优秀成果予以表彰和奖励；编印、出版价格资料和刊物。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（四）宣传国家和省价格法律、法规、政策和价格知识，加强舆论引导和监督。</span> </span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（五）组织会员单位加强价格自律，开展工作交流，沟通信息，调查研究，总结经验，整合系统资源，坚持与时俱进，不断拓展业务活动领域。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（六）拓展服务领域，建立价格协会网站，为会员提供更多更具针对性的价格政策和信息，为社会提供更为便捷的价格咨询和服务，成为具有社会化服务功能的沟通交流和互动平台。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（七）<span style="letter-spacing: -0">承办政府价格主管部门和社会公众授权或委托的其他工作。</span></span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（八）与本会职能和业务相关的其他工作。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";text-align: center;line-height: 40px"><span style="font-size: 21px;font-family: 黑体;color: black">第三章 会员</span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第七条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会会员分团体会员和个人会员。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">团体会员为各市、县（市）、区的价格协会（学会）和与价格工作相关的有关企事业单位和行业组织。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">个人会员为对价格工作有研究热情，并有一定研究成果或对价格工作有较丰富经验的个人。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">团体会员需派出代表参与本会各项活动，如因岗位调整而需变更团体会员代表人，须向协会秘书处办理变更手续。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第八条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">申请加入本会的会员，必须具备下列条件：</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（一）拥护本会章程；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（二）有加入本会的意愿，并积极参与活动；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（三）在本会的业务领域内具有一定影响力。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第九条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">会员入会的程序：</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（一）提交入会申请；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（二）协会秘书处审核，经会长办公会议批准；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（三）本会秘书处发给协会会员证。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第十条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">会员享有下列权利：</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（一）本会的选举权、被选举权和表决权；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（二）参加本会的活动；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（三）获得本会服务的优先权；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（四）免费或以优惠价格得到本会编印的书刊和资料；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（五）对本会工作的批评建议权和监督权；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（六）入会自愿、退会自由。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第十一条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">会员履行下列义务：</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（一）遵守本会章程，执行本会的决议；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（二）维护本会的合法权益；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（三）完成本会交办的工作；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（四）按规定交纳会费；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（五）向本会反映价格、收费等方面的情况和问题；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（六）向本会提供价格研究成果和有关资料。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第十二条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">会员一年无故不参加本会活动，单位会员一年不交纳会费，视为自动退会。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第十三条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">会员如有严重违反本章程的行为，经会长办公会或常务理事会表决通过，予以除名。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";text-align: center;line-height: 40px"><span style="font-size: 21px;font-family: 黑体;color: black">第四章 组织机构和负责人产生、罢免</span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第十四条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">会员代表大会是本会的最高权力机构。会员代表大会的职权是：</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（一）制定和修改本会章程；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（二）选取和罢免理事；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（三）审议理事会的工作报告和财务报告；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（四）决定各机构重要人事任免；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（五）决定其他重大事项。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第十五条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">会员代表大会须有</span><span style="font-size: 21px;color: black">2/3</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">以上的会员代表到会方能召开，其决议须经到会会员代表半数以上表决通过方能生效。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第十六条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">会员代表大会每届</span><span style="font-size: 21px;color: black">5</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">年。因特殊情况需提前或延期换届的，须由理事会表决通过，报业务主管单位审查并经社团登记管理机关同意。但延期换届最长不超过</span><span style="font-size: 21px;color: black">1</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">年。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第十七条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">理事会是会员代表大会的执行机构，在会员代表大会闭会期间领导本会开展日常工作，对会员代表大会负责。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第十八条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">理事会的职权是：</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（一）执行会员代表大会的决议；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（二）选举和罢免会长、副会长、秘书长；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（三）聘请名誉会长和顾问、名誉副会长、名誉常务理事、名誉理事；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（四）筹备召开会员代表大会；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（五）向会员代表大会报告工作和财务状况；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（六）决定会员的吸收和除名；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（七）决定设立办事机构、分支机构、代表机构、实体机构；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（八）决定副秘书长，各机构主要负责人的聘任；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（九）制定内部管理制度；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（十）决定其他重大事项。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第十九条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">理事会须有</span><span style="font-size: 21px;color: black">2/3</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">以上理事出席方能召开，其决议须经到会理事</span><span style="font-size: 21px;color: black">2/3</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">以上表决通过方能生效。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第二十条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">理事会每年召开一次，有特殊情况可采用通讯形式召开。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第二十一条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本协会设立常务理事会。常务理事会由理事会选举产生。常务理事人数不超过理事人数的</span><span style="font-size: 21px;color: black">1/3</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">。在理事会闭会期间实行第十八条第一、四、六、七、八、九项职权。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第二十二条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">常务理事会须有</span><span style="font-size: 21px;color: black">2/3</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">以上的常务理事出席方能召开，其决议须经到会常务理事</span><span style="font-size: 21px;color: black">2/3</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">以上表决通过方能生效。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第二十三条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">常务理事会每半年召开一次，特殊情况的也可采用通讯形式召开。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第二十四条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">常务理事会闭会期间，受常务理事会委托，由会长办公会讨论决定有关重大问题。会长办公会议成员由会长、副会长组成，秘书长及有关人员列席，原则上每月召开一次，也可根据需要随时召开。会长办公会须有</span><span style="font-size: 21px;color: black">2/3</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">以上会长、副会长出席方能召开，其决议须经到会人员</span><span style="font-size: 21px;color: black">2/3</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">以上表决通过方能生效。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第二十五条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会根据需要，可按行业、专业类别和业务范围的特点设立分支机构。分支机构的任务是在相关的领域承担中介服务职能，从事章程规定范围内的业务活动，促进各自领域内价格形成机制的完善，加强价格监管，规范价格行为。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">分支机构不具有法人资格。分支机构必须遵守协会章程及有关规定，执行会员代表大会、理事会、常务理事会和会长办公会议决定，反映会员、企事业单位意见，参与协会相关问题的讨论研究。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第二十六条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会的会长、副会长、秘书长任职资格应符合有关规定，具备下列条件：</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（一）坚持党的路线、方针、政策，政治素质好；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（二）在价格或相关领域内有较大影响；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（三）身体健康，能坚持正常工作；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（四）最高任职年龄不超过</span><span style="font-size: 21px;color: black">65</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">周岁；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（五）未受过剥夺政治权利的刑事处罚；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（六）具有完全民事行为能力。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第二十七条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会会长、副会长、秘书长如超过最高任职年龄的，须经理事会表决通过，报业务主管单位审查并经社团登记管理机关同意后，方可任职。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">会长、副会长、秘书长任期五年，任期最长不得超过两届，因特殊情况需延长任期的，须经会员代表大会</span><span style="font-size: 21px;color: black">2/3</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">以上会员代表表决通过，报业务主管单位审查并经社团登记管理机关同意后，方可任职。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第二十八条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">会长是本会的法定代表人。本会法定代表人不兼任其他团体的法定代表。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第二十九条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会会长行使下列职权：</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（一）召集和主持理事会、常务理事会及会长办公会议；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（二）督促、检查会员代表大会、理事会、常务理事会及会长办公会议决议的落实；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（三）提出或审核分支机构、办事机构、代表机构和实体机构的主要负责人，并按程序审核后，交理事会或常务理事会决定或提请分支机构按规定选举产生；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（四）代表本会签署有关文件。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第三十条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">秘书处是本会办事机构，由秘书长负责。本会秘书长行使下列职权：</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（一）主持秘书处日常工作，组织实施年度工作计划；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（二）协调各分支机构、办事机构、代表机构、实体机构开展工作；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（三）协助会长决定和管理本会分支机构、办事机构、代表机构、实体机构的聘用人员；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（四）负责完成理事会、常务理事会、会长办公会议和会长交办的其他工作。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";text-align: center;line-height: 40px"><span style="font-size: 21px;font-family: 黑体;color: black">第五章 资产管理</span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第三十一条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会经费来源</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（一）会费；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（二）政府专项拨款；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（三）捐助；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（四）在核准的业务范围内开展活动或服务的收入；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（五）利息；</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">（六）兴办经济实体和其他合法收入。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第三十二条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会按照国家有关规定收取会员会费。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">会费标准为：团体会员每年</span><span style="font-size: 21px;color: black">1000</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">元。个人会员原则上不收费。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">每年</span><span style="font-size: 21px;color: black">12</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">月</span><span style="font-size: 21px;color: black">31</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">日前缴纳当年会费。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第三十三条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会经费必须用于本章程规定的业务范围和事业的发展，不得在会员中分配。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第三十四条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会建立严格的财务管理制度，保证会计资料合法、真实、准确、完整。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第三十五条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会配备具有专业资格的会计人员。会计不得兼任出纳。会计人员必须进行会计核算，实行会计监督。会计人员调动或离职时，必须与接管人员办清交接手续。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第三十六条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会资产管理必须执行国家规定的财务管理制度，接受会员代表大会和财税部门的监督。资产来源属于国家拨款或者社会捐赠、资助的，接受审计机关的监督。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第三十七条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会换届或更换法人代表之前，接受社团登记管理机关和业务主管单位组织的财务审计。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第三十八条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会的资产，任何单位、个人不得侵占、私分和挪用。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第三十九条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会专职工作人员的工资、保险、福利待遇，参照国家对事业单位的有关规定执行。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";text-align: center;line-height: 40px"><span style="font-size: 21px;font-family: 黑体;color: black">第六章 章程修改</span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第四十条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black;letter-spacing: -0">对本会章程的修改，要经理事会表决通过后，报会员代表大会审议。</span></span></p><p style=";line-height: 40px;text-indent: 41px"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black;letter-spacing: -1px"><span style="font-family:Times New Roman">第四十一条</span></span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black;letter-spacing: -1px"><span style="font-family:Times New Roman">本会修改的章程，在会员代表大会通过后</span></span><span style="font-size: 21px;font-family: &#39;Times&#39;,&#39;serif&#39;;color: black;letter-spacing: -1px">15</span><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black;letter-spacing: -1px">日内，经业务主管单位审查同意，并报社团登记管理机关核准后方可生效。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";text-align: center;line-height: 40px"><span style="font-size: 21px;font-family: 黑体;color: black">第七章 终止程序</span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第四十二条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会完成宗旨或自行解散或由于分立、合并等原因需要注销的，由常务理事会或会长办公会提出终止动议，经常务理事会表决通过，并报业务主管单位审查同意。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第四十三条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会终止前，须在业务主管单位及社团登记管理机关指导下成立清算小组，清理债权债务，处理善后事宜。清算期间，不开展清算以外的活动。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第四十四条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会经社团登记管理机关办理注销登记手续后即为终止。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第四十五条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本会终止后的剩余财产，在业务主管单位和社团登记管理机关的监督下，按照国家有关规定，用于发展与本会宗旨相关的事业。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";text-align: center;line-height: 40px"><span style="font-size: 21px;font-family: 黑体;color: black">第八章 附则</span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-size: 21px;color: black"><span style="font-family:Times New Roman">&nbsp;</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第四十六条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本章程经</span><span style="font-size: 21px;color: black">2014</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">年</span><span style="font-size: 21px;color: black">9</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">月</span><span style="font-size: 21px;color: black">29</span><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">日本会四届一次会员代表大会表决通过。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第四十七条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本章程的解释权属于本会理事会。</span></span></p><p style=";line-height: 40px;text-indent: 43px"><span style="font-family:Times New Roman"><span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">第四十八条</span> <span style="font-size: 21px;font-family: 仿宋_GB2312;color: black">本章程自社团登记管理机关核准之日起生效。</span></span></p><p><br></p></span></div></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

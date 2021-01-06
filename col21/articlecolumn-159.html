@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>《江苏价格》期刊——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_561'></span>
+<script language='JavaScript'>
+function funcDate_561()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_561.innerHTML = strHTML;
+}
+setInterval(funcDate_561,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td><a href="../index.html">首 页</a></td>
+<td><a href="../col1/articlecolumn.html">工作动态</a></td>
+<td><a href="../col2/articlecolumn.html">政策文件</a></td>
+<td><a href="../col3/articlecolumn.html">课题研究</a></td>
+<td><a href="../col4/articlecolumn.html">专家视点</a></td>
+<td><a href="../col5/col13/piccolumn.html">预期调查</a></td>
+<td><a href="../col6/col9/articlecolumn.html">价格培训</a></td>
+<td><a href="../col7/articlecolumn.html">会员风采</a></td>
+<td><a href="../col8/articlecolumn.html">联系我们</a></td></tr></tbody></table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='index.html' target='_self' class='x_column_link'>《江苏价格》期刊</a></td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" height="600" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center">
+			
+			<div id="divBookID">
+			<table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td> 请选择期刊 </td>
+              </tr>
+
+              <tr>
+                <td><script language="JavaScript" type="text/javascript">
+var intColID=[
+["卷首语","调查研究",],["卷首语",],["卷首语","重点关注","改革论坛","价格调控","时政资讯","专家视角","调查研究","民生关注","依法行政","经验交流","物价风采","价格动态","政策速递",],["卷首语",],["卷首语","特别推荐","改革论坛","调查研究","降本减负","依法行政","反垄断研究","经验交流","物价风采","价格动态","政策速递","休闲园地",],["卷首语","特别推荐","改革论坛","时政资讯","专家视角","价格调控","调查研究","民生关注","价格监管","反垄断研究","经验交流","物价风采","价格动态","政策速递",],["卷首语","本期焦点","专题交换","改革论坛","时政资讯","专家视角","价格分析","调查研究","价格监测","依法行政","竞争政策论坛","价格动态","政策速递",],["卷首语","特别推荐","重点关注","时政资讯","专家视角","价格调控","调查研究","民生关注","依法行政","价格监管","竞争政策论坛","经验交流","价格动态","政策速递",],["卷首语","本期焦点","重点关注","价格调控","时政资讯","专家视角","调查研究","民生关注","依法行政","价格监管","竞争政策论坛","经验交流","价格动态",],["卷首语","本期焦点","重点关注","时政资讯","专家视角","价格调控","调查研究","民生关注","价格监测","价格监管","经验交流","价格动态",],["卷首语","重点关注","价格调控","时政资讯","专家视角","调查研究","民生关注","依法行政","价格监管","竞争政策论坛","经验交流","价格动态",],["卷首语","本期焦点","重点关注","价格调控","时政资讯","专家视角","调查研究","民生关注","依法行政","价格监管","竞争政策论坛","经验交流","他山之石","价格动态",],["卷首语","本期焦点","改革论坛","时政资讯","价格分析","调查研究","民生关注","政策评估","价格监督","价格动态",],["卷首语","重点关注","改革论坛","价格调控","时政资讯","专家视角","媒体视点","调查研究","依法行政","价格监管","经验交流","价格动态",],["卷首语","特别推荐","价格调控","专家视角","媒体视点","热点访谈","调查研究","民生关注","依法行政","经验交流","队伍建设","价格动态",],["卷首语","本期焦点","重点关注","价格分析","时政资讯","专家视角","媒体视点","热点访谈","调查研究","医药改革","民生关注","依法行政","价格监管","价格评估","队伍建设","价格动态",],["卷首语","重点关注","价格分析","时政资讯","专家视角","调查研究","医药改革","价格监管","民生关注","依法行政","价格动态",]];
+
+var IntClassID=[
+["10","11",],["16",],["17","18","19","20","21","22","23","24","25","26","27","28","29",],["37",],["34","35","36","54","55","56","57","58","59","60","61","62",],["39","40","41","42","43","44","45","46","47","48","49","50","51","52",],["64","65","66","67","68","69","70","71","72","73","74","75","76",],["78","79","80","81","82","83","84","85","86","87","88","89","90","91",],["93","94","95","96","97","98","99","100","101","102","103","104","105",],["107","108","109","110","111","112","113","114","116","117","118","119",],["121","122","123","124","125","126","127","128","129","130","131","132",],["134","135","136","137","138","139","140","141","142","143","144","145","146","147",],["149","150","151","152","153","154","155","156","157","158",],["160","161","162","163","164","165","166","167","168","169","170","171",],["203","204","205","206","207","208","209","210","211","212","213","214",],["187","188","189","190","191","192","193","194","195","196","197","198","199","200","201","202",],["176","177","178","179","180","181","182","183","184","185","186",]];
+
+function getClass()
+{
+   var sltBClassID=document.form1.intClassID;
+   var sltClass=document.form1.intColID;
+   var intClassID=intColID[sltBClassID.selectedIndex - 1];
+   var IClassID=IntClassID[sltBClassID.selectedIndex - 1];
+   
+   sltClass.length=1;
+   for(var i=0;i<intClassID.length;i++)
+   {
+		sltClass[i+1]=new Option(intClassID[i],IClassID[i]);
+   }
+}
+/*
+function getClass()
+{
+   var sltBClassID=document.form1.intClassID;
+   var sltClass=document.form1.intColID;
+   
+   var intClassID=intColID[sltBClassID.selectedIndex - 1];
+   
+   sltClass.length=1;
+   for(var i=0;i<intClassID.length;i++)
+   {
+		sltClass[i+1]=new Option(intClassID[i],intClassID[i]);
+   }
+}
+*/
+</script>
+
+	
+<table cellpadding="0" cellspacing="0" border="0">	
+  <tr>
+  	<td>
+	<select style="width:160px;" onchange="javascript:if(this.value.length>4) window.location=this.value;">
+		<option selected="" value=''>——请选择期刊—— </option>
+					<option value="?intClassID=175">价格2018年第5期</option>
+					<option value="?intClassID=174">价格2018年第4期</option>
+					<option value="?intClassID=173">价格2018年第3期</option>
+					<option value="?intClassID=159" selected="">价格2018年第2期</option>
+					<option value="?intClassID=148">价格2018年第1期</option>
+					<option value="?intClassID=133">价格2017年第6期</option>
+					<option value="?intClassID=120">价格2017年第5期</option>
+					<option value="?intClassID=106">价格2017年第4期</option>
+					<option value="?intClassID=92">价格2017年第3期</option>
+					<option value="?intClassID=77">价格2017年第2期</option>
+					<option value="?intClassID=63">价格2017年第1期</option>
+					<option value="?intClassID=38">价格2016年第6期</option>
+					<option value="?intClassID=33">价格2016年第5期</option>
+					<option value="?intClassID=14">价格2016年第4期</option>
+					<option value="?intClassID=13">价格2016年第3期</option>
+					<option value="?intClassID=12">价格2016年第2期</option>
+					<option value="?intClassID=9">价格2016年第1期</option>
+			</select>
+	</td>
+  </tr>
+</table> 	
+
+
+
+<table cellpadding="0" cellspacing="0" border="0" style="display:none">
+<form method="post" action="" name="form1">
+  <tr>
+  	<td>
+	<select name="intClassID" onchange="getClass()">
+		<option value="0">——请选择——</option>
+			</select>
+	</td>
+	<td>&nbsp;</td>
+  	<td style="display:none">
+	<select name="intColID">
+		<option value="0">——请选择——</option>
+	</select>
+	</td>
+	<td style="display:none">&nbsp;</td>
+	<td>
+	<input type="submit" value="查 询">
+	</td>
+	
+  </tr>
+</form> 
+</table> 
+</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+
+            </table>
+			</div>
+			
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr>
+					<td colspan="3" align="left" background=""><div style="margin-left:px;" align="left" class="textBookTitle">卷首语</div></td>
+				  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 把握新时代中国经济格局的不变与变</a></td>
+							<td align="right">林毅夫</td>
+						  </tr><tr>
+					<td colspan="3" align="left" background=""><div style="margin-left:px;" align="left" class="textBookTitle">重点关注</div></td>
+				  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 江苏降低实体经济企业成本政策效力研究</a></td>
+							<td align="right">江苏省减负办 江苏省物价局 江苏省经信研究院</td>
+						  </tr><tr>
+					<td colspan="3" align="left" background=""><div style="margin-left:px;" align="left" class="textBookTitle">改革论坛</div></td>
+				  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 建立降费联动机制 迈开强企壮实之步——连云港市强企降费“三风行动”助力“降成本”改革落地见效</a></td>
+							<td align="right">王志慧 郑淼松</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 适应新时代 谋划新作为 在服务高质量发展中谱写稳价惠民新篇章</a></td>
+							<td align="right">范建江</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 千磨万击还坚劲 任尔东西南北风——徐州价格工作始终坚持“奋斗”主题</a></td>
+							<td align="right">顾铁柱</td>
+						  </tr><tr>
+					<td colspan="3" align="left" background=""><div style="margin-left:px;" align="left" class="textBookTitle">价格调控</div></td>
+				  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 江苏省一季度及近期主要商品价格运行情况分析</a></td>
+							<td align="right">江苏省价格监测中心</td>
+						  </tr><tr>
+					<td colspan="3" align="left" background=""><div style="margin-left:px;" align="left" class="textBookTitle">时政资讯</div></td>
+				  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 多项数据显示中国经济呈企稳回升趋势旺季特征明显</a></td>
+							<td align="right">信息来源：人民网</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 国务院：部署采取系列措施进一步优化营商环境</a></td>
+							<td align="right">信息来源：中国经济网</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 国家统计局：一季度工业利润保持两位数增长</a></td>
+							<td align="right">信息来源：人民日报</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 4月份50大城市土地收入2842亿同比增83.4%</a></td>
+							<td align="right"></td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 国内成品油价格因增值税税率调整相应下调</a></td>
+							<td align="right">信息来源：人民网</td>
+						  </tr><tr>
+					<td colspan="3" align="left" background=""><div style="margin-left:px;" align="left" class="textBookTitle">专家视角</div></td>
+				  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 经济运行中的新苗头需要审慎把握</a></td>
+							<td align="right">信息来源：国家网</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 进口抗癌药降价：减税只是第一步 以量换价进入医保</a></td>
+							<td align="right">曾益新：国家卫生健康委员会副主任；陈金甫：人社部医保司司长</td>
+						  </tr><tr>
+					<td colspan="3" align="left" background=""><div style="margin-left:px;" align="left" class="textBookTitle">媒体视点</div></td>
+				  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 江苏省开展平价商店优惠券试点困难群众“菜篮子”再减负</a></td>
+							<td align="right">江苏卫视新时</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 价格部门当好“老娘舅”2017年调解1766起价格争议</a></td>
+							<td align="right">中国江苏网</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 江苏省将放开车用气销售价严控国有景区门票涨价</a></td>
+							<td align="right">《新华日报》</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 罚了698万 vivo手机仍在搞控价</a></td>
+							<td align="right">《现代快报》</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 南京网约车“逼退”出租车？江苏省物价局这样表态……</a></td>
+							<td align="right">荔枝网</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 江苏绝大部分城市商品房价格预期趋稳</a></td>
+							<td align="right">中新网南京</td>
+						  </tr><tr>
+					<td colspan="3" align="left" background=""><div style="margin-left:px;" align="left" class="textBookTitle">调查研究</div></td>
+				  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 宿迁物流成本情况调研报告</a></td>
+							<td align="right">葛翔宇 袁影华</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 连云港市区机动车停车收费问题研究</a></td>
+							<td align="right">柳 青 李保国 张兰兰 郑淼松</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 城市地下综合管廊定价机制的探讨</a></td>
+							<td align="right">芮有富  颜 安</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 关于宿迁市区餐饮业菜肴价格水平的调查报告</a></td>
+							<td align="right">周西胜 李 想</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 南通市普通高中校园超市价格情况的调研报告</a></td>
+							<td align="right">张 虎 杨建林</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· “扬中河豚美食岛” 价格诚信区域创建的实践与成效</a></td>
+							<td align="right">王玲玲 洪 祥</td>
+						  </tr><tr>
+					<td colspan="3" align="left" background=""><div style="margin-left:px;" align="left" class="textBookTitle">依法行政</div></td>
+				  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 涉案财物价格认定依据的收集及风险管控浅析</a></td>
+							<td align="right">魏 娟 顾 霞</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 论价格认定与政府定价的异同</a></td>
+							<td align="right">肖 侠  郭海堂</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 关于行政应诉的几点思考</a></td>
+							<td align="right">陈小琳</td>
+						  </tr><tr>
+					<td colspan="3" align="left" background=""><div style="margin-left:px;" align="left" class="textBookTitle">价格监管</div></td>
+				  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 网络电商价格行为监管对策研究</a></td>
+							<td align="right">王朋才 张从来 朱昌伟</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 健全价格监督服务网络的实践与思考</a></td>
+							<td align="right">高道恩</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 落实“放管服”改革新要求丰富“12358”品牌新内涵</a></td>
+							<td align="right">徐建锋</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 向“门票经济”说再见</a></td>
+							<td align="right">苏 靖</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 新形势下明码标价的现状与对策</a></td>
+							<td align="right">马伟钟</td>
+						  </tr><tr>
+					<td colspan="3" align="left" background=""><div style="margin-left:px;" align="left" class="textBookTitle">经验交流</div></td>
+				  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 辛勤耕耘付艰辛激情飞扬写华章</a></td>
+							<td align="right">张思胜</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 以合作求支持以服务谋发展共建双赢局面</a></td>
+							<td align="right">赵 巍</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 站位新时代 谋求新发展——对做好新时代成本监审工作的思考</a></td>
+							<td align="right">马根元</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 争当新时代价格事业的奋进者</a></td>
+							<td align="right">陈 亮</td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 准确把握新时代党建总要求以优良作风推进价格改革再上台阶</a></td>
+							<td align="right">王亚雄</td>
+						  </tr><tr>
+					<td colspan="3" align="left" background=""><div style="margin-left:px;" align="left" class="textBookTitle">价格动态</div></td>
+				  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 江苏省下调一般工商业用电价格</a></td>
+							<td align="right"></td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 江苏省下调天然气发电上网电价</a></td>
+							<td align="right"></td>
+						  </tr><tr>
+							<td width="32" align="left" background="">&nbsp;</td>
+							<td align="left"><a href="javascript:;" target="_blank">· 市县动态</a></td>
+							<td align="right"></td>
+						  </tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

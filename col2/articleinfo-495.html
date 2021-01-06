@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>政策文件——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_66'></span>
+<script language='JavaScript'>
+function funcDate_66()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_66.innerHTML = strHTML;
+}
+setInterval(funcDate_66,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td><a href="../col1/articlecolumn.html">工作动态</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">政策文件</a></td> 
+        <td><a href="../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>政策文件</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="2">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>浅析：行政许可与备案的区别</td></tr><tr align='center'><td><span class='x_time'>2020-07-08 15:06:57</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><p style="BACKGROUND: white; TEXT-ALIGN: center; MARGIN: 0px 0px 14px; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: #333333; LETTER-SPACING: 1px">信息来源：&nbsp;<a href="javascript:;"><span style="COLOR: #333333; text-underline: none">归去来兮的法律时空</span></a></span></p><p style="BACKGROUND: white; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span> <span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: #333333; LETTER-SPACING: 1px">行政许可，是指“是指行政机关根据公民、法人或者其他组织的申请，经依法审查，准予其从事特定活动的行为”（《行政许可法》第二条)。而对于何为备案，目前没有法律法规作出明确规定。笔者理解，备案是指公民、法人或者其他组织将其从事特定活动的相关信息报送给行政机关的行为，目的在于使行政机关掌握相关情况，从而采取相应的管理措施。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span> <span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: #333333; LETTER-SPACING: 1px">由于行政许可对公民、法人或者其他组织的权利影响甚大，因此《行政许可法》对设定行政许可作了相应的限制。除第《行政许可法》第十二条具体规定了哪些事项可以设定行政许可外，第十四、十五条还对设定行政许可的权限作了规定，即一般来说，只有法律、法规及国务院命令、决定可以设定行政许可，特殊情况下省级政府规章可以设定有效期为一年的临时性行政许可，除此之外，部门规章和规章以下的规范性文件一律不得设定许可。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: #333333; LETTER-SPACING: 1px">如果在实践中没有分清许可与备案的区别，那么可能会出现以“备案”之名行许可之实等问题，有违依法行政原则。那么许可与备案究竟有何区别？对于这个问题在实践中存在一些误解。比如，有一种观点认为，如果要求行政相对人在事前向行政机关报送信息，就是实质上的行政许可，如果可以先从事某项活动后再报送信息才是备案；又如笔者接触过一些政府法制机构中从事地方政府规章草案审核论证工作的工作人员，他们中的一些人认为，如果只规定了报送信息的义务而没有规定不报送信息的法律责任（即没有处罚规定）就是备案，如果既规定了报送信息的义务，又规定了不报送信息的处罚措施，则为许可。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span> <span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: #333333; LETTER-SPACING: 1px">实际上这些观点都不正确。实际上，许可与备案的本质区别，在于行政机关有无拒绝的权力。如果有，则为许可，如果没有则为备案。对此详述如下：</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span> <span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: #333333; LETTER-SPACING: 1px">在行政许可过程中，行政机关必须根据法律法规的规定，对申请人是否符合法律法规所规定条件作出判断，然后决定是否准许申请人从事特定活动。对于有数量限制的许可，可能还要通过招标、拍卖等方式，从多个符合条件的申请人中选择不超过限制数量的申请人，准予其从事特定活动。总之，行政许可的特点是对于行政相对人的申请，行政机关可能同意，也可能不同意。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span> <span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: #333333; LETTER-SPACING: 1px">而如前所述，备案只是向行政机关报送信息。对于行政相对人报送的信息，行政机关必须接受，没有拒绝的余地（当然对于报送信息不实的，可以按规定予以处罚）。只要符合此特征，不论是事前报送信息还是事后报送信息，均为备案而非许可。另外，备案作为行政相对人的一项义务，如果违反的话当然应当承担法律责任，因此对于不按规定报送信息（即不按规定备案）者予以行政处罚，并不意味着名为备案实为许可。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span> <span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: #333333; LETTER-SPACING: 1px">从这个本质区别出发，通常许可与备案还有以下形式上的区别：</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span> <span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: #333333; LETTER-SPACING: 1px">一、如果法律法规规定了需要经过许可才能从事某项活动（即设定了行政许可），一般都要同时规定许可的条件。如果不规定许可条件，则意味着行政机关对该许可事项享有不受限制的“绝对权力”，可以不需要任何理由就同意或者不同意申请人从事特定活动。此为法律法规授权行政机关恣意行政，显然不符合现代法治原则。而对于备案，因为行政机关只是被动地接受信息，没有拒绝的余地，因此不可能规定具备什么条件行政机关应当接受备案，具备什么条件则行政机关不接受备案。即法律法规规章不会规定备案的条件。</span></p><p style="BACKGROUND: white; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span> <span style="FONT-SIZE: 21px; FONT-FAMILY: 宋体; COLOR: #333333; LETTER-SPACING: 1px">&nbsp;</span><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; COLOR: #333333; LETTER-SPACING: 1px">二、根据《行政许可法》第十二条的规定，设定行政许可的目的主要在于维护国家安全、公共安全、公民人身、财产安全、维护公共利益、保护生态环境、合理开发利用自然资源等，因此如果未经许可擅自从事法律法规规定需经许可才能从事的活动，则会对国家安全、公共安全、人身、财产安全等造成威胁，因此此种违法行为危害性较大，故一般会设定较重的法律责任，如高额罚款，在规定法律责任的同时往往还会规定责令行为人停止实施特定活动；而不备案则仅是对行政管理规定的违反，其危害性则仅体现在对行政机关依法实施管理活动造成不便，因而危害性较小，故一般法律责任也比较轻，一般为数额较低的罚款，在规定法律责任的同时可能会要求违法者补报相关信息，但不会因为未报送信息而禁止相对人继续从事该项活动。这也说明，对于违反备案义务的行为进行处罚并不意味着该备案实为许可。</span></p><p style="LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">&nbsp;</span></p><p></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-523.html'>国务院办公厅关于进一步规范行业协会商会收费的通知</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-494.html'>转发关于进一步做好清理规范行业协会商会涉企收费工作的通知</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>

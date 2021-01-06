@@ -1,0 +1,103 @@
+body {
+	margin: 0px;
+}
+td{
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#000000;
+}
+.tableStyle20{
+	margin-top:20px;
+}
+.tableStyle10{
+	margin-top:10px;
+}
+
+
+/************************ 登录页 ************************/
+.loginBodyBG{
+	background-color:#137DBB;
+	background-image:url(logo_201606_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+}
+
+.loginMainTdBG{
+	background:url(http://oa.jsjgxh.org:8080/hodeframe2016_jsprice/images/login_2016_img_002.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+}
+
+.loginMain_BG{
+	background:url(login_201606_img_002.png);
+	background-repeat:no-repeat;
+	background-position:top;
+	width:554px;
+	height:259px;
+}
+
+#divLoginStyleID{
+	margin-left:248px;
+	margin-top:91px;
+}
+#divLoginStyleID .inputLogin{
+	border:0px solid #005D89;
+	height:29px;
+	width:281px;
+	font-size:18px;
+	font-family:"微软雅黑";
+}
+
+.textCopyRight{
+	color:#FFFFFF;
+	font-family:"微软雅黑";
+	font-size:14px;
+	line-height:25px;
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+/************************ 系统界面 ************************/
+.mainTop_BG{
+	background-image:url(http://oa.jsjgxh.org:8080/hodeframe2016_jsprice/images/main_201603_img_02.jpg);
+	background-color:#158BC9;
+}
+.mainTopUser_BG{
+	background:url(http://oa.jsjgxh.org:8080/hodeframe2016_jsprice/images/main_201603_img_04.jpg);
+	width:600px;
+}
+.mainTopUserInfo{
+	margin-right:5px;
+	margin-bottom:13px;
+	color:#FFFFFF;
+	text-align:center;
+	padding-right:10px;
+}
+
+#divMainName td{
+	color:#FFFFFF;
+	font-size:20px;
+	padding-left:15px;
+	vertical-align:bottom;
+}
+#divMainName a{
+	color:#FFFFFF;
+	font-size:16px;
+	vertical-align:bottom;
+	text-decoration:none;
+}
+
+#divMainRightInfoID td,#divMainRightInfoID a{
+	line-height:30px;
+	color:#FFFFFF;
+	border-bottom:1px solid #57BDE9;
+}
+
+
+

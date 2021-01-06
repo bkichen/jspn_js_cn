@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>工作动态——江苏省物价局-江苏省物价局网站</title>
+<meta name="Keywords" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+<meta name="Description" content="希迪麦德CMS , 江苏省物价局-江苏省物价局网站">
+
+
+<link href="../images/style_2016.css" rel="stylesheet" type="text/css">
+<script src="../images/laydate/laydate.js"></script>
+<script src="../images/main_2016.js"></script>
+
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle">
+  <tr>
+    <td>
+	
+	
+	<div id="divTextTopID">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1D87F7">
+      <tr>
+        <td width="250" align="center"><span id='jnkc_36'></span>
+<script language='JavaScript'>
+function funcDate_36()
+{
+	var myDate = new Date();
+	var strHTML = '';
+	strHTML += myDate.getFullYear() +'年'
+	strHTML += (myDate.getMonth() + 1) +'月'
+	strHTML += myDate.getDate() +'日 '
+	if(myDate.getHours() < 10 )
+	{
+		strHTML += '0'+(myDate.getHours()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getHours()  ) +':'
+	}
+	if(myDate.getMinutes() < 10 )
+	{
+		strHTML += '0'+(myDate.getMinutes()  ) +':'
+	}
+	else
+	{
+		strHTML += (myDate.getMinutes()  ) +':'
+	}
+	if(myDate.getSeconds() < 10 )
+	{
+		strHTML += '0'+(myDate.getSeconds()  ) +' '
+	}
+	else
+	{
+		strHTML += (myDate.getSeconds()  ) +' '
+	}
+	strHTML += '星期'+'日一二三四五六'.charAt(myDate.getDay());
+	jnkc_36.innerHTML = strHTML;
+}
+setInterval(funcDate_36,1000)
+</script>
+</td>
+        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center"><span id="dz_city_txt" class="curCity c_red"></span><!--a href="http://php.weather.sina.com.cn/search.php?city=上海&dpc=1" class="c_red">上海</a--><span id="now_wea_day_i"><img style="MARGIN-TOP: -2px; PADDING-RIGHT: 3px" alt="阴" align="absMiddle" src="http://i0.sinaimg.cn/dy/weather/images/figure/yin_small.gif" width="14" height="14"></span> <span id="now_wea_day">阴</span> <span id="now_wea_day_c">3</span>℃～<span id="now_wea_nig_c">8</span>℃ </td></tr></tbody></table>
+<script type="text/javascript"> 
+    var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}}; 
+     
+    var customCity = { 
+        url : 'http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=show', 
+        city : sina.readCookie('SINA_NEWS_CUSTOMIZE_city') || '', 
+        getSFigure : function(figure, status, size, type){ 
+                    return '<img src="http://i2.sinaimg.cn/dy/weather/images/yb2/'+size+'_'+size+'/'+figure+'_'+type+'.gif" title="'+status+'" />'; 
+                }, 
+        show : function (o){ 
+                    if(o.w){ 
+                    for(i in o.w){ 
+                        customCity.city = i; 
+                        var CityWea = o.w[i]; 
+                    } 
+                        //sina.$('dz_city_txt').innerHTML = '<a target="_blank" class="c_red" href="http://php.weather.sina.com.cn/search.php?city=' + customCity.city + '&dpc=1">' + customCity.city + '</a>'; 
+                        sina.$('dz_city_txt').innerHTML = ' ' + customCity.city + ' '; 
+                        sina.$('now_wea_day').innerHTML = CityWea[0].s1; 
+                        //sina.$('now_wea_nig').innerHTML = CityWea[0].s2; 
+                        sina.$('now_wea_day_i').innerHTML = customCity.getSFigure(CityWea[0].f1,CityWea[0].s1,20,0); 
+                        //sina.$('now_wea_nig_i').innerHTML = customCity.getSFigure(CityWea[0].f2,CityWea[0].s2,20,1); 
+                        sina.$('now_wea_day_c').innerHTML = CityWea[0].t1; 
+                        sina.$('now_wea_nig_c').innerHTML = CityWea[0].t2;     
+                    } 
+                else{ 
+                    customCity.city = "北京"; 
+                    var reqUrl = customCity.url + '&city=' + customCity.city; 
+                    customCity._getJsData(reqUrl); 
+                } 
+        }, 
+        requestWea : function(cusCity){ 
+            this.city = cusCity || this.city; 
+            var reqUrl = customCity.url + '&city=' + customCity.city; 
+            this._getJsData(reqUrl); 
+        }, 
+        _getJsData : function(url,dispose){ 
+            var Snode = document.createElement("script"); 
+            Snode.type = "text/javascript"; 
+            Snode.language = "javascript"; 
+            Snode.defer = true; 
+     
+            //超时 
+            Snode.TimeOutObj = setTimeout(function(){ 
+                document.getElementsByTagName("head")[0].removeChild(Snode); 
+            },10000); 
+            Snode[Snode.onreadystatechange === null ? "onreadystatechange" : "onload"] = function(){ 
+                if(this.onreadystatechange){ 
+                    if(this.readyState != "loaded" && this.readyState != "complete") {return;} 
+                }; 
+                if(dispose){setTimeout(dispose,100)}; 
+                this[this.onreadystatechange ? "onreadystatechange" : "onload"] = null; 
+                clearTimeout(Snode.TimeOutObj); 
+                setTimeout(function(){Snode.parentNode.removeChild(Snode)},1000); 
+            }; 
+            Snode.src = url; 
+            document.getElementsByTagName("head")[0].appendChild(Snode); 
+        } 
+    }; 
+    var show = customCity.show; 
+    customCity.requestWea(); 
+    </script></td>
+        <td width="200" align="center"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jspn.js.cn/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://www.jspn.js.cn/','江苏省物价局-江苏省物价局网站')">加入收藏</a></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td><img border="0" src="../information/picfile/webeditor/20200722124116_44444444444444.jpg" width="1000" height="160"></td>
+	  </tr>
+	</table>
+	
+	<div id="divTopMenuID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr> 
+        <td><a href="../index.html">首 页</a></td> 
+        <td class="menuSelected"><a href="articlecolumn.html">工作动态</a></td> 
+        <td><a href="../col2/articlecolumn.html">政策文件</a></td> 
+        <td><a href="../col3/articlecolumn.html">课题研究</a></td> 
+        <td><a href="../col4/articlecolumn.html">专家视点</a></td> 
+        <td><a href="../col5/col13/piccolumn.html">预期调查</a></td> 
+        <td><a href="../col6/col9/articlecolumn.html">价格培训</a></td> 
+        <td><a href="../col7/articlecolumn.html">会员风采</a></td> 
+        <td><a href="../col8/articlecolumn.html">联系我们</a></td> 
+      </tr> 
+    </table>	</div>
+	
+	
+	</td>
+  </tr>
+</table>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableMainStyle_F">
+  <tr>
+    <td>
+	
+	<div id="divMainLocID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableMainStyle_1">
+      <tr>
+        <td><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr><td><a href='../index.html'>首页</a> >>&nbsp;<a href='articlecolumn.html' target='_self' class='x_column_link'>工作动态</a> >>&nbsp;正文</td></tr></table></td>
+      </tr>
+    </table>
+	</div>
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableStyle20">
+      <tr>
+        <td width="220" valign="top">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			<div id="divSearchID">
+					<!--table><form action='' method='post'>
+		<tr><td>时&nbsp;&nbsp;间：<select name='year'>
+					<option value='' ></option>	
+				</select>
+		<select name='month'>
+					<option value=''></option>	
+				</select>
+		</td></tr>
+		<tr><td>
+		关键字：<input type='text' size='' name='keyword'></td></tr>
+		<tr><td align='center'><input type='submit' name='submit' class='button' value='检 索'><input type='hidden' name='columnid' value=''><input type='hidden' name='searchFormType' value='3'></td></tr>
+		</form></table-->
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<form id="formSearch" name="formSearch" method="post" action="http://www.jspn.js.cn/search.php">
+		  <tr>
+			<td> 请输入关键词检索 </td>
+		  </tr>
+		  <tr>
+			<td><input type="text" name="keyword" class="inputKeySearch"></td>
+		  </tr>
+		  <tr>
+			<td>发布日期检索</td>
+		  </tr>
+		  <tr>
+			<td>从 <input id="strStartTime" name="strStartTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td>至 <input id="strEndTime" name="strEndTime" class="laydate-icon inputDateSearch"></td>
+		  </tr>
+		  <tr>
+			<td><input type="image" src="http://www.jspn.js.cn/images/main_2016_img_07.jpg"></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+		  </tr>
+		  <input type="hidden" name="columnid" value="1">
+		  <input type="hidden" name="searchFormType" value="3">
+		</form>  
+		</table>
+		
+		
+		
+		
+					</div>
+			</td>
+          </tr>
+          <tr>
+            <td align="center" valign="bottom"><img src="../images/main_2016_img_11.jpg"></td>
+          </tr>
+        </table>
+		
+		</td>
+        <td align="center" valign="top">
+		
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><table border="0" cellpadding="0" cellspacing="0" width='100%' align='center'><tr align='center'><td class='x_content_title'>明年起至2023年江苏53所民办高校学历教育收费拟放开</td></tr><tr align='center'><td><span class='x_time'>2020-09-04 14:51:34</span></td></tr><tr align='center'><td height="bgcolor="></td></tr><tr><td><div id='divMainContentID'><span class='x_content'><h2 style="BACKGROUND: white; TEXT-ALIGN: center; MARGIN: 0px 0px 14px; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">信息来源：微讯江苏</span></h2><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">民办高校收费放开，江苏时间表将明确。9月2日，江苏省发展改革委发布《关于进一步推进民办高等学校学历教育收费改革的通知》（征求意见稿）（以下简称“征求意见稿”），面向社会公开征求意见。</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">&nbsp;</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">根据征求意见稿，自明年起至2023年，江苏拟逐步放开全省53所民办高等学校（含29所民办高校和24所独立学院）学历教育收费。对于民办高等学校学历教育收费改革，你有什么意见和建议？9月8日前，都可反馈至省发展改革委收费管理和价格调控处。电子邮箱:jsfgwsfc@126.com。传真：025-83275036。</span></p><p style="TEXT-ALIGN: left; MARGIN-LEFT: 42px; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">先行试点<br>江苏已放开3所民办普通本科院校收费</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">据悉，早在2016年12月，国务院印发《关于鼓励社会力量兴办教育促进民办教育健康发展的意见》（国发〔2016〕81号），明确“非营利性民办学校收费，通过市场化改革试点，逐步实行市场调节价”。目前，北京、上海、浙江、广东、山东、安徽等23个省区市已对民办高校（独立学院除外）学历教育收费全面实行市场调节价，由学校自主确定学费和住宿费标准。</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">&nbsp;</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">2018年2月，江苏省政府印发《关于鼓励社会力量兴办教育促进民办教育健康发展的实施意见》（苏政发〔2018〕31号），明确提出“在试点基础上有序放开部分学段非营利性民办学校学历教育收费”。按照国务院《意见》和省政府《实施意见》，2018年5月，江苏试点放开三江学院、无锡太湖学院、南通理工学院3所独立设置民办普通本科院校收费。</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">为深入贯彻落实国务院和省政府文件精神，促进江苏全省民办高等教育持续健康发展，省发展改革委会同省教育厅通过座谈会、实地调研、问卷调查等方式，对全省民办高校收费管理情况进行了广泛调研，在此基础上，起草了《关于进一步推进民办高等学校学历教育收费改革的通知》（征求意见稿），并公开向社会征求意见。</span></p><p style="TEXT-ALIGN: left; MARGIN-LEFT: 42px; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">分“三步走”<br>拟逐步放开53所民办高校学历教育收费</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">根据征求意见稿，江苏拟在2018年试点放开部分民办高校学历教育收费的基础上，进一步推进全省民办高等学校学历教育收费改革，包括逐步放开民办高校收费、从严规范民办高校收费行为、切实加强民办高校收费事中事后监管等。</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">逐步放开民办高校收费。征求意见稿明确，自明年起至2023年，逐步放开全省53所民办高等学校（含29所民办高校和24所独立学院）学历教育收费，并给出了三个阶段的时间表：</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">一是自2021年秋季学期起，放开26所独立设置的民办本专科院校（3所试点高校和南京传媒学院共4所本科、22所专科）收费，由学校自主研究确定学费和住宿费标准。2018年试点的3所高校在2021年秋季学期前继续维持现行收费标准。</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">二是自2022年秋季学期起，放开中外合作办学性质的3所民办本专科院校（西交利物浦和昆山杜克两所本科、苏州百年职业学院1所专科）收费，由学校自主研究确定学费和住宿费标准。</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">三是2023年，根据24所独立学院的全面评估和办学性质重新登记情况，对划归公办的实行政府指导价管理，划归民办（与公办高校完全脱钩）的实行市场调节价管理，由学校自主研究确定学费和住宿费标准。</span></p><p style="TEXT-ALIGN: left; MARGIN-LEFT: 42px; LINE-HEIGHT: 37px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋; LETTER-SPACING: 1px">从严规范<br>放开不等于不管，不得多频次大幅度调整</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">放开民办高等学校学历教育收费，不等于放任不管。征求意见稿明确，从严规范民办高校收费行为。其中拟要求，要充分考虑教育教学成本、学校发展需要以及经济发展水平和社会承受能力等因素，合理制定和调整学费和住宿费标准，并提前3个月向社会公示后执行，同时报省发展改革委、省教育厅。要切实保持学费和住宿费标准的相对稳定，原则上3-4年保持平稳，不得多频次、大幅度调整。</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">同时，调整收费标准实行“新生新办法，老生老办法”，学生入学时的学费和住宿费标准一经确定，在读期间不得提高。</span></p><p style="LINE-HEIGHT: 37px; TEXT-INDENT: 45px"><span style="FONT-SIZE: 21px; FONT-FAMILY: 仿宋">征求意见稿强调，各级发展改革和教育部门要跟踪了解民办高校收费政策执行情况，切实防止收费标准变动频繁、变动幅度过大等现象的发生。督促各民办高校严格落实收费公示等制度，及时查处超标准、超范围收费等各类违法违规收费，切实维护学生的合法权益。</span></p><p><br></p></span></div></td></tr><tr><td align='left'>&nbsp;</td></tr><tr><td align='left'>上一篇：<a class='x_title' href='articleinfo-560.html'>苏州市物理治疗和康复医疗服务项目收费试点改革实施方案</a></td></tr><tr><td align='left'>下一篇：<a class='x_title' href='articleinfo-558.html'>国常会：深入做好新增财政资金直接惠企利民工作</a></td></tr></table></td>
+          </tr>
+        </table>
+		
+		</td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+
+
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="1" class="tableIndexStyle_3">
+  <tr>
+    <td>
+	<div id="divFootID">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableStyleTB10">
+      <tr>
+        <td align="center">友情链接： <a href="javascript:;" target="_blank">江苏省物价局</a> | <a href="javascript:;" target="_blank">中国价格协会</a> | <a href="javascript:;" target="_blank">南京市物价局</a> | <a href="javascript:;" target="_blank">福建价格协会</a></td>
+      </tr>
+      <tr>
+        <td align="center">备案序号：<a href="javascript:;" target="_blank">苏IPC备16022877号</a> 江苏省物价局-江苏省物价局网站版权所有 地址：南京市北京西路24号 技术支持：<img style="VERTICAL-ALIGN: middle" src="../images/logo_img_hodesoft.png"> 南京希迪麦德软件有限公司</td>
+      </tr>
+    </table>
+	</div>
+	</td>
+  </tr>
+</table>
+
+<script src="../images/main_2016_foot.js"></script>
+<a href="javascript:;" style="display:none"> Produced 	By 南京希迪麦德软件有限公司</a></body>
+</html>
